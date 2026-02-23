@@ -1,0 +1,2081 @@
+{
+  "meta": {
+    "title": "Friseur Gesellenprüfung Theorie – 100 Fragen (IHK/HWK-Stil)",
+    "created": "2026-02-19",
+    "language": "de",
+    "version": "1.1-daz",
+    "daz_support": {
+      "fields_added": [
+        "simple",
+        "explanation_short",
+        "example"
+      ],
+      "note": "Einfache Sprache + kurze Erklärung + Beispiel pro Frage (Toggle in UI)."
+    },
+    "updated": "2026-02-20"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Schichten besitzt das menschliche Haar?",
+      "choices": [
+        "Epidermis – Dermis – Subcutis",
+        "Cuticula – Cortex – Medulla",
+        "Hornschicht – Lederhaut – Unterhaut",
+        "Talgschicht – Faser – Pigment"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Das Haar besteht aus Cuticula (Schuppenschicht), Cortex (Faserschicht) und ggf. Medulla (Markkanal).",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Schichten besitzt das menschliche Haar",
+      "example": "Beispiel: In der Beratung erklärst du, dass der Cortex die Festigkeit des Haares bestimmt.",
+      "explanation_short": "Das Haar besteht aus Cuticula , Cortex und ggf. Medulla ."
+    },
+    {
+      "id": 2,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "In welcher Schicht des Haares befinden sich die Farbpigmente (Melanin) überwiegend?",
+      "choices": [
+        "Cuticula",
+        "Cortex",
+        "Medulla",
+        "Haarwurzel"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Melanin liegt überwiegend im Cortex.",
+      "simple": "In welcher Schicht des Haares befinden sich die Farbpigmente meist.",
+      "example": "Beispiel: Bei fettiger Kopfhaut sprichst du über Seborrhoe (zu viel Talg).",
+      "explanation_short": "Melanin liegt überwiegend im Cortex."
+    },
+    {
+      "id": 3,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Aufgabe hat die Cuticula hauptsächlich?",
+      "choices": [
+        "Pigmentbildung",
+        "Nährstoffversorgung",
+        "Schutzfunktion",
+        "Haarwachstum"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Die Schuppenschicht schützt die innere Haarstruktur und beeinflusst Glanz/Kämmbarkeit.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche macht die Cuticula vor allem",
+      "example": "Beispiel: In der Beratung erklärst du, dass der Cortex die Festigkeit des Haares bestimmt.",
+      "explanation_short": "Die Schuppenschicht schützt die innere Haarstruktur und beeinflusst Glanz/Kämmbarkeit."
+    },
+    {
+      "id": 4,
+      "topic": "Chemie/pH",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welcher pH-Wert gilt als neutral?",
+      "choices": [
+        "4",
+        "5,5",
+        "7",
+        "9"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "pH 7 ist neutral.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welcher pH-Wert ist neutral",
+      "example": "Beispiel: Ein pH 9 Produkt öffnet die Cuticula stärker als ein pH 4,5 Produkt.",
+      "explanation_short": "pH 7 ist neutral."
+    },
+    {
+      "id": 5,
+      "topic": "Chemie/pH",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Ein Produkt mit pH 9 wirkt:",
+      "choices": [
+        "sauer",
+        "neutral",
+        "alkalisch",
+        "oxidierend"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "pH 9 liegt im alkalischen Bereich.",
+      "simple": "Ein Produkt mit pH 9 wirkt:.",
+      "example": "Beispiel: Nach Blondierung nutzt du ein saures Produkt, damit sich die Schuppenschicht wieder glättet.",
+      "explanation_short": "pH 9 liegt im alkalischen Bereich."
+    },
+    {
+      "id": 6,
+      "topic": "Chemie/pH",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum quillt das Haar bei alkalischen Produkten stärker auf?",
+      "choices": [
+        "Cuticula schließt sich",
+        "Wasser verdampft",
+        "Cuticula öffnet sich",
+        "Pigmente lösen sich sofort"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Alkalisch → Cuticula öffnet sich → Wasser dringt ein → Quellung.",
+      "simple": "Sag kurz den Grund: Warum quillt das Haar bei alkalischen Produkten stärker auf",
+      "example": "Beispiel: Ein pH 9 Produkt öffnet die Cuticula stärker als ein pH 4,5 Produkt.",
+      "explanation_short": "Alkalisch → Cuticula öffnet sich → Wasser dringt ein → Quellung."
+    },
+    {
+      "id": 7,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist Seborrhoe?",
+      "choices": [
+        "Trockene Kopfhaut",
+        "Übermäßige Talgproduktion",
+        "Pilzinfektion",
+        "Haarausfall"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Seborrhoe = erhöhte Talgproduktion.",
+      "simple": "Was ist Seborrhoe.",
+      "example": "Beispiel: In der Beratung erklärst du, dass der Cortex die Festigkeit des Haares bestimmt.",
+      "explanation_short": "Seborrhoe = erhöhte Talgproduktion."
+    },
+    {
+      "id": 8,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Funktion hat der Haarfollikel?",
+      "choices": [
+        "Farbneutralisation",
+        "Verankerung und Bildung des Haares",
+        "Feuchtigkeitsregulierung",
+        "Schutz vor UV-Strahlung"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Im Follikel wird das Haar gebildet und verankert.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Funktion hat der Haarfollikel",
+      "example": "Beispiel: Bei fettiger Kopfhaut sprichst du über Seborrhoe (zu viel Talg).",
+      "explanation_short": "Im Follikel wird das Haar gebildet und verankert."
+    },
+    {
+      "id": 9,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was bewirkt Wasserstoffperoxid (H₂O₂) bei oxidativen Haarfarben?",
+      "choices": [
+        "Schließt die Cuticula",
+        "Entwickelt Farbstoffe durch Oxidation",
+        "Neutralisiert Rotpigmente",
+        "Senkt den pH-Wert"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "H₂O₂ wirkt als Oxidationsmittel (Aufhellung + Farbentwicklung).",
+      "simple": "Was macht Wasserstoffperoxid bei oxidativen Haarfarben.",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "H₂O₂ wirkt als Oxidationsmittel ."
+    },
+    {
+      "id": 10,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Farbe neutralisiert einen Gelbstich am zuverlässigsten?",
+      "choices": [
+        "Grün",
+        "Blau",
+        "Violett",
+        "Rot"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Komplementär zu Gelb ist Violett.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Farbe neutralisiert einen Gelbstich am zuverlässigsten",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Komplementär zu Gelb ist Violett."
+    },
+    {
+      "id": 11,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Farbe neutralisiert einen Orangestich?",
+      "choices": [
+        "Grün",
+        "Blau",
+        "Violett",
+        "Gelb"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Komplementär zu Orange ist Blau.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Farbe neutralisiert einen Orangestich",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Komplementär zu Orange ist Blau."
+    },
+    {
+      "id": 12,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Direktzieher wirken hauptsächlich:",
+      "choices": [
+        "durch Oxidation",
+        "durch Einlagerung fertiger Farbmoleküle",
+        "durch Melaninabbau",
+        "durch Reduktion"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Direktzieher lagern fertige Farbmoleküle an/zwischen Cuticula an.",
+      "simple": "Direktzieher wirken vor allem:.",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Direktzieher lagern fertige Farbmoleküle an/zwischen Cuticula an."
+    },
+    {
+      "id": 13,
+      "topic": "Umformung/Dauerwelle",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Bindungen werden bei der Dauerwelle primär umgeformt?",
+      "choices": [
+        "Wasserstoffbrücken",
+        "Disulfidbrücken",
+        "Peptidbindungen",
+        "Salzbindungen"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Dauerwelle verändert Disulfidbrücken (S–S).",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Bindungen werden bei der Dauerwelle vor allem umgeformt",
+      "example": "Beispiel: Wenn die Fixierung zu kurz ist, hängen sich Locken schneller aus.",
+      "explanation_short": "Dauerwelle verändert Disulfidbrücken ."
+    },
+    {
+      "id": 14,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum ist eine Haaranalyse vor chemischer Behandlung wichtig?",
+      "choices": [
+        "Wegen der Mode",
+        "Zur Preisberechnung",
+        "Zur Wahl des richtigen Produktes/Einwirkzeit",
+        "Zur Zeitersparnis"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Haarzustand bestimmt Mittelstärke, Technik und Einwirkzeit.",
+      "simple": "Sag kurz den Grund: Warum ist eine Haaranalyse vor chemischer Behandlung wichtig",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Haarzustand bestimmt Mittelstärke, Technik und Einwirkzeit."
+    },
+    {
+      "id": 15,
+      "topic": "Hygiene",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Desinfektion bedeutet:",
+      "choices": [
+        "Entfernung sichtbarer Verschmutzung",
+        "Abtötung aller Mikroorganismen",
+        "Reduzierung von Keimen auf ein ungefährliches Maß",
+        "Sterile Lagerung"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Desinfektion reduziert Keime auf ein unschädliches Maß.",
+      "simple": "Desinfektion heißt:.",
+      "example": "Beispiel: Kamm erst reinigen, dann – wenn nötig – desinfizieren.",
+      "explanation_short": "Desinfektion reduziert Keime auf ein unschädliches Maß."
+    },
+    {
+      "id": 16,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was sind Fixkosten im Salon?",
+      "choices": [
+        "Farbverbrauch",
+        "Einmalhandschuhe",
+        "Miete",
+        "Shampooeinsatz"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Fixkosten fallen unabhängig von der Auslastung an (z. B. Miete).",
+      "simple": "Was sind Fixkosten im Salon.",
+      "example": "Beispiel: Miete ist Fixkosten – sie fällt auch an, wenn keine Kunden da sind.",
+      "explanation_short": "Fixkosten fallen unabhängig von der Auslastung an ."
+    },
+    {
+      "id": 17,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Variable Kosten sind z. B.:",
+      "choices": [
+        "Stromgrundgebühr",
+        "Versicherungen",
+        "Verbrauchsmaterial",
+        "Leasingrate"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Variable Kosten hängen von der Leistung ab (z. B. Materialeinsatz).",
+      "simple": "Variable Kosten sind z. B.:.",
+      "example": "Beispiel: 20 € Umsatz minus 6 € Wareneinsatz ergibt 14 € Deckungsbeitrag.",
+      "explanation_short": "Variable Kosten hängen von der Leistung ab ."
+    },
+    {
+      "id": 18,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist der Deckungsbeitrag (vereinfacht)?",
+      "choices": [
+        "Gewinn",
+        "Umsatz minus variable Kosten",
+        "Umsatz minus Fixkosten",
+        "Materialkosten"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "DB = Umsatz − variable Kosten.",
+      "simple": "Was ist der Deckungsbeitrag.",
+      "example": "Beispiel: Miete ist Fixkosten – sie fällt auch an, wenn keine Kunden da sind.",
+      "explanation_short": "DB = Umsatz − variable Kosten."
+    },
+    {
+      "id": 19,
+      "topic": "Beratung",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Vor einer Farbveränderung muss mindestens:",
+      "choices": [
+        "nur der Preis genannt werden",
+        "nur gewaschen werden",
+        "eine Beratung/Diagnose durchgeführt werden",
+        "sofort begonnen werden"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Beratung/Diagnose ist Pflichtbestandteil der fachgerechten Dienstleistung.",
+      "simple": "Vor einer Farbveränderung muss auf jeden Fall:.",
+      "example": "Beispiel: Du fragst nach Styling-Gewohnheiten und erklärst Pflegeaufwand und Risiken.",
+      "explanation_short": "Beratung/Diagnose ist Pflichtbestandteil der fachgerechten Dienstleistung."
+    },
+    {
+      "id": 20,
+      "topic": "Recht/Dokumentation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum ist Dokumentation bei chemischen Dienstleistungen wichtig?",
+      "choices": [
+        "Für Werbung",
+        "Für Statistik",
+        "Für rechtliche Absicherung & Nachvollziehbarkeit",
+        "Für Rabattaktionen"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Dokumentation schützt bei Reklamationen und sichert Qualität.",
+      "simple": "Sag kurz den Grund: Warum ist Dokumentation bei chemischen Dienstleistungen wichtig",
+      "example": "Beispiel: Kundendaten werden sicher gespeichert und nicht offen herumliegen gelassen.",
+      "explanation_short": "Dokumentation schützt bei Reklamationen und sichert Qualität."
+    },
+    {
+      "id": 21,
+      "topic": "Schnitt-Theorie",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was bewirkt ein hoher Abhebewinkel (Elevation) beim Schneiden?",
+      "choices": [
+        "Kompakte Form",
+        "Mehr Stufung/Entlastung",
+        "Keine Veränderung",
+        "Dichtere Kontur"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Höhere Elevation → mehr Stufung, weniger Gewicht.",
+      "simple": "Was macht ein hoher Abhebewinkel beim Schneiden.",
+      "example": "Beispiel: Eine Leitsträhne hilft dir, alle Abteilungen auf die gleiche Länge zu schneiden.",
+      "explanation_short": "Höhere Elevation → mehr Stufung, weniger Gewicht."
+    },
+    {
+      "id": 22,
+      "topic": "Schnitt-Theorie",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wozu dient eine Leitsträhne?",
+      "choices": [
+        "Zur Haarwäsche",
+        "Als Orientierung/Referenz beim Schneiden",
+        "Zum Volumenaufbau",
+        "Zur Farbverteilung"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Leitsträhne = Referenz für Länge/Winkel.",
+      "simple": "Wozu dient eine Leitsträhne.",
+      "example": "Beispiel: Quercheck im Nacken zeigt, ob eine Linie wirklich gerade ist.",
+      "explanation_short": "Leitsträhne = Referenz für Länge/Winkel."
+    },
+    {
+      "id": 23,
+      "topic": "Schnitt-Theorie",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Ein stumpfer Schnitt erzeugt typischerweise:",
+      "choices": [
+        "starke Stufung",
+        "viel Bewegung",
+        "eine klare, kompakte Linie",
+        "Locken"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Stumpf = kompakt, klare Kontur.",
+      "simple": "Ein stumpfer Schnitt erzeugt meistens:.",
+      "example": "Beispiel: Eine Leitsträhne hilft dir, alle Abteilungen auf die gleiche Länge zu schneiden.",
+      "explanation_short": "Stumpf = kompakt, klare Kontur."
+    },
+    {
+      "id": 24,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum sollten Metallgegenstände nicht mit Blondierung in Kontakt kommen?",
+      "choices": [
+        "Sie rosten",
+        "Sie können chemische Reaktionen beeinflussen",
+        "Sie färben ab",
+        "Sie schließen die Cuticula"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Metallionen können Reaktionen katalysieren/unerwünscht verändern.",
+      "simple": "Sag kurz den Grund: Warum sollten Metallgegenstände nicht mit Blondierung in Kontakt kommen",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Metallionen können Reaktionen katalysieren/unerwünscht verändern."
+    },
+    {
+      "id": 25,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Aussage ist richtig?",
+      "choices": [
+        "Blondierung färbt Pigmente ein",
+        "Blondierung baut Melanin ab",
+        "Blondierung glättet die Cuticula",
+        "Blondierung senkt den pH-Wert"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Blondierung oxidiert/abbaut Melanin (Aufhellung).",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Aussage ist richtig",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Blondierung oxidiert/abbaut Melanin ."
+    },
+    {
+      "id": 26,
+      "topic": "Chemie/pH",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zu pH-Wert und Haar sind richtig?",
+      "choices": [
+        "Der natürliche Säureschutzmantel ist leicht sauer.",
+        "Alkalische Produkte lassen das Haar eher aufquellen.",
+        "Saure Produkte öffnen die Cuticula stark.",
+        "Ein pH-Wert unter 7 gilt als basisch."
+      ],
+      "correctIndices": [
+        0,
+        1
+      ],
+      "explanation": "Haar/Haut sind leicht sauer; alkalisch öffnet Cuticula. Sauer schließt eher; pH<7 ist sauer.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zu pH-Wert und Haar sind richtig",
+      "example": "Beispiel: Ein pH 9 Produkt öffnet die Cuticula stärker als ein pH 4,5 Produkt.",
+      "explanation_short": "Haar/Haut sind leicht sauer; alkalisch öffnet Cuticula. Sauer schließt eher; pH<7 ist sauer."
+    },
+    {
+      "id": 27,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wofür steht die Entwicklerstärke (z. B. 6%, 9%) hauptsächlich?",
+      "choices": [
+        "Für den pH-Wert der Farbe",
+        "Für die Oxidations-/Aufhellungsleistung",
+        "Für die Menge an Direktpigmenten",
+        "Für die Einwirkzeitgarantie"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Höhere % = stärkeres Oxidations-/Aufhellungsvermögen (je nach System).",
+      "simple": "Wofür steht die Entwicklerstärke vor allem.",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Höhere % = stärkeres Oxidations-/Aufhellungsvermögen ."
+    },
+    {
+      "id": 28,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Faktoren beeinflussen das Farbergebnis oxidativer Haarfarben am stärksten?",
+      "choices": [
+        "Ausgangshaarfarbe/Tonhöhe",
+        "Porosität/Haarzustand",
+        "Einwirkzeit",
+        "Föhnluft-Temperatur beim Finish"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Ausgangsbasis, Haarzustand und Einwirkzeit sind zentral; Föhnluft ist nachrangig.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Faktoren beeinflussen das Farbergebnis oxidativer Haarfarben am stärksten",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Ausgangsbasis, Haarzustand und Einwirkzeit sind zentral; Föhnluft ist nachrangig."
+    },
+    {
+      "id": 29,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was bedeutet „Tonhöhe 8“ in gängigen Farbsystemen?",
+      "choices": [
+        "sehr dunkel",
+        "mittelblond",
+        "hellblond",
+        "schwarz"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Tonhöhe 8 liegt typischerweise im Bereich hellblond (je nach Hersteller).",
+      "simple": "Was heißt „Tonhöhe 8“ in gängigen Farbsystemen.",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Tonhöhe 8 liegt typischerweise im Bereich hellblond ."
+    },
+    {
+      "id": 30,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist ein Strähnentest (Probesträhne) in erster Linie?",
+      "choices": [
+        "Eine Werbemaßnahme",
+        "Ein Test zur Bestimmung von Ergebnis und Haarreaktion",
+        "Eine Technik zur Volumensteigerung",
+        "Eine Methode zur Desinfektion"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Probesträhne prüft Reaktion/Belastung und Ergebnis vor der Gesamtanwendung.",
+      "simple": "Was ist ein Strähnentest vor allem.",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Probesträhne prüft Reaktion/Belastung und Ergebnis vor der Gesamtanwendung."
+    },
+    {
+      "id": 31,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zur Blondierung sind korrekt?",
+      "choices": [
+        "Blondierung arbeitet meist alkalisch.",
+        "Blondierung baut Naturpigment (Melanin) ab.",
+        "Blondierung ist immer schonender als permanente Farbe.",
+        "Zu starke Überlappung kann Haarbruch begünstigen."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Blondierung ist alkalisch und baut Melanin ab; sie ist häufig stärker belastend; Überlappung ist riskant.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zur Blondierung sind korrekt",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Blondierung ist alkalisch und baut Melanin ab; sie ist häufig stärker belastend; Überlappung ist riskant."
+    },
+    {
+      "id": 32,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Maßnahme reduziert das Risiko von „Flecken“ bei Ansatzfärbung am besten?",
+      "choices": [
+        "Sehr große Abteilungen",
+        "Gleichmäßige Sättigung + saubere Abteilungen",
+        "Mehr Wärme durch Haube unabhängig vom Hersteller",
+        "Unbedingt Metallkamm verwenden"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Saubere Abteilungen und gleichmäßige Sättigung sind entscheidend.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Maßnahme reduziert das Risiko von „Flecken“ bei Ansatzfärbung am klarsten",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Saubere Abteilungen und gleichmäßige Sättigung sind entscheidend."
+    },
+    {
+      "id": 33,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was bedeutet „Porosität“ beim Haar?",
+      "choices": [
+        "Dicke des Haares",
+        "Aufnahme- und Abgabefähigkeit von Feuchtigkeit/Wirkstoffen",
+        "Anzahl der Haare pro cm²",
+        "Elastizität der Kopfhaut"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Porosität beschreibt die Durchlässigkeit/Struktur der Cuticula.",
+      "simple": "Was heißt „Porosität“ beim Haar.",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Porosität beschreibt die Durchlässigkeit/Struktur der Cuticula."
+    },
+    {
+      "id": 34,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum kann stark poröses Haar Farbe schneller verlieren?",
+      "choices": [
+        "Weil es weniger Haare hat",
+        "Weil Farbmoleküle schlechter gehalten werden und schneller ausgespült werden",
+        "Weil der pH-Wert immer neutral ist",
+        "Weil es keine Cuticula besitzt"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Offene/geschädigte Cuticula hält Pigmente schlechter → schnelleres Auswaschen.",
+      "simple": "Sag kurz den Grund: Warum kann stark poröses Haar Farbe schneller verlieren",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Offene/geschädigte Cuticula hält Pigmente schlechter → schnelleres Auswaschen."
+    },
+    {
+      "id": 35,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche sind typische Beratungspunkte vor einer starken Aufhellung?",
+      "choices": [
+        "Haardiagnose/Elastizität/Porosität",
+        "Erwartungsmanagement (machbar/nicht machbar)",
+        "Pflege- und Erhaltungsaufwand",
+        "Nur die Lieblingsfarbe des Kunden"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Diagnose, Machbarkeit und Pflegeaufwand gehören in die Beratung.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche sind typische Beratungspunkte vor einer starken Aufhellung",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Diagnose, Machbarkeit und Pflegeaufwand gehören in die Beratung."
+    },
+    {
+      "id": 36,
+      "topic": "Umformung/Dauerwelle",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Schritte gehören grundsätzlich zu einer Dauerwellenbehandlung?",
+      "choices": [
+        "Vorbehandlung/Diagnose",
+        "Reduktion (Umformmittel)",
+        "Fixierung/Neutralisation",
+        "Tönung mit Direktzieher als Pflichtschritt"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Diagnose, Reduktion und Fixierung gehören dazu; Tönung ist optional.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Schritte gehören grundsätzlich zu einer Dauerwellenbehandlung",
+      "example": "Beispiel: Bei porösem Haar prüfst du zuerst, ob eine Dauerwelle überhaupt sinnvoll ist.",
+      "explanation_short": "Diagnose, Reduktion und Fixierung gehören dazu; Tönung ist optional."
+    },
+    {
+      "id": 37,
+      "topic": "Umformung/Dauerwelle",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum wird nach der Reduktion fixiert?",
+      "choices": [
+        "Um das Haar zu entfetten",
+        "Um die umgeformten Bindungen zu stabilisieren",
+        "Um den pH-Wert zu erhöhen",
+        "Um Direktpigmente einzulagern"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Fixierung re-oxidiert/stabilisiert die Struktur.",
+      "simple": "Sag kurz den Grund: Warum wird nach der Reduktion fixiert",
+      "example": "Beispiel: Wenn die Fixierung zu kurz ist, hängen sich Locken schneller aus.",
+      "explanation_short": "Fixierung re-oxidiert/stabilisiert die Struktur."
+    },
+    {
+      "id": 38,
+      "topic": "Hygiene",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Maßnahmen sind typische Hygienestandards im Salon?",
+      "choices": [
+        "Werkzeuge nach Kundenkontakt reinigen/desinfizieren (je nach Einsatz).",
+        "Handhygiene vor/nach Kundenkontakt.",
+        "Benutzte Wäsche/Textilien wechseln.",
+        "Desinfektion ersetzt immer die Reinigung."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Reinigung ist Grundlage; Desinfektion ergänzt, ersetzt sie nicht.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Maßnahmen sind typische Hygienestandards im Salon",
+      "example": "Beispiel: Nach jedem Kunden wechselst du Umhang/Nackenschutzband.",
+      "explanation_short": "Reinigung ist Grundlage; Desinfektion ergänzt, ersetzt sie nicht."
+    },
+    {
+      "id": 39,
+      "topic": "Arbeitsschutz",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Aussage zu Handschuhen bei chemischen Arbeiten ist richtig?",
+      "choices": [
+        "Handschuhe sind nur bei Blondierung sinnvoll.",
+        "Handschuhe schützen Haut vor Reizungen/Allergien und vor Chemikalienkontakt.",
+        "Handschuhe sind hygienisch, aber chemisch wirkungslos.",
+        "Handschuhe sind nur bei Herrenhaarschnitten nötig."
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Chemischer Hautschutz ist zentral (Kontaktdermatitis/Allergieprävention).",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Aussage zu Handschuhen bei chemischen Arbeiten ist richtig",
+      "example": "Beispiel: Beim Blondieren trägst du Handschuhe und arbeitest möglichst staubarm.",
+      "explanation_short": "Chemischer Hautschutz ist zentral ."
+    },
+    {
+      "id": 40,
+      "topic": "Arbeitsschutz",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Symptome können auf eine Kontaktdermatitis hinweisen?",
+      "choices": [
+        "Juckreiz",
+        "Rötung",
+        "Rissige/Schuppige Haut",
+        "Verbesserung durch häufigeres Blondieren"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Typisch sind Rötung/Juckreiz/Schuppung/Risse; Belastung verschlimmert meist.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Symptome können auf eine Kontaktdermatitis hinweisen",
+      "example": "Beispiel: Gute Lüftung reduziert Dämpfe und Reizungen bei chemischen Arbeiten.",
+      "explanation_short": "Typisch sind Rötung/Juckreiz/Schuppung/Risse; Belastung verschlimmert meist."
+    },
+    {
+      "id": 41,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Ein Salon verkauft eine Pflegekur für 20 €. Der Wareneinsatz beträgt 6 €. Wie hoch ist der Deckungsbeitrag?",
+      "choices": [
+        "14 €",
+        "26 €",
+        "6 €",
+        "20 €"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Deckungsbeitrag = Umsatz − variable Kosten = 20 − 6 = 14.",
+      "simple": "Ein Salon verkauft eine Pflegekur für 20 €. Der Wareneinsatz beträgt 6 €. Wie hoch ist der Deckungsbeitrag.",
+      "example": "Beispiel: 20 € Umsatz minus 6 € Wareneinsatz ergibt 14 € Deckungsbeitrag.",
+      "explanation_short": "Deckungsbeitrag = Umsatz − variable Kosten = 20 − 6 = 14."
+    },
+    {
+      "id": 42,
+      "topic": "BWL/Kalkulation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zur Kalkulation sind richtig?",
+      "choices": [
+        "Der Wareneinsatz zählt i. d. R. zu variablen Kosten.",
+        "Fixkosten fallen auch ohne Kunden an.",
+        "Ein höherer Deckungsbeitrag hilft, Fixkosten zu decken.",
+        "Fixkosten ändern sich täglich proportional zur Kundenzahl."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Wareneinsatz variabel; Fixkosten unabhängig; DB deckt Fixkosten; Fixkosten nicht proportional zur Kundenzahl.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zur Kalkulation sind richtig",
+      "example": "Beispiel: Miete ist Fixkosten – sie fällt auch an, wenn keine Kunden da sind.",
+      "explanation_short": "Wareneinsatz variabel; Fixkosten unabhängig; DB deckt Fixkosten; Fixkosten nicht proportional zur Kundenzahl."
+    },
+    {
+      "id": 43,
+      "topic": "Recht/Dokumentation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Inhalte sind sinnvoll in einer Farbdokumentation festzuhalten?",
+      "choices": [
+        "Ausgangsbasis/Tonhöhe",
+        "Produkt/Marke/Mischungsverhältnis/Entwickler",
+        "Einwirkzeit/Technik",
+        "Lieblingsmusik im Salon"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Dokumentation für Reproduzierbarkeit und Absicherung.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Inhalte sind sinnvoll in einer Farbdokumentation festzuhalten",
+      "example": "Beispiel: Du notierst Mischung, Entwickler und Einwirkzeit für spätere Wiederholungen.",
+      "explanation_short": "Dokumentation für Reproduzierbarkeit und Absicherung."
+    },
+    {
+      "id": 44,
+      "topic": "Beratung",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Formulierung ist in der Beratung am professionellsten?",
+      "choices": [
+        "Das wird schon irgendwie.",
+        "Ich garantiere 100% exakt das Foto.",
+        "Wir prüfen Haarzustand und Ziel; ich erkläre Chancen/Risiken und Alternativen.",
+        "Das geht nie, egal wie."
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "Professionell: Diagnose, Chancen/Risiken, Alternativen.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Formulierung ist in der Beratung am professionellsten",
+      "example": "Beispiel: Du sagst ehrlich, was machbar ist, statt ein Foto 1:1 zu versprechen.",
+      "explanation_short": "Professionell: Diagnose, Chancen/Risiken, Alternativen."
+    },
+    {
+      "id": 45,
+      "topic": "Schnitt-Theorie",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zu Abteilungen und Kontrolle sind richtig?",
+      "choices": [
+        "Saubere Abteilungen erleichtern Symmetrie und Kontrolle.",
+        "Kontrollchecks (Spiegel/Diagonalen) helfen Fehler zu finden.",
+        "Schnell schneiden ohne Kontrolle spart Prüfungszeit sicher.",
+        "Leitsträhne gibt Orientierung."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Kontrolle und Leitsträhne sind Basics; „ohne Kontrolle“ ist risikoreich.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zu Abteilungen und Kontrolle sind richtig",
+      "example": "Beispiel: Eine Leitsträhne hilft dir, alle Abteilungen auf die gleiche Länge zu schneiden.",
+      "explanation_short": "Kontrolle und Leitsträhne sind Basics; „ohne Kontrolle“ ist risikoreich."
+    },
+    {
+      "id": 46,
+      "topic": "Schnitt-Theorie",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Was beschreibt „Überdirektion“ (Overdirection) beim Schneiden am besten?",
+      "choices": [
+        "Haar wird in natürlichem Fall geschnitten",
+        "Haar wird aus dem natürlichen Fall heraus zur Seite/gegen die Fallrichtung geführt",
+        "Haar wird nur nass geschnitten",
+        "Haar wird nur mit Maschine geschnitten"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Überdirektion: Strähnen werden vom natürlichen Fall weg gezogen, beeinflusst Gewicht/Verlauf.",
+      "simple": "Was erklärt „Überdirektion“ beim Schneiden am klarsten.",
+      "example": "Beispiel: Quercheck im Nacken zeigt, ob eine Linie wirklich gerade ist.",
+      "explanation_short": "Überdirektion: Strähnen werden vom natürlichen Fall weg gezogen, beeinflusst Gewicht/Verlauf."
+    },
+    {
+      "id": 47,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Komplementärfarbe neutralisiert einen Grünstich?",
+      "choices": [
+        "Rot",
+        "Blau",
+        "Violett",
+        "Gelb"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Komplementär zu Grün ist Rot.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Komplementärfarbe neutralisiert einen Grünstich",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Komplementär zu Grün ist Rot."
+    },
+    {
+      "id": 48,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Situationen erhöhen das Risiko von Haarbruch bei Blondierung?",
+      "choices": [
+        "Vorher stark geschädigtes/poröses Haar",
+        "Mehrfaches Überlappen auf bereits aufgehellte Längen",
+        "Zu lange Einwirkzeit",
+        "Saure Nachbehandlung nach Herstellerangaben"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Schädigung/Überlappung/Einwirkzeit erhöhen Risiko; saure Nachbehandlung kann helfen.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Situationen erhöhen das Risiko von Haarbruch bei Blondierung",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Schädigung/Überlappung/Einwirkzeit erhöhen Risiko; saure Nachbehandlung kann helfen."
+    },
+    {
+      "id": 49,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Was bedeutet „Ansatz“ in der Farbdienstleistung?",
+      "choices": [
+        "Die frisch gewachsene Naturhaarzone am Haaransatz",
+        "Die Spitzenzone",
+        "Die Ponyzone",
+        "Die Zone hinter den Ohren"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Ansatz = nachgewachsener Bereich.",
+      "simple": "Was heißt „Ansatz“ in der Farbdienstleistung.",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Ansatz = nachgewachsener Bereich."
+    },
+    {
+      "id": 50,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zu Grauhaardeckung sind typischerweise richtig (allgemein, herstellerabhängig)?",
+      "choices": [
+        "Höherer Naturtonanteil kann Deckkraft verbessern.",
+        "Sehr transparente Nuancen decken oft schlechter.",
+        "Haaranalyse (Grauanteil) ist wichtig.",
+        "Grauhaar lässt sich nur mit Direktziehern decken."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Deckkraft hängt von Rezeptur/Naturanteil ab; Direktzieher allein decken oft nicht dauerhaft.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zu Grauhaardeckung sind meistens richtig",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Deckkraft hängt von Rezeptur/Naturanteil ab; Direktzieher allein decken oft nicht dauerhaft."
+    },
+    {
+      "id": 51,
+      "topic": "Warenkunde",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Welche Aussage trifft auf Conditioner am ehesten zu?",
+      "choices": [
+        "Reinigt primär wie Shampoo",
+        "Glättet die Oberfläche und verbessert Kämmbarkeit",
+        "Bleibt dauerhaft im Cortex",
+        "Ersetzt eine Blondierung"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Conditioner wirkt v. a. an der Oberfläche (Cuticula) und verbessert Kämmbarkeit.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Aussage trifft auf Conditioner am ehesten zu",
+      "example": "Beispiel: Conditioner macht das Haar glatter und besser kämmbar, aber reinigt nicht wie Shampoo.",
+      "explanation_short": "Conditioner wirkt v. a."
+    },
+    {
+      "id": 52,
+      "topic": "Warenkunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Faktoren begünstigen Farbverlust im Alltag?",
+      "choices": [
+        "Häufiges Waschen mit stark reinigenden Shampoos",
+        "Hohe Hitze (Glätteisen) ohne Hitzeschutz",
+        "UV-Strahlung",
+        "Saure Pflege nach der Farbe"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Aggressive Reinigung, Hitze und UV begünstigen Verlust; saure Pflege kann helfen.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Faktoren begünstigen Farbverlust im Alltag",
+      "example": "Beispiel: Hitzeschutz vor dem Glätteisen reduziert Schäden.",
+      "explanation_short": "Aggressive Reinigung, Hitze und UV begünstigen Verlust; saure Pflege kann helfen."
+    },
+    {
+      "id": 53,
+      "topic": "Hygiene",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist der richtige Ablauf bei sichtbarer Verschmutzung eines Werkzeugs?",
+      "choices": [
+        "Sofort desinfizieren, Reinigung ist unnötig",
+        "Zuerst reinigen, dann (bei Bedarf) desinfizieren",
+        "Nur abwischen reicht immer",
+        "Sterilisieren ist immer Pflicht"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Reinigung entfernt Schmutz; danach ggf. Desinfektion.",
+      "simple": "Was ist der richtige Ablauf bei sichtbarer Verschmutzung eines Werkzeugs.",
+      "example": "Beispiel: Kamm erst reinigen, dann – wenn nötig – desinfizieren.",
+      "explanation_short": "Reinigung entfernt Schmutz; danach ggf. Desinfektion."
+    },
+    {
+      "id": 54,
+      "topic": "Arbeitsschutz",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welche Aussagen zu Blondierpulver/Persulfaten sind als Arbeitsschutz relevant?",
+      "choices": [
+        "Staub möglichst vermeiden (z. B. vorsichtig dosieren).",
+        "Einatmen kann reizen.",
+        "Handschutz ist wichtig.",
+        "Staub ist ungefährlich, nur Farbe ist riskant."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Persulfatstaub kann reizen; Staubarm arbeiten, Schutzmaßnahmen beachten.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zu Blondierpulver/Persulfaten sind als Arbeitsschutz relevant",
+      "example": "Beispiel: Gute Lüftung reduziert Dämpfe und Reizungen bei chemischen Arbeiten.",
+      "explanation_short": "Persulfatstaub kann reizen; Staubarm arbeiten, Schutzmaßnahmen beachten."
+    },
+    {
+      "id": 55,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Aussage zur Preisabsprache ist am korrektesten?",
+      "choices": [
+        "Preis wird erst nach Leistung genannt.",
+        "Vorher eine realistische Preisinformation/Spanne kommunizieren.",
+        "Preis ist egal, Hauptsache Ergebnis.",
+        "Preise nur auf Nachfrage nennen."
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Transparente Preiskommunikation vor der Dienstleistung ist professionell.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Aussage zur Preisabsprache ist am korrektesten",
+      "example": "Beispiel: 20 € Umsatz minus 6 € Wareneinsatz ergibt 14 € Deckungsbeitrag.",
+      "explanation_short": "Transparente Preiskommunikation vor der Dienstleistung ist professionell."
+    },
+    {
+      "id": 56,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wodurch wächst das Haar?",
+      "choices": [
+        "Durch Zellteilung in der Haarmatrix",
+        "Durch Wasseraufnahme im Haarschaft",
+        "Durch Pigmentbildung in der Cuticula",
+        "Durch Talgproduktion"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Haarwachstum entsteht durch Zellteilung in der Matrix der Haarwurzel.",
+      "simple": "Wodurch wächst das Haar.",
+      "example": "Beispiel: Bei fettiger Kopfhaut sprichst du über Seborrhoe (zu viel Talg).",
+      "explanation_short": "Haarwachstum entsteht durch Zellteilung in der Matrix der Haarwurzel."
+    },
+    {
+      "id": 57,
+      "topic": "Haar- und Hautkunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aufgaben hat Talg auf der Kopfhaut?",
+      "choices": [
+        "Schutz vor Austrocknung",
+        "Unterstützung des Säureschutzmantels",
+        "Mechanischer Schutz/Glanz",
+        "Bleichen von Pigmenten"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Talg schützt und unterstützt den Säureschutzmantel; er bleicht nicht.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aufgaben hat Talg auf der Kopfhaut",
+      "example": "Beispiel: In der Beratung erklärst du, dass der Cortex die Festigkeit des Haares bestimmt.",
+      "explanation_short": "Talg schützt und unterstützt den Säureschutzmantel; er bleicht nicht."
+    },
+    {
+      "id": 58,
+      "topic": "Chemie/pH",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Ein Produkt mit pH 4,5 wirkt:",
+      "choices": [
+        "alkalisch",
+        "neutral",
+        "sauer",
+        "oxidierend"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "pH 4,5 ist sauer.",
+      "simple": "Ein Produkt mit pH 4,5 wirkt:.",
+      "example": "Beispiel: Ein pH 9 Produkt öffnet die Cuticula stärker als ein pH 4,5 Produkt.",
+      "explanation_short": "pH 4,5 ist sauer."
+    },
+    {
+      "id": 59,
+      "topic": "Chemie/pH",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welche Aussagen sind korrekt?",
+      "choices": [
+        "Oxidation bedeutet Elektronenabgabe (im Friseurkontext: oft 'Sauerstoffwirkung').",
+        "Reduktion und Oxidation treten oft gekoppelt auf.",
+        "Oxidation ist immer völlig schadlos fürs Haar.",
+        "H₂O₂ ist ein Oxidationsmittel."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Oxidation/Reduktion sind gekoppelt; H₂O₂ oxidiert; Oxidation belastet das Haar.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen sind korrekt",
+      "example": "Beispiel: Nach Blondierung nutzt du ein saures Produkt, damit sich die Schuppenschicht wieder glättet.",
+      "explanation_short": "Oxidation/Reduktion sind gekoppelt; H₂O₂ oxidiert; Oxidation belastet das Haar."
+    },
+    {
+      "id": 60,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum sollte man bei stark geschädigtem Haar vorsichtig aufhellen?",
+      "choices": [
+        "Weil geschädigtes Haar weniger quillt",
+        "Weil die Haarstruktur weniger stabil ist und schneller bricht",
+        "Weil H₂O₂ dann nicht wirkt",
+        "Weil Direktzieher dann nicht halten"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Geschädigtes Haar hat reduzierte Strukturfestigkeit.",
+      "simple": "Sag kurz den Grund: Warum sollte man bei stark geschädigtem Haar vorsichtig aufhellen",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Geschädigtes Haar hat reduzierte Strukturfestigkeit."
+    },
+    {
+      "id": 61,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Punkte gehören in eine Risikoaufklärung vor Aufhellung?",
+      "choices": [
+        "Mögliche Haarstrukturbelastung",
+        "Mögliche Abweichung zum Wunschbild",
+        "Notwendige Heimpflege",
+        "Garantierte 1:1-Fotokopie"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Risiken/Erwartungen/Pflege sind Pflicht, Garantien sind unseriös.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Punkte gehören in eine Risikoaufklärung vor Aufhellung",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Risiken/Erwartungen/Pflege sind Pflicht, Garantien sind unseriös."
+    },
+    {
+      "id": 62,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist der Hauptzweck eines Toners/Glossings (allgemein)?",
+      "choices": [
+        "Starkes Aufhellen um 6 Tonstufen",
+        "Nuancieren/Neutralisieren und Glanz geben",
+        "Haare dauerhaft locken",
+        "Haare entfetten"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Toner/Glossing dient dem Nuancieren/Neutralisieren und Glanz.",
+      "simple": "Was ist der Hauptzweck eines Toners/Glossings.",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Toner/Glossing dient dem Nuancieren/Neutralisieren und Glanz."
+    },
+    {
+      "id": 63,
+      "topic": "Umformung/Dauerwelle",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Haarstruktur ist für eine Dauerwelle besonders kritisch?",
+      "choices": [
+        "Sehr porös/chemisch vorgeschädigt",
+        "Naturhaar, gesund",
+        "Dickes, gesundes Haar",
+        "Kurzes Haar"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Vorgeschädigtes/poröses Haar ist risikoreich.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Haarstruktur ist für eine Dauerwelle besonders kritisch",
+      "example": "Beispiel: Wenn die Fixierung zu kurz ist, hängen sich Locken schneller aus.",
+      "explanation_short": "Vorgeschädigtes/poröses Haar ist risikoreich."
+    },
+    {
+      "id": 64,
+      "topic": "Hygiene",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zur Händehygiene sind korrekt?",
+      "choices": [
+        "Hände vor und nach dem Kunden kontakt reinigen/desinfizieren (je nach Standard).",
+        "Schmuck kann Händehygiene erschweren.",
+        "Händehygiene ist nur nach dem Färben nötig.",
+        "Hautschutzplan kann berufsbedingte Ekzeme reduzieren."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Händehygiene ist grundsätzlich wichtig; Schmuck stört; Hautschutzplan hilft.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zur Händehygiene sind korrekt",
+      "example": "Beispiel: Nach jedem Kunden wechselst du Umhang/Nackenschutzband.",
+      "explanation_short": "Händehygiene ist grundsätzlich wichtig; Schmuck stört; Hautschutzplan hilft."
+    },
+    {
+      "id": 65,
+      "topic": "Arbeitsschutz",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was bedeutet PSA im Arbeitsschutz?",
+      "choices": [
+        "Persönliche Schutzausrüstung",
+        "Produkt-Sicherheits-Akte",
+        "Prüfungs-Standard-Analyse",
+        "Private Salon-Ausstattung"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "PSA = persönliche Schutzausrüstung.",
+      "simple": "Was heißt PSA im Arbeitsschutz.",
+      "example": "Beispiel: Beim Blondieren trägst du Handschuhe und arbeitest möglichst staubarm.",
+      "explanation_short": "PSA = persönliche Schutzausrüstung."
+    },
+    {
+      "id": 66,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Ein Haarschnitt kostet 35 €. Variable Kosten (Material) 3 €. Deckungsbeitrag?",
+      "choices": [
+        "32 €",
+        "38 €",
+        "3 €",
+        "35 €"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "35 − 3 = 32.",
+      "simple": "Ein Haarschnitt kostet 35 €. Variable Kosten 3 €. Deckungsbeitrag.",
+      "example": "Beispiel: Miete ist Fixkosten – sie fällt auch an, wenn keine Kunden da sind.",
+      "explanation_short": "35 − 3 = 32."
+    },
+    {
+      "id": 67,
+      "topic": "BWL/Kalkulation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Beispiele zählen typischerweise zu Fixkosten?",
+      "choices": [
+        "Miete",
+        "Grundgebühr Telefon/Internet",
+        "Farbcreme pro Kunde",
+        "Versicherung"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Farbcreme ist variabel; Miete/Grundgebühr/Versicherung fix.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Beispiele zählen meistens zu Fixkosten",
+      "example": "Beispiel: 20 € Umsatz minus 6 € Wareneinsatz ergibt 14 € Deckungsbeitrag.",
+      "explanation_short": "Farbcreme ist variabel; Miete/Grundgebühr/Versicherung fix."
+    },
+    {
+      "id": 68,
+      "topic": "Recht/Dokumentation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wie sollte mit Kundendaten (Dokumentation) grundsätzlich umgegangen werden?",
+      "choices": [
+        "Beliebig teilen",
+        "Zweckgebunden, vertraulich und sicher speichern",
+        "Ohne Einwilligung veröffentlichen",
+        "Nie dokumentieren"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Datenschutz: zweckgebunden, vertraulich, sicher.",
+      "simple": "Wie sollte mit Kundendaten grundsätzlich umgegangen werden.",
+      "example": "Beispiel: Kundendaten werden sicher gespeichert und nicht offen herumliegen gelassen.",
+      "explanation_short": "Datenschutz: zweckgebunden, vertraulich, sicher."
+    },
+    {
+      "id": 69,
+      "topic": "Beratung",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Fragen sind in der Bedarfsermittlung hilfreich?",
+      "choices": [
+        "Wie stylen Sie Ihre Haare im Alltag?",
+        "Welche chemischen Behandlungen hatten Sie zuletzt?",
+        "Wie hoch ist Ihre Schmerzgrenze?",
+        "Was gefällt Ihnen am Wunschbild besonders?"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Alltagsroutine und Historie sind wichtig; Schmerzgrenze ist meist irrelevant.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Fragen sind in der Bedarfsermittlung hilfreich",
+      "example": "Beispiel: Du fragst nach Styling-Gewohnheiten und erklärst Pflegeaufwand und Risiken.",
+      "explanation_short": "Alltagsroutine und Historie sind wichtig; Schmerzgrenze ist meist irrelevant."
+    },
+    {
+      "id": 70,
+      "topic": "Schnitt-Theorie",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Was beschreibt 'Graduation' (Graduierung) am besten?",
+      "choices": [
+        "Kompakte Schnittlinie ohne Stufung",
+        "Aufbau von Gewicht/Volumen durch mittlere Elevation",
+        "Nur Rasurtechnik",
+        "Nur Trockenschnitt"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Graduation = Gewichtaufbau durch kontrollierte Elevation.",
+      "simple": "Was erklärt 'Graduation' am klarsten.",
+      "example": "Beispiel: Quercheck im Nacken zeigt, ob eine Linie wirklich gerade ist.",
+      "explanation_short": "Graduation = Gewichtaufbau durch kontrollierte Elevation."
+    },
+    {
+      "id": 71,
+      "topic": "Schnitt-Theorie",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Faktoren beeinflussen die Schnittform sichtbar?",
+      "choices": [
+        "Haarwuchsrichtung/Wirbel",
+        "Kopf- und Gesichtsform",
+        "Abteilungen und Zugwinkel",
+        "Lautstärke im Salon"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Wuchsrichtung, Kopfform und Technik prägen das Ergebnis.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Faktoren beeinflussen die Schnittform sichtbar",
+      "example": "Beispiel: Eine Leitsträhne hilft dir, alle Abteilungen auf die gleiche Länge zu schneiden.",
+      "explanation_short": "Wuchsrichtung, Kopfform und Technik prägen das Ergebnis."
+    },
+    {
+      "id": 72,
+      "topic": "Warenkunde",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Was macht ein Hitzeschutzprodukt hauptsächlich?",
+      "choices": [
+        "Ersetzt Pflege komplett",
+        "Reduziert thermische Schädigung und Feuchtigkeitsverlust",
+        "Bleicht das Haar",
+        "Erhöht den pH-Wert"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Hitzeschutz reduziert Wärmeschäden.",
+      "simple": "Was macht ein Hitzeschutzprodukt vor allem.",
+      "example": "Beispiel: Hitzeschutz vor dem Glätteisen reduziert Schäden.",
+      "explanation_short": "Hitzeschutz reduziert Wärmeschäden."
+    },
+    {
+      "id": 73,
+      "topic": "Warenkunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Inhaltsstoffgruppen sind in vielen Conditionern/Masken typisch?",
+      "choices": [
+        "Kationische Pflegestoffe/Quats",
+        "Öle/Lipide",
+        "Silikone (je nach Produkt)",
+        "Persulfate"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Persulfate sind Blondierbestandteile, nicht typische Conditionerstoffe.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Inhaltsstoffgruppen sind in vielen Conditionern/Masken typisch",
+      "example": "Beispiel: Conditioner macht das Haar glatter und besser kämmbar, aber reinigt nicht wie Shampoo.",
+      "explanation_short": "Persulfate sind Blondierbestandteile, nicht typische Conditionerstoffe."
+    },
+    {
+      "id": 74,
+      "topic": "Hygiene",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wofür wird ein Einweg-Nackenschutzband am Umhang eingesetzt?",
+      "choices": [
+        "Als Schmuck",
+        "Zur zusätzlichen Hygiene/Schutz vor Hautkontakt mit Umhang",
+        "Zur Farbneutralisation",
+        "Als Fixierung bei Dauerwelle"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Dient Hygiene und Kundenschutz.",
+      "simple": "Wofür wird ein Einweg-Nackenschutzband am Umhang eingesetzt.",
+      "example": "Beispiel: Nach jedem Kunden wechselst du Umhang/Nackenschutzband.",
+      "explanation_short": "Dient Hygiene und Kundenschutz."
+    },
+    {
+      "id": 75,
+      "topic": "Arbeitsschutz",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Maßnahmen helfen bei Hautschutz im Friseurberuf?",
+      "choices": [
+        "Hautschutz-/Pflegeplan",
+        "Geeignete Handschuhe bei Chemiearbeiten",
+        "Häufiges Arbeiten ohne Handschuhe, damit Haut 'abhärtet'",
+        "Milde Wasch-/Pflegeprodukte"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Haut abhärten ist Mythos; Schutzplan/Handschuhe/milde Produkte helfen.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Maßnahmen helfen bei Hautschutz im Friseurberuf",
+      "example": "Beispiel: Beim Blondieren trägst du Handschuhe und arbeitest möglichst staubarm.",
+      "explanation_short": "Haut abhärten ist Mythos; Schutzplan/Handschuhe/milde Produkte helfen."
+    },
+    {
+      "id": 76,
+      "topic": "Farb- & Chemiekunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist eine häufige Ursache für ungleichmäßige Farbergebnisse in Längen/Spitzen?",
+      "choices": [
+        "Ungleichmäßige Porosität/Schädigung",
+        "Zu viele Kunden im Salon",
+        "Zu kaltes Wasser beim Ausspülen",
+        "Zu kurze Beratung"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Porosität unterscheidet Aufnahmefähigkeit → Flecken/Uneinheitlichkeit.",
+      "simple": "Was ist eine häufige Ursache für ungleichmäßige Farbergebnisse in Längen/Spitzen.",
+      "example": "Beispiel: Vor einer Aufhellung machst du eine Probesträhne, um Risiko und Ergebnis zu prüfen.",
+      "explanation_short": "Porosität unterscheidet Aufnahmefähigkeit → Flecken/Uneinheitlichkeit."
+    },
+    {
+      "id": 77,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Schritte reduzieren Reizungen bei Farbdienstleistungen?",
+      "choices": [
+        "Kopfhaut nicht unnötig mechanisch reizen (z. B. starkes Kratzen)",
+        "Schutzcreme am Haaransatz (wenn herstellerkonform)",
+        "Einwirkzeit deutlich verlängern",
+        "Handschuhe tragen"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Reizung vermeiden, Schutzmaßnahmen, Handschuhe; Einwirkzeit nicht willkürlich verlängern.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Schritte reduzieren Reizungen bei Farbdienstleistungen",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Reizung vermeiden, Schutzmaßnahmen, Handschuhe; Einwirkzeit nicht willkürlich verlängern."
+    },
+    {
+      "id": 78,
+      "topic": "Umformung/Dauerwelle",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Punkte können die Haltbarkeit einer Umformung beeinflussen?",
+      "choices": [
+        "Wickelspannung/Größe",
+        "Einwirkzeit/Diagnose",
+        "Fixierung korrekt",
+        "Nur die Frisur des Kundenwunsches"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Technik, Diagnose und Fixierung sind entscheidend.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Punkte können die Haltbarkeit einer Umformung beeinflussen",
+      "example": "Beispiel: Bei porösem Haar prüfst du zuerst, ob eine Dauerwelle überhaupt sinnvoll ist.",
+      "explanation_short": "Technik, Diagnose und Fixierung sind entscheidend."
+    },
+    {
+      "id": 79,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist ein typischer Zweck einer Inventur im Salon?",
+      "choices": [
+        "Kundenberatung",
+        "Bestandsaufnahme von Waren/Material",
+        "Haaranalyse",
+        "Desinfektion"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Inventur = Bestandsaufnahme.",
+      "simple": "Was ist ein typischer Zweck einer Inventur im Salon.",
+      "example": "Beispiel: 20 € Umsatz minus 6 € Wareneinsatz ergibt 14 € Deckungsbeitrag.",
+      "explanation_short": "Inventur = Bestandsaufnahme."
+    },
+    {
+      "id": 80,
+      "topic": "Recht/Dokumentation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen sind in Reklamationen sinnvoll?",
+      "choices": [
+        "Sachlich bleiben und zuhören",
+        "Lösung anbieten (Korrekturtermin/Pflege)",
+        "Schuld sofort beim Kunden suchen",
+        "Dokumentation prüfen"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Professionell: zuhören, prüfen, Lösung anbieten, dokumentieren.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen sind in Reklamationen sinnvoll",
+      "example": "Beispiel: Kundendaten werden sicher gespeichert und nicht offen herumliegen gelassen.",
+      "explanation_short": "Professionell: zuhören, prüfen, Lösung anbieten, dokumentieren."
+    },
+    {
+      "id": 81,
+      "topic": "Beratung",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Reihenfolge ist in der Beratung sinnvoll?",
+      "choices": [
+        "Wunsch → Diagnose → Machbarkeit/Risiken → Vorgehen/Preis → Pflege",
+        "Preis → sofort starten → Wunsch klären",
+        "Nur Wunschbild anschauen und los",
+        "Risiken verschweigen, um Kunde nicht zu verunsichern"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Strukturiert beraten: Wunsch, Diagnose, Machbarkeit, Plan, Preis, Pflege.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Reihenfolge ist in der Beratung sinnvoll",
+      "example": "Beispiel: Du fragst nach Styling-Gewohnheiten und erklärst Pflegeaufwand und Risiken.",
+      "explanation_short": "Strukturiert beraten: Wunsch, Diagnose, Machbarkeit, Plan, Preis, Pflege."
+    },
+    {
+      "id": 82,
+      "topic": "Chemie/pH",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Wirkung hat eine saure Nachbehandlung nach einer alkalischen Behandlung typischerweise?",
+      "choices": [
+        "Sie öffnet die Cuticula weiter",
+        "Sie hilft, die Cuticula zu schließen/zu glätten",
+        "Sie bleicht zusätzlich stark",
+        "Sie macht das Haar dauerhaft lockig"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Sauer hilft beim Schließen/Glätten der Cuticula.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Wirkung hat eine saure Nachbehandlung nach einer alkalischen Behandlung meistens",
+      "example": "Beispiel: Ein pH 9 Produkt öffnet die Cuticula stärker als ein pH 4,5 Produkt.",
+      "explanation_short": "Sauer hilft beim Schließen/Glätten der Cuticula."
+    },
+    {
+      "id": 83,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Was ist die Hauptfunktion von Keratin im Haar?",
+      "choices": [
+        "Pigmentbildung",
+        "Struktur/ Festigkeit als Faserprotein",
+        "Talgproduktion",
+        "pH-Regulation"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Keratin ist das strukturgebende Protein des Haares.",
+      "simple": "Was ist die Hauptfunktion von Keratin im Haar.",
+      "example": "Beispiel: In der Beratung erklärst du, dass der Cortex die Festigkeit des Haares bestimmt.",
+      "explanation_short": "Keratin ist das strukturgebende Protein des Haares."
+    },
+    {
+      "id": 84,
+      "topic": "Haar- und Hautkunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zu Haarfarben sind korrekt?",
+      "choices": [
+        "Eumelanin steht eher für braun/schwarz.",
+        "Phäomelanin steht eher für rot/gelb.",
+        "Melanin sitzt ausschließlich in der Cuticula.",
+        "Naturpigmentabbau führt zu Aufhellung."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Melanin liegt v. a. im Cortex; Abbau → Aufhellung.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zu Haarfarben sind korrekt",
+      "example": "Beispiel: Bei fettiger Kopfhaut sprichst du über Seborrhoe (zu viel Talg).",
+      "explanation_short": "Melanin liegt v. a."
+    },
+    {
+      "id": 85,
+      "topic": "Schnitt-Theorie",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was ist der Unterschied zwischen 'Point Cutting' und stumpfem Schnitt?",
+      "choices": [
+        "Point Cutting erzeugt eine weichere, texturierte Kante.",
+        "Point Cutting macht die Kante maximal kompakt.",
+        "Point Cutting ist nur mit Maschine möglich.",
+        "Es gibt keinen Unterschied."
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Point Cutting texturiert und weicht die Kontur auf.",
+      "simple": "Was ist der Unterschied zwischen 'Point Cutting' und stumpfem Schnitt.",
+      "example": "Beispiel: Eine Leitsträhne hilft dir, alle Abteilungen auf die gleiche Länge zu schneiden.",
+      "explanation_short": "Point Cutting texturiert und weicht die Kontur auf."
+    },
+    {
+      "id": 86,
+      "topic": "Warenkunde",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welcher Produkttyp ist am ehesten zur neutralisierenden Pigmentkorrektur nach Blondierung gedacht?",
+      "choices": [
+        "Volumenschaum ohne Pigmente",
+        "Silber-/Violett-Shampoo oder Toner (je nach Ziel)",
+        "Haarspray extra strong",
+        "Trockenshampoo"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Violettpigmente neutralisieren Gelb, Toner nuanciert.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welcher Produkttyp ist am ehesten zur neutralisierenden Pigmentkorrektur nach Blondierung gedacht",
+      "example": "Beispiel: Hitzeschutz vor dem Glätteisen reduziert Schäden.",
+      "explanation_short": "Violettpigmente neutralisieren Gelb, Toner nuanciert."
+    },
+    {
+      "id": 87,
+      "topic": "Hygiene",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Was gehört zu einer korrekten Werkzeugaufbereitung (allgemein)?",
+      "choices": [
+        "Herstellerangaben zu Konzentration/Einwirkzeit beachten",
+        "Regelmäßige Lösungserneuerung/Wechsel (je nach System)",
+        "Einwirkzeit beliebig verkürzen",
+        "Verschmutzung vorher entfernen"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Konzentration/Einwirkzeit und vorherige Reinigung sind wichtig.",
+      "simple": "Mehrere Antworten sind richtig. Was gehört zu einer korrekten Werkzeugaufbereitung.",
+      "example": "Beispiel: Kamm erst reinigen, dann – wenn nötig – desinfizieren.",
+      "explanation_short": "Konzentration/Einwirkzeit und vorherige Reinigung sind wichtig."
+    },
+    {
+      "id": 88,
+      "topic": "Arbeitsschutz",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum ist Lüften bei chemischen Dienstleistungen sinnvoll?",
+      "choices": [
+        "Damit Farbe schneller wirkt",
+        "Zur Reduktion von Dämpfen/Belastung",
+        "Damit Cuticula schließt",
+        "Damit Wasserstoffperoxid neutral wird"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Gute Lüftung reduziert Dämpfe/Reizstoffe.",
+      "simple": "Sag kurz den Grund: Warum ist Lüften bei chemischen Dienstleistungen sinnvoll",
+      "example": "Beispiel: Gute Lüftung reduziert Dämpfe und Reizungen bei chemischen Arbeiten.",
+      "explanation_short": "Gute Lüftung reduziert Dämpfe/Reizstoffe."
+    },
+    {
+      "id": 89,
+      "topic": "BWL/Kalkulation",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Kennzahlen können für Salonsteuerung nützlich sein?",
+      "choices": [
+        "Umsatz pro Stunde",
+        "Wareneinsatzquote",
+        "Auslastung/Terminquote",
+        "Mondphase"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Typische Steuerungskennzahlen.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Kennzahlen können für Salonsteuerung nützlich sein",
+      "example": "Beispiel: 20 € Umsatz minus 6 € Wareneinsatz ergibt 14 € Deckungsbeitrag.",
+      "explanation_short": "Typische Steuerungskennzahlen."
+    },
+    {
+      "id": 90,
+      "topic": "Recht/Dokumentation",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Wann ist ein schriftlicher Hinweis/Einverständnis besonders sinnvoll?",
+      "choices": [
+        "Bei risikoreichen chemischen Veränderungen",
+        "Bei jeder Haarwäsche",
+        "Bei jedem Smalltalk",
+        "Nie"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Bei erhöhtem Risiko/Abweichung ist schriftliche Aufklärung sinnvoll.",
+      "simple": "Wann ist ein schriftlicher Hinweis/Einverständnis besonders sinnvoll.",
+      "example": "Beispiel: Kundendaten werden sicher gespeichert und nicht offen herumliegen gelassen.",
+      "explanation_short": "Bei erhöhtem Risiko/Abweichung ist schriftliche Aufklärung sinnvoll."
+    },
+    {
+      "id": 91,
+      "topic": "Farb- & Chemiekunde",
+      "type": "multi",
+      "difficulty": 3,
+      "question": "Welche Aussagen zur Einwirkzeit sind korrekt?",
+      "choices": [
+        "Zu kurze Einwirkzeit kann zu schlechter Deckung führen.",
+        "Zu lange Einwirkzeit kann unnötig belasten oder unerwünscht nachdunkeln (herstellerabhängig).",
+        "Einwirkzeit ist bei oxidativen Farben immer egal.",
+        "Herstellerangaben sind zu beachten."
+      ],
+      "correctIndices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Einwirkzeit ist ergebnisrelevant; Herstellerangaben sind maßgeblich.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zur Einwirkzeit sind korrekt",
+      "example": "Beispiel: Gelbstich nach Blondierung wird mit Violett neutralisiert (Silbershampoo/Toner).",
+      "explanation_short": "Einwirkzeit ist ergebnisrelevant; Herstellerangaben sind maßgeblich."
+    },
+    {
+      "id": 92,
+      "topic": "Umformung/Dauerwelle",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Was kann passieren, wenn Fixierung zu kurz einwirkt?",
+      "choices": [
+        "Bessere Haltbarkeit",
+        "Form kann sich schneller aushängen",
+        "Haar wird automatisch glatter",
+        "Pigmente werden neutralisiert"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Unzureichende Fixierung → geringere Haltbarkeit.",
+      "simple": "Was kann passieren, wenn Fixierung zu kurz einwirkt.",
+      "example": "Beispiel: Bei porösem Haar prüfst du zuerst, ob eine Dauerwelle überhaupt sinnvoll ist.",
+      "explanation_short": "Unzureichende Fixierung → geringere Haltbarkeit."
+    },
+    {
+      "id": 93,
+      "topic": "Hygiene",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Warum sollten Kämme/Bürsten regelmäßig gereinigt werden?",
+      "choices": [
+        "Nur wegen Optik",
+        "Um Keimübertragung und Produktablagerungen zu vermeiden",
+        "Damit sie schneller schneiden",
+        "Damit Farbe stärker oxidiert"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Reinigung reduziert Keime und Ablagerungen.",
+      "simple": "Sag kurz den Grund: Warum sollten Kämme/Bürsten regelmäßig gereinigt werden",
+      "example": "Beispiel: Kamm erst reinigen, dann – wenn nötig – desinfizieren.",
+      "explanation_short": "Reinigung reduziert Keime und Ablagerungen."
+    },
+    {
+      "id": 94,
+      "topic": "Arbeitsschutz",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Wofür steht das Gefahrstoffpiktogramm mit Ausrufezeichen (GHS07) typischerweise?",
+      "choices": [
+        "Ätzend",
+        "Explosiv",
+        "Reizend/gesundheitsschädlich",
+        "Umweltgefährlich"
+      ],
+      "correctIndices": [
+        2
+      ],
+      "explanation": "GHS07 weist u. a. auf Reizung/gesundheitsschädliche Wirkung hin.",
+      "simple": "Wofür steht das Gefahrstoffpiktogramm mit Ausrufezeichen meistens.",
+      "example": "Beispiel: Gute Lüftung reduziert Dämpfe und Reizungen bei chemischen Arbeiten.",
+      "explanation_short": "GHS07 weist u. a."
+    },
+    {
+      "id": 95,
+      "topic": "BWL/Kalkulation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Was beschreibt die Wareneinsatzquote am besten?",
+      "choices": [
+        "Anteil der Materialkosten am Umsatz",
+        "Anteil der Fixkosten am Gewinn",
+        "Anzahl der Mitarbeiter pro Kunde",
+        "Dauer einer Dienstleistung"
+      ],
+      "correctIndices": [
+        0
+      ],
+      "explanation": "Wareneinsatzquote = Materialkosten/Umsatz (vereinfacht).",
+      "simple": "Was erklärt die Wareneinsatzquote am klarsten.",
+      "example": "Beispiel: 20 € Umsatz minus 6 € Wareneinsatz ergibt 14 € Deckungsbeitrag.",
+      "explanation_short": "Wareneinsatzquote = Materialkosten/Umsatz ."
+    },
+    {
+      "id": 96,
+      "topic": "Beratung",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen gehören zu einem guten Abschluss der Beratung?",
+      "choices": [
+        "Pflege-/Stylingempfehlung",
+        "Realistische Erwartung für Haltbarkeit",
+        "Termin-/Nachbehandlungsoptionen",
+        "Kunde soll selbst mischen und auftragen"
+      ],
+      "correctIndices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Abschluss: Pflege, Haltbarkeit, Nachbehandlung/Plan.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen gehören zu einem guten Abschluss der Beratung",
+      "example": "Beispiel: Du sagst ehrlich, was machbar ist, statt ein Foto 1:1 zu versprechen.",
+      "explanation_short": "Abschluss: Pflege, Haltbarkeit, Nachbehandlung/Plan."
+    },
+    {
+      "id": 97,
+      "topic": "Recht/Dokumentation",
+      "type": "single",
+      "difficulty": 3,
+      "question": "Was ist bei der Aufbewahrung von Kundenkarteien grundsätzlich wichtig?",
+      "choices": [
+        "Offen auf dem Tresen liegen lassen",
+        "Zugriff beschränken und sicher verwahren",
+        "In Social Media posten",
+        "Keine Backups erlauben"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Sicher verwahren, Zugriff beschränken (Datenschutz).",
+      "simple": "Was ist bei der Aufbewahrung von Kundenkarteien grundsätzlich wichtig.",
+      "example": "Beispiel: Du notierst Mischung, Entwickler und Einwirkzeit für spätere Wiederholungen.",
+      "explanation_short": "Sicher verwahren, Zugriff beschränken ."
+    },
+    {
+      "id": 98,
+      "topic": "Schnitt-Theorie",
+      "type": "single",
+      "difficulty": 2,
+      "question": "Welche Kontrolle hilft, horizontale Ungleichheiten im Nacken zu erkennen?",
+      "choices": [
+        "Vertikale Abteilungen",
+        "Quercheck (horizontale Kontrollabteilung)",
+        "Nur Spiegel von vorne",
+        "Nur Trockenshampoo"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Quercheck hilft, horizontale Linien zu prüfen.",
+      "simple": "Wähle die richtige(n) Aussage(n): Welche Kontrolle hilft, horizontale Ungleichheiten im Nacken zu erkennen",
+      "example": "Beispiel: Quercheck im Nacken zeigt, ob eine Linie wirklich gerade ist.",
+      "explanation_short": "Quercheck hilft, horizontale Linien zu prüfen."
+    },
+    {
+      "id": 99,
+      "topic": "Warenkunde",
+      "type": "multi",
+      "difficulty": 2,
+      "question": "Welche Aussagen zu Shampoo sind korrekt?",
+      "choices": [
+        "Shampoo dient primär der Reinigung.",
+        "Sehr stark entfettende Shampoos können Farbe schneller auswaschen.",
+        "Shampoo fixiert eine Dauerwelle.",
+        "Shampoo ersetzt Desinfektion von Werkzeugen."
+      ],
+      "correctIndices": [
+        0,
+        1
+      ],
+      "explanation": "Reinigung ja; aggressive Tenside können Farbe schneller lösen.",
+      "simple": "Mehrere Antworten sind richtig. Wähle die richtige(n) Aussage(n): Welche Aussagen zu Shampoo sind korrekt",
+      "example": "Beispiel: Conditioner macht das Haar glatter und besser kämmbar, aber reinigt nicht wie Shampoo.",
+      "explanation_short": "Reinigung ja; aggressive Tenside können Farbe schneller lösen."
+    },
+    {
+      "id": 100,
+      "topic": "Haar- und Hautkunde",
+      "type": "single",
+      "difficulty": 1,
+      "question": "Wie heißt die äußere Hautschicht?",
+      "choices": [
+        "Dermis",
+        "Epidermis",
+        "Subcutis",
+        "Matrix"
+      ],
+      "correctIndices": [
+        1
+      ],
+      "explanation": "Epidermis ist die äußere Hautschicht.",
+      "simple": "Wie heißt die äußere Hautschicht.",
+      "example": "Beispiel: Bei fettiger Kopfhaut sprichst du über Seborrhoe (zu viel Talg).",
+      "explanation_short": "Epidermis ist die äußere Hautschicht."
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Friseur Abschreib-Quiz (DaZ)</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:16px;max-width:980px}
+    .card{border:1px solid #ddd;border-radius:14px;padding:16px;margin:12px 0}
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    button, select, input[type="text"], textarea{padding:10px 12px;border-radius:10px;border:1px solid #ccc;background:#fff}
+    button{cursor:pointer}
+    button.primary{border-color:#222}
+    .muted{color:#666;font-size:.95rem}
+    .pill{display:inline-block;padding:2px 10px;border:1px solid #ddd;border-radius:999px;margin-right:6px}
+    .ok{color:#0a7;font-weight:700}
+    .bad{color:#c33;font-weight:700}
+    textarea{width:100%;min-height:140px;resize:vertical;line-height:1.35}
+    .q{font-size:1.15rem;font-weight:700;margin:8px 0 4px}
+    .a{font-size:1.05rem;margin:8px 0;white-space:pre-wrap}
+    .rtl{direction:rtl;text-align:right}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media (min-width: 900px){ .grid{grid-template-columns:1fr 1fr} }
+    .mini{font-size:.9rem}
+    .sep{height:1px;background:#eee;margin:10px 0}
+    .warn{color:#b35a00;font-weight:600}
+    .smallbtn{padding:8px 10px}
+  </style>
+</head>
+<body>
+  <div class="row" style="justify-content:space-between">
+    <div>
+      <h1 style="margin:0">Friseur Abschreib-Quiz</h1>
+      <div class="muted">Frage → richtige Lösung → abschreiben • Vorlesen • (optional: Diktieren)</div>
+    </div>
+    <div class="row">
+      <button id="btnShuffle" class="primary">Neu mischen</button>
+      <button id="btnWrong">Fehler wiederholen</button>
+    </div>
+  </div>
+
+  <div class="card" id="status">Lade Daten…</div>
+
+  <div class="card">
+    <div class="row" style="justify-content:space-between">
+      <div class="row">
+        <span class="pill" id="pillMode">Modus: Normal</span>
+        <span class="pill" id="pillIdx">Frage: -/-</span>
+        <span class="pill" id="pillWrong">Fehler: 0</span>
+      </div>
+      <div class="row mini">
+        <label class="row mini" style="gap:6px">
+          <input id="toggleArabic" type="checkbox"/>
+          <span>Arabisch anzeigen (falls vorhanden)</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="row">
+      <button id="speakQ" class="primary">🔊 Frage</button>
+      <button id="speakA">🔊 Lösung</button>
+      <button id="speakBoth">🔊 Beides</button>
+      <button id="stopTTS">⏹ Stop</button>
+
+      <span class="muted mini" id="ttsInfo"></span>
+      <span class="muted mini" id="sttInfo"></span>
+    </div>
+
+    <div class="row mini muted" id="iosNote" style="display:none">
+      Hinweis: Auf iPhone/iPad funktioniert „Diktieren“ im Browser oft nicht per Web-API. Du kannst aber die iOS-Tastatur-Diktierfunktion nutzen (Mikrofon auf der Tastatur).
+    </div>
+  </div>
+
+  <div class="card" id="quizCard">
+    <div id="topic" class="muted"></div>
+
+    <div class="grid">
+      <div>
+        <div class="muted">Frage</div>
+        <div id="question" class="q"></div>
+      </div>
+
+      <div>
+        <div class="muted">Richtige Lösung</div>
+        <div id="answer" class="a"></div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+
+    <div class="row" style="justify-content:space-between">
+      <div class="muted">Schreibe die Lösung exakt ab:</div>
+      <div class="row">
+        <button id="mic" class="smallbtn">🎙️ Diktieren</button>
+        <button id="clear" class="smallbtn">🧹 Leeren</button>
+      </div>
+    </div>
+
+    <textarea id="copyInput" placeholder="Hier die Lösung abschreiben…" autocomplete="off" spellcheck="false"></textarea>
+
+    <div class="row" style="margin-top:10px">
+      <button id="check" class="primary">Prüfen</button>
+      <button id="showHint">Hinweis</button>
+      <button id="next">Weiter</button>
+      <span id="feedback" class="muted"></span>
+    </div>
+
+    <div id="hint" class="muted" style="margin-top:10px;display:none"></div>
+  </div>
+
+<script>
+/* -------------------------
+   Daten
+-------------------------- */
+let DATA=null;
+let queue=[], idx=0;
+let wrong=[];              // merkt falsche Karten
+let wrongMode=false;
+
+function shuffle(a){
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+function normalizeText(s){
+  return String(s ?? "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function getQAFromItem(item){
+  const q = item.question ?? "";
+
+  let a = "";
+  if (Array.isArray(item.choices) && Array.isArray(item.correctIndices) && item.correctIndices.length){
+    const parts = item.correctIndices.map(i => item.choices[i]).filter(Boolean);
+    a = parts.join(", ");
+  } else if (typeof item.answer === "string" && item.answer.trim()){
+    a = item.answer.trim();
+  } else if (typeof item.solution === "string" && item.solution.trim()){
+    a = item.solution.trim();
+  } else if (typeof item.explanation === "string" && item.explanation.trim()){
+    a = item.explanation.trim();
+  }
+
+  const q_ar = item.question_ar || item.ar_question || "";
+  const a_ar = item.answer_ar   || item.ar_answer   || "";
+
+  return { q, a, q_ar, a_ar };
+}
+
+/* -------------------------
+   iOS Detection
+-------------------------- */
+function isIOS(){
+  try{
+    const ua = navigator.userAgent || "";
+    return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  }catch(e){ return false; }
+}
+
+/* -------------------------
+   TTS: WebSpeech
+-------------------------- */
+function ttsAvailable(){
+  return ("speechSynthesis" in window) && ("SpeechSynthesisUtterance" in window);
+}
+
+function stopSpeak(){
+  try{ if(ttsAvailable()) window.speechSynthesis.cancel(); }catch(e){}
+}
+
+function pickBestVoice(langPrefix){
+  const voices = (ttsAvailable() ? window.speechSynthesis.getVoices() : []) || [];
+  const pref = voices.find(v => v.lang && v.lang.toLowerCase().startsWith(langPrefix) && /google/i.test(v.name))
+            || voices.find(v => v.lang && v.lang.toLowerCase().startsWith(langPrefix))
+            || null;
+  return pref;
+}
+
+function initVoices(){
+  if(!ttsAvailable()) return;
+  const v = window.speechSynthesis.getVoices();
+  if(!v || v.length===0){
+    setTimeout(()=>{}, 250);
+  }
+}
+if(ttsAvailable()){
+  window.speechSynthesis.onvoiceschanged = ()=>{};
+  document.addEventListener("DOMContentLoaded", initVoices);
+}
+
+function speak(text, lang){
+  if(!ttsAvailable()){
+    alert("Vorlesen ist in diesem Browser nicht verfügbar.");
+    return;
+  }
+  try{
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(String(text));
+    u.lang = lang || "de-DE";
+    u.rate = 0.95;
+    u.pitch = 1.0;
+
+    const want = (lang || "de").toLowerCase().startsWith("ar") ? "ar" : "de";
+    const voice = pickBestVoice(want);
+    if(voice) u.voice = voice;
+
+    window.speechSynthesis.speak(u);
+  }catch(e){
+    alert("Vorlesen-Fehler: " + e);
+  }
+}
+
+/* -------------------------
+   STT: Browser SpeechRecognition
+   Hinweis: iOS Safari unterstützt das meist nicht.
+-------------------------- */
+let rec=null, recording=false;
+
+function sttAvailable(){
+  return ("webkitSpeechRecognition" in window) || ("SpeechRecognition" in window);
+}
+
+function sttStart(lang){
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){
+    alert("Diktieren per Web-API ist in diesem Browser nicht verfügbar. Tipp: iOS-Tastatur-Diktat verwenden.");
+    return;
+  }
+  if(recording) return;
+
+  rec = new SR();
+  rec.lang = lang || "de-DE";
+  rec.interimResults = true;
+  rec.continuous = false;
+
+  const box = document.getElementById("copyInput");
+
+  rec.onresult = (ev) => {
+    let finalText = "";
+    for(let i=ev.resultIndex;i<ev.results.length;i++){
+      const txt = ev.results[i][0].transcript;
+      if(ev.results[i].isFinal) finalText += txt;
+    }
+    if(finalText){
+      box.value = (box.value ? box.value + " " : "") + finalText.trim();
+      autoResize(box);
+    }
+  };
+
+  rec.onerror = (e) => {
+    console.log("STT error", e);
+  };
+
+  rec.onend = () => {
+    recording = false;
+    document.getElementById("mic").textContent = "🎙️ Diktieren";
+  };
+
+  recording = true;
+  document.getElementById("mic").textContent = "⏹️ Stop Diktat";
+  rec.start();
+}
+
+function sttStop(){
+  try{ if(rec) rec.stop(); }catch(e){}
+  recording = false;
+  const b=document.getElementById("mic");
+  if(b) b.textContent = "🎙️ Diktieren";
+}
+
+/* -------------------------
+   UI Helpers
+-------------------------- */
+function autoResize(el){
+  if(!el) return;
+  el.style.height = "auto";
+  el.style.height = Math.min(320, el.scrollHeight + 4) + "px";
+}
+
+function setStatus(){
+  const total = queue.length || 0;
+  document.getElementById("pillIdx").textContent = `Frage: ${Math.min(idx+1,total)}/${total}`;
+  document.getElementById("pillWrong").textContent = `Fehler: ${wrong.length}`;
+  document.getElementById("pillMode").textContent = `Modus: ${wrongMode ? "Fehler" : "Normal"}`;
+
+  const ttsInfo = document.getElementById("ttsInfo");
+  ttsInfo.textContent = ttsAvailable() ? "TTS: aktiv" : "TTS: nicht verfügbar";
+
+  const sttInfo = document.getElementById("sttInfo");
+  if(isIOS()){
+    document.getElementById("iosNote").style.display = "block";
+    sttInfo.innerHTML = `<span class="warn">STT: iOS Safari meist nicht verfügbar</span>`;
+  } else {
+    sttInfo.textContent = sttAvailable() ? "STT: verfügbar" : "STT: nicht verfügbar";
+  }
+}
+
+function render(){
+  setStatus();
+  const item = queue[idx];
+  const { q, a, q_ar, a_ar } = getQAFromItem(item);
+
+  const useArabic = document.getElementById("toggleArabic").checked && (q_ar || a_ar);
+
+  const qEl = document.getElementById("question");
+  const aEl = document.getElementById("answer");
+
+  qEl.classList.toggle("rtl", useArabic);
+  aEl.classList.toggle("rtl", useArabic);
+
+  qEl.textContent = useArabic ? (q_ar || q) : q;
+  aEl.textContent = useArabic ? (a_ar || a) : a;
+
+  document.getElementById("topic").textContent =
+    `${item.topic || ""}${item.difficulty ? " • Schwierigkeit " + item.difficulty : ""}`;
+
+  const box = document.getElementById("copyInput");
+  box.value = "";
+  autoResize(box);
+  box.focus();
+
+  document.getElementById("feedback").textContent = "";
+  document.getElementById("hint").style.display = "none";
+  document.getElementById("hint").textContent = "";
+
+  const toggle = document.getElementById("toggleArabic");
+  toggle.disabled = !(q_ar || a_ar);
+}
+
+function check(){
+  const item = queue[idx];
+  const { a, a_ar } = getQAFromItem(item);
+  const useArabic = document.getElementById("toggleArabic").checked && a_ar;
+  const correct = useArabic ? (a_ar || a) : a;
+
+  const typed = document.getElementById("copyInput").value;
+  const ok = normalizeText(typed) === normalizeText(correct);
+
+  const fb = document.getElementById("feedback");
+  if(ok){
+    fb.innerHTML = `<span class="ok">Richtig ✅</span>`;
+  } else {
+    fb.innerHTML = `<span class="bad">Noch nicht exakt ❌</span> <span class="muted">Tipp: Achte auf Rechtschreibung/Leerzeichen.</span>`;
+    if(!wrong.find(x => x.id === item.id)) wrong.push(item);
+  }
+  setStatus();
+}
+
+function showHint(){
+  const item = queue[idx];
+  const { a, a_ar } = getQAFromItem(item);
+  const useArabic = document.getElementById("toggleArabic").checked && a_ar;
+  const correct = useArabic ? (a_ar || a) : a;
+
+  const h = document.getElementById("hint");
+  const previewLen = Math.min(14, correct.length);
+  const preview = correct.slice(0, previewLen);
+  h.style.display = "block";
+  h.textContent = `Hinweis: Lösung beginnt mit: "${preview}${correct.length>previewLen ? "…" : ""}"`;
+}
+
+function next(){
+  idx++;
+  if(idx >= queue.length){
+    const card = document.getElementById("quizCard");
+    card.innerHTML = `
+      <h2>Fertig!</h2>
+      <p>Du hast ${queue.length} Karten bearbeitet.</p>
+      <p><b>Fehler gemerkt:</b> ${wrong.length}</p>
+      <div class="row">
+        <button class="primary" onclick="resetAll()">Neu mischen</button>
+        <button onclick="repeatWrong()">Fehler wiederholen</button>
+      </div>
+    `;
+    return;
+  }
+  render();
+}
+
+function resetAll(){
+  wrongMode = false;
+  queue = shuffle([...(DATA.questions || [])]);
+  idx = 0;
+  render();
+}
+
+function repeatWrong(){
+  if(!wrong.length){ alert("Noch keine Fehler gesammelt."); return; }
+  wrongMode = true;
+  queue = shuffle([...wrong]);
+  idx = 0;
+  render();
+}
+
+/* -------------------------
+   Load
+-------------------------- */
+async function loadData(){
+  // GitHub Pages / localhost: JSON via fetch laden
+  const r = await fetch("fragen_100_ihk_hwk_daz.json");
+  DATA = await r.json();
+
+  if(!DATA || !Array.isArray(DATA.questions) || DATA.questions.length === 0){
+    document.getElementById("status").innerHTML = `<span class="bad">Keine Fragen gefunden.</span>`;
+    return;
+  }
+
+  document.getElementById("status").innerHTML =
+    `<div class="muted">${DATA.meta?.title || "Quiz"} • Fragen: ${DATA.questions.length}</div>`;
+
+  document.getElementById("check").onclick = check;
+  document.getElementById("next").onclick = () => { stopSpeak(); next(); };
+  document.getElementById("showHint").onclick = showHint;
+
+  document.getElementById("btnShuffle").onclick = () => { stopSpeak(); resetAll(); };
+  document.getElementById("btnWrong").onclick = () => { stopSpeak(); repeatWrong(); };
+  document.getElementById("toggleArabic").onchange = () => { stopSpeak(); render(); };
+
+  document.getElementById("stopTTS").onclick = () => stopSpeak();
+
+  document.getElementById("speakQ").onclick = () => {
+    const { q, q_ar } = getQAFromItem(queue[idx]);
+    const useArabic = document.getElementById("toggleArabic").checked && q_ar;
+    speak(useArabic ? (q_ar || q) : q, useArabic ? "ar" : "de-DE");
+  };
+  document.getElementById("speakA").onclick = () => {
+    const { a, a_ar } = getQAFromItem(queue[idx]);
+    const useArabic = document.getElementById("toggleArabic").checked && a_ar;
+    speak(useArabic ? (a_ar || a) : a, useArabic ? "ar" : "de-DE");
+  };
+  document.getElementById("speakBoth").onclick = () => {
+    const { q, a, q_ar, a_ar } = getQAFromItem(queue[idx]);
+    const useArabic = document.getElementById("toggleArabic").checked && (q_ar || a_ar);
+    const text = useArabic
+      ? `السؤال. ${q_ar || q}. الإجابة. ${a_ar || a}`
+      : `Frage. ${q}. Lösung. ${a}`;
+    speak(text, useArabic ? "ar" : "de-DE");
+  };
+
+  // STT Button
+  document.getElementById("mic").onclick = () => {
+    const useArabic = document.getElementById("toggleArabic").checked;
+    const lang = useArabic ? "ar" : "de-DE";
+    if(recording) sttStop(); else sttStart(lang);
+  };
+
+  // Leeren
+  document.getElementById("clear").onclick = () => {
+    const box = document.getElementById("copyInput");
+    box.value = "";
+    autoResize(box);
+    box.focus();
+  };
+
+  // Auto-resize beim Tippen
+  document.getElementById("copyInput").addEventListener("input", (e)=>{
+    autoResize(e.target);
+  });
+
+  // Enter: prüfen (auf iOS in textarea nicht immer praktisch – aber lassen wir drin)
+  document.getElementById("copyInput").addEventListener("keydown", (e) => {
+    if(e.key === "Enter" && (e.ctrlKey || e.metaKey)){
+      e.preventDefault();
+      check();
+    }
+  });
+
+  resetAll();
+}
+
+loadData();
+</script>
+</body>
+</html>
