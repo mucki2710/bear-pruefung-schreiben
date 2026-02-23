@@ -132,9 +132,24 @@ function shuffle(a){
 
 function normalizeText(s){
   return String(s ?? "")
+    .toLowerCase()
+
+    // Umlaute vereinheitlichen
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+
+    // Satzzeichen entfernen
+    .replace(/[.,;:!?()"']/g, "")
+
+    // Bindestriche & Sonderzeichen vereinheitlichen
+    .replace(/[-–—]/g, " ")
+
+    // Mehrfach-Leerzeichen reduzieren
     .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
+
+    .trim();
 }
 
 function getQAFromItem(item){
@@ -369,19 +384,69 @@ function check(){
   const item = queue[idx];
   const { a, a_ar } = getQAFromItem(item);
   const useArabic = document.getElementById("toggleArabic").checked && a_ar;
-  const correct = useArabic ? (a_ar || a) : a;
+  const correctRaw = useArabic ? (a_ar || a) : a;
 
-  const typed = document.getElementById("copyInput").value;
-  const ok = normalizeText(typed) === normalizeText(correct);
+  const typedRaw = document.getElementById("copyInput").value;
+
+  const correct = normalizeText(correctRaw);
+  const typed = normalizeText(typedRaw);
+
+  let ok = false;
+
+  if(typed === correct){
+    ok = true;
+  } else {
+    // kleine Toleranz: 95% Übereinstimmung
+    const similarity = similarityScore(typed, correct);
+    if(similarity >= 0.95){
+      ok = true;
+    }
+  }
 
   const fb = document.getElementById("feedback");
+
   if(ok){
     fb.innerHTML = `<span class="ok">Richtig ✅</span>`;
   } else {
-    fb.innerHTML = `<span class="bad">Noch nicht exakt ❌</span> <span class="muted">Tipp: Achte auf Rechtschreibung/Leerzeichen.</span>`;
+    fb.innerHTML = `<span class="bad">Noch nicht exakt ❌</span> <span class="muted">Achte auf fehlende Wörter oder falsche Begriffe.</span>`;
     if(!wrong.find(x => x.id === item.id)) wrong.push(item);
   }
+
   setStatus();
+}
+
+function similarityScore(a, b){
+  if(!a || !b) return 0;
+
+  if(a === b) return 1;
+
+  const longer = a.length > b.length ? a : b;
+  const shorter = a.length > b.length ? b : a;
+
+  const longerLength = longer.length;
+  if(longerLength === 0) return 1;
+
+  return (longerLength - editDistance(longer, shorter)) / longerLength;
+}
+
+function editDistance(a, b){
+  const dp = Array.from({length: b.length + 1}, () => []);
+
+  for(let i=0;i<=b.length;i++){
+    for(let j=0;j<=a.length;j++){
+      if(i === 0) dp[i][j] = j;
+      else if(j === 0) dp[i][j] = i;
+      else if(b[i-1] === a[j-1])
+        dp[i][j] = dp[i-1][j-1];
+      else
+        dp[i][j] = Math.min(
+          dp[i-1][j-1] + 1,
+          dp[i][j-1] + 1,
+          dp[i-1][j] + 1
+        );
+    }
+  }
+  return dp[b.length][a.length];
 }
 
 function showHint(){
