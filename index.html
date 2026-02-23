@@ -47,6 +47,8 @@
         <span class="pill" id="pillMode">Modus: Normal</span>
         <span class="pill" id="pillIdx">Frage: -/-</span>
         <span class="pill" id="pillWrong">Fehler: 0</span>
+        <label class="mini">Thema:</label>
+        <select id="topicSelect"></select>
       </div>
       <div class="row mini">
         <label class="row mini" style="gap:6px">
@@ -118,6 +120,7 @@ let DATA=null;
 let queue=[], idx=0;
 let wrong=[];              // merkt falsche Karten
 let wrongMode=false;
+let selectedTopic = "ALL";
 
 function shuffle(a){
   for(let i=a.length-1;i>0;i--){
@@ -335,6 +338,33 @@ function render(){
   toggle.disabled = !(q_ar || a_ar);
 }
 
+function initTopics(){
+  const sel = document.getElementById("topicSelect");
+  sel.innerHTML = "";
+
+  const topics = [...new Set((DATA.questions || [])
+    .map(q => q.topic || "Ohne Thema")
+  )].sort();
+
+  const allOpt = document.createElement("option");
+  allOpt.value = "ALL";
+  allOpt.textContent = "Alle Themen";
+  sel.appendChild(allOpt);
+
+  topics.forEach(t => {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t;
+    sel.appendChild(opt);
+  });
+
+  sel.onchange = () => {
+    selectedTopic = sel.value;
+    stopSpeak();
+    resetAll();
+  };
+}
+
 function check(){
   const item = queue[idx];
   const { a, a_ar } = getQAFromItem(item);
@@ -387,16 +417,46 @@ function next(){
 
 function resetAll(){
   wrongMode = false;
-  queue = shuffle([...(DATA.questions || [])]);
+
+  let base = [...(DATA.questions || [])];
+
+  if(selectedTopic !== "ALL"){
+    base = base.filter(q => (q.topic || "Ohne Thema") === selectedTopic);
+  }
+
+  queue = shuffle(base);
   idx = 0;
+
+  if(queue.length === 0){
+    document.getElementById("quizCard").innerHTML =
+      "<p class='bad'>Keine Fragen in diesem Thema gefunden.</p>";
+    return;
+  }
+
   render();
 }
-
 function repeatWrong(){
-  if(!wrong.length){ alert("Noch keine Fehler gesammelt."); return; }
+  if(!wrong.length){
+    alert("Noch keine Fehler gesammelt.");
+    return;
+  }
+
   wrongMode = true;
-  queue = shuffle([...wrong]);
+
+  let base = [...wrong];
+
+  if(selectedTopic !== "ALL"){
+    base = base.filter(q => (q.topic || "Ohne Thema") === selectedTopic);
+  }
+
+  queue = shuffle(base);
   idx = 0;
+
+  if(queue.length === 0){
+    alert("Keine Fehler in diesem Thema.");
+    return;
+  }
+
   render();
 }
 
@@ -407,6 +467,7 @@ async function loadData(){
   // GitHub Pages / localhost: JSON via fetch laden
   const r = await fetch("fragen_100_ihk_hwk_daz.json");
   DATA = await r.json();
+  initTopics();
 
   if(!DATA || !Array.isArray(DATA.questions) || DATA.questions.length === 0){
     document.getElementById("status").innerHTML = `<span class="bad">Keine Fragen gefunden.</span>`;
