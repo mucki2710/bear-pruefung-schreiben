@@ -25,6 +25,7 @@
     .sep{height:1px;background:#eee;margin:10px 0}
     .warn{color:#b35a00;font-weight:600}
     .smallbtn{padding:8px 10px}
+    .warn{color:#b58900;font-weight:600}
   </style>
 </head>
 <body>
@@ -391,30 +392,31 @@ function check(){
   const correct = normalizeText(correctRaw);
   const typed = normalizeText(typedRaw);
 
-  let ok = false;
-
-  if(typed === correct){
-    ok = true;
-  } else {
-    // kleine Toleranz: 95% Übereinstimmung
-    const similarity = similarityScore(typed, correct);
-    if(similarity >= 0.95){
-      ok = true;
-    }
-  }
+  const similarity = similarityScore(typed, correct);
 
   const fb = document.getElementById("feedback");
 
-  if(ok){
+  const missing = missingWords(correctRaw, typedRaw);
+  if(missing.length && similarity < 1){
+    fb.innerHTML += `<div class="mini">Fehlende Wörter: ${missing.join(", ")}</div>`;
+  }
+
+  if(similarity === 1){
     fb.innerHTML = `<span class="ok">Richtig ✅</span>`;
-  } else {
-    fb.innerHTML = `<span class="bad">Noch nicht exakt ❌</span> <span class="muted">Achte auf fehlende Wörter oder falsche Begriffe.</span>`;
+  }
+  else if(similarity >= 0.8){
+    fb.innerHTML = `<span class="warn">Fast richtig ⚠</span>`;
+    showWordDifferences(correctRaw, typedRaw);
+  }
+  else{
+    fb.innerHTML = `<span class="bad">Falsch ❌</span>`;
+    showWordDifferences(correctRaw, typedRaw);
+
     if(!wrong.find(x => x.id === item.id)) wrong.push(item);
   }
 
   setStatus();
 }
-
 function similarityScore(a, b){
   if(!a || !b) return 0;
 
@@ -479,6 +481,40 @@ function next(){
   }
   render();
 }
+
+function showWordDifferences(correctRaw, typedRaw){
+  const correctWords = correctRaw.split(/\s+/);
+  const typedWords = typedRaw.split(/\s+/);
+
+  let result = "";
+
+  for(let i=0;i<correctWords.length;i++){
+    const cw = correctWords[i] || "";
+    const tw = typedWords[i] || "";
+
+    if(normalizeText(cw) === normalizeText(tw)){
+      result += `<span class="ok">${cw}</span> `;
+    } else if(!tw){
+      result += `<span class="bad">${cw}</span> `;
+    } else {
+      result += `<span class="warn">${cw}</span> `;
+    }
+  }
+
+  document.getElementById("hint").style.display = "block";
+  document.getElementById("hint").innerHTML =
+    `<div class="mini">Vergleich (korrekte Wörter):</div>${result}`;
+}
+
+function missingWords(correctRaw, typedRaw){
+  const correctWords = correctRaw.split(/\s+/);
+  const typedNorm = normalizeText(typedRaw);
+
+  return correctWords.filter(w =>
+    !typedNorm.includes(normalizeText(w))
+  );
+}
+
 
 function resetAll(){
   wrongMode = false;
