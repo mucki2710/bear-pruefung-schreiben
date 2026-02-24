@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Friseur Abschreib-Quiz (DaZ)</title>
+  <title>Friseur Abschreib-Quiz (Runtime)</title>
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:16px;max-width:980px}
     .card{border:1px solid #ddd;border-radius:14px;padding:16px;margin:12px 0}
@@ -15,17 +15,16 @@
     .pill{display:inline-block;padding:2px 10px;border:1px solid #ddd;border-radius:999px;margin-right:6px}
     .ok{color:#0a7;font-weight:700}
     .bad{color:#c33;font-weight:700}
-    textarea{width:100%;min-height:140px;resize:vertical;line-height:1.35}
-    .q{font-size:1.15rem;font-weight:700;margin:8px 0 4px}
+    .warn{color:#b58900;font-weight:700}
+    textarea{width:100%;min-height:150px;resize:vertical;line-height:1.35}
+    .q{font-size:1.15rem;font-weight:700;margin:8px 0 4px;white-space:pre-wrap}
     .a{font-size:1.05rem;margin:8px 0;white-space:pre-wrap}
     .rtl{direction:rtl;text-align:right}
     .grid{display:grid;grid-template-columns:1fr;gap:12px}
     @media (min-width: 900px){ .grid{grid-template-columns:1fr 1fr} }
     .mini{font-size:.9rem}
     .sep{height:1px;background:#eee;margin:10px 0}
-    .warn{color:#b35a00;font-weight:600}
     .smallbtn{padding:8px 10px}
-    .warn{color:#b58900;font-weight:600}
   </style>
 </head>
 <body>
@@ -48,9 +47,11 @@
         <span class="pill" id="pillMode">Modus: Normal</span>
         <span class="pill" id="pillIdx">Frage: -/-</span>
         <span class="pill" id="pillWrong">Fehler: 0</span>
+
         <label class="mini">Thema:</label>
         <select id="topicSelect"></select>
       </div>
+
       <div class="row mini">
         <label class="row mini" style="gap:6px">
           <input id="toggleArabic" type="checkbox"/>
@@ -72,7 +73,8 @@
     </div>
 
     <div class="row mini muted" id="iosNote" style="display:none">
-      Hinweis: Auf iPhone/iPad funktioniert „Diktieren“ im Browser oft nicht per Web-API. Du kannst aber die iOS-Tastatur-Diktierfunktion nutzen (Mikrofon auf der Tastatur).
+      Hinweis: Auf iPhone/iPad funktioniert „Diktieren“ im Browser oft nicht per Web-API.
+      Du kannst aber die iOS-Tastatur-Diktierfunktion nutzen (Mikrofon auf der Tastatur).
     </div>
   </div>
 
@@ -94,7 +96,7 @@
     <div class="sep"></div>
 
     <div class="row" style="justify-content:space-between">
-      <div class="muted">Schreibe die Lösung exakt ab:</div>
+      <div class="muted">Schreibe die Lösung (tolerant geprüft):</div>
       <div class="row">
         <button id="mic" class="smallbtn">🎙️ Diktieren</button>
         <button id="clear" class="smallbtn">🧹 Leeren</button>
@@ -123,6 +125,9 @@ let wrong=[];              // merkt falsche Karten
 let wrongMode=false;
 let selectedTopic = "ALL";
 
+/* -------------------------
+   Utils
+-------------------------- */
 function shuffle(a){
   for(let i=a.length-1;i>0;i--){
     const j=Math.floor(Math.random()*(i+1));
@@ -131,46 +136,82 @@ function shuffle(a){
   return a;
 }
 
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+function autoResize(el){
+  if(!el) return;
+  el.style.height = "auto";
+  el.style.height = Math.min(320, el.scrollHeight + 4) + "px";
+}
+
+/* tolerant normalize: case/punctuation/umlauts */
 function normalizeText(s){
   return String(s ?? "")
     .toLowerCase()
-
-    // Umlaute vereinheitlichen
-    .replace(/ä/g, "ae")
-    .replace(/ö/g, "oe")
-    .replace(/ü/g, "ue")
-    .replace(/ß/g, "ss")
-
-    // Satzzeichen entfernen
+    .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
     .replace(/[.,;:!?()"']/g, "")
-
-    // Bindestriche & Sonderzeichen vereinheitlichen
     .replace(/[-–—]/g, " ")
-
-    // Mehrfach-Leerzeichen reduzieren
     .replace(/\s+/g, " ")
-
     .trim();
 }
 
-function getQAFromItem(item){
-  const q = item.question ?? "";
+/* similarity (Levenshtein ratio) */
+function editDistance(a, b){
+  const dp = Array.from({length: b.length + 1}, () => []);
+  for(let i=0;i<=b.length;i++){
+    for(let j=0;j<=a.length;j++){
+      if(i === 0) dp[i][j] = j;
+      else if(j === 0) dp[i][j] = i;
+      else if(b[i-1] === a[j-1]) dp[i][j] = dp[i-1][j-1];
+      else dp[i][j] = Math.min(dp[i-1][j-1] + 1, dp[i][j-1] + 1, dp[i-1][j] + 1);
+    }
+  }
+  return dp[b.length][a.length];
+}
+function similarityScore(a, b){
+  if(!a || !b) return 0;
+  if(a === b) return 1;
+  const longer = a.length > b.length ? a : b;
+  const shorter = a.length > b.length ? b : a;
+  return (longer.length - editDistance(longer, shorter)) / longer.length;
+}
 
-  let a = "";
-  if (Array.isArray(item.choices) && Array.isArray(item.correctIndices) && item.correctIndices.length){
-    const parts = item.correctIndices.map(i => item.choices[i]).filter(Boolean);
-    a = parts.join(", ");
-  } else if (typeof item.answer === "string" && item.answer.trim()){
-    a = item.answer.trim();
-  } else if (typeof item.solution === "string" && item.solution.trim()){
-    a = item.solution.trim();
-  } else if (typeof item.explanation === "string" && item.explanation.trim()){
-    a = item.explanation.trim();
+function missingWords(correctRaw, typedRaw){
+  const correctWords = String(correctRaw||"").split(/\s+/).filter(Boolean);
+  const typedNorm = normalizeText(typedRaw);
+  return correctWords.filter(w => !typedNorm.includes(normalizeText(w)));
+}
+
+function showWordDifferences(correctRaw, typedRaw){
+  const correctWords = String(correctRaw||"").split(/\s+/).filter(Boolean);
+  const typedWords = String(typedRaw||"").split(/\s+/);
+
+  let html = "";
+  for(let i=0;i<correctWords.length;i++){
+    const cw = correctWords[i] || "";
+    const tw = typedWords[i] || "";
+    if(normalizeText(cw) === normalizeText(tw)) html += `<span class="ok">${escapeHtml(cw)}</span> `;
+    else if(!tw) html += `<span class="bad">${escapeHtml(cw)}</span> `;
+    else html += `<span class="warn">${escapeHtml(cw)}</span> `;
   }
 
-  const q_ar = item.question_ar || item.ar_question || "";
-  const a_ar = item.answer_ar   || item.ar_answer   || "";
+  const hint = document.getElementById("hint");
+  hint.style.display = "block";
+  hint.innerHTML = `<div class="mini">Vergleich (korrekte Wörter):</div>${html}`;
+}
 
+/* -------------------------
+   Option-A Runtime (quiz_runtime.json)
+   question: item.q, answer: item.a (multi answers are newline-separated)
+   Optional arabic: q_ar / a_ar (falls du später ergänzt)
+-------------------------- */
+function getQAFromItem(item){
+  const q = item.q ?? item.question ?? "";
+  const a = item.a ?? item.answer ?? "";
+  const q_ar = item.q_ar || item.question_ar || item.ar_question || "";
+  const a_ar = item.a_ar || item.answer_ar || item.ar_answer || "";
   return { q, a, q_ar, a_ar };
 }
 
@@ -190,11 +231,9 @@ function isIOS(){
 function ttsAvailable(){
   return ("speechSynthesis" in window) && ("SpeechSynthesisUtterance" in window);
 }
-
 function stopSpeak(){
   try{ if(ttsAvailable()) window.speechSynthesis.cancel(); }catch(e){}
 }
-
 function pickBestVoice(langPrefix){
   const voices = (ttsAvailable() ? window.speechSynthesis.getVoices() : []) || [];
   const pref = voices.find(v => v.lang && v.lang.toLowerCase().startsWith(langPrefix) && /google/i.test(v.name))
@@ -202,19 +241,6 @@ function pickBestVoice(langPrefix){
             || null;
   return pref;
 }
-
-function initVoices(){
-  if(!ttsAvailable()) return;
-  const v = window.speechSynthesis.getVoices();
-  if(!v || v.length===0){
-    setTimeout(()=>{}, 250);
-  }
-}
-if(ttsAvailable()){
-  window.speechSynthesis.onvoiceschanged = ()=>{};
-  document.addEventListener("DOMContentLoaded", initVoices);
-}
-
 function speak(text, lang){
   if(!ttsAvailable()){
     alert("Vorlesen ist in diesem Browser nicht verfügbar.");
@@ -246,7 +272,6 @@ let rec=null, recording=false;
 function sttAvailable(){
   return ("webkitSpeechRecognition" in window) || ("SpeechRecognition" in window);
 }
-
 function sttStart(lang){
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   if(!SR){
@@ -273,11 +298,6 @@ function sttStart(lang){
       autoResize(box);
     }
   };
-
-  rec.onerror = (e) => {
-    console.log("STT error", e);
-  };
-
   rec.onend = () => {
     recording = false;
     document.getElementById("mic").textContent = "🎙️ Diktieren";
@@ -287,7 +307,6 @@ function sttStart(lang){
   document.getElementById("mic").textContent = "⏹️ Stop Diktat";
   rec.start();
 }
-
 function sttStop(){
   try{ if(rec) rec.stop(); }catch(e){}
   recording = false;
@@ -296,14 +315,40 @@ function sttStop(){
 }
 
 /* -------------------------
-   UI Helpers
+   Themenfilter
 -------------------------- */
-function autoResize(el){
-  if(!el) return;
-  el.style.height = "auto";
-  el.style.height = Math.min(320, el.scrollHeight + 4) + "px";
+function initTopics(){
+  const sel = document.getElementById("topicSelect");
+  sel.innerHTML = "";
+
+  const topics = [...new Set((DATA.questions || [])
+    .map(q => q.topic || "Ohne Thema")
+  )].sort();
+
+  const allOpt = document.createElement("option");
+  allOpt.value = "ALL";
+  allOpt.textContent = "Alle Themen";
+  sel.appendChild(allOpt);
+
+  topics.forEach(t => {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t;
+    sel.appendChild(opt);
+  });
+
+  sel.value = selectedTopic;
+
+  sel.onchange = () => {
+    selectedTopic = sel.value;
+    stopSpeak();
+    resetAll();
+  };
 }
 
+/* -------------------------
+   UI / Flow
+-------------------------- */
 function setStatus(){
   const total = queue.length || 0;
   document.getElementById("pillIdx").textContent = `Frage: ${Math.min(idx+1,total)}/${total}`;
@@ -347,38 +392,54 @@ function render(){
   box.focus();
 
   document.getElementById("feedback").textContent = "";
-  document.getElementById("hint").style.display = "none";
-  document.getElementById("hint").textContent = "";
+  const hint = document.getElementById("hint");
+  hint.style.display = "none";
+  hint.textContent = "";
 
   const toggle = document.getElementById("toggleArabic");
   toggle.disabled = !(q_ar || a_ar);
 }
 
-function initTopics(){
-  const sel = document.getElementById("topicSelect");
-  sel.innerHTML = "";
+function resetAll(){
+  wrongMode = false;
+  let base = [...(DATA.questions || [])];
+  if(selectedTopic !== "ALL"){
+    base = base.filter(q => (q.topic || "Ohne Thema") === selectedTopic);
+  }
+  queue = shuffle(base);
+  idx = 0;
 
-  const topics = [...new Set((DATA.questions || [])
-    .map(q => q.topic || "Ohne Thema")
-  )].sort();
+  if(queue.length === 0){
+    document.getElementById("quizCard").innerHTML =
+      "<p class='bad'>Keine Fragen in diesem Thema gefunden.</p>";
+    return;
+  }
 
-  const allOpt = document.createElement("option");
-  allOpt.value = "ALL";
-  allOpt.textContent = "Alle Themen";
-  sel.appendChild(allOpt);
+  render();
+}
 
-  topics.forEach(t => {
-    const opt = document.createElement("option");
-    opt.value = t;
-    opt.textContent = t;
-    sel.appendChild(opt);
-  });
+function repeatWrong(){
+  if(!wrong.length){
+    alert("Noch keine Fehler gesammelt.");
+    return;
+  }
 
-  sel.onchange = () => {
-    selectedTopic = sel.value;
-    stopSpeak();
-    resetAll();
-  };
+  wrongMode = true;
+  let base = [...wrong];
+
+  if(selectedTopic !== "ALL"){
+    base = base.filter(q => (q.topic || "Ohne Thema") === selectedTopic);
+  }
+
+  queue = shuffle(base);
+  idx = 0;
+
+  if(queue.length === 0){
+    alert("Keine Fehler in diesem Thema.");
+    return;
+  }
+
+  render();
 }
 
 function check(){
@@ -391,64 +452,28 @@ function check(){
 
   const correct = normalizeText(correctRaw);
   const typed = normalizeText(typedRaw);
-
   const similarity = similarityScore(typed, correct);
 
   const fb = document.getElementById("feedback");
-
-  const missing = missingWords(correctRaw, typedRaw);
-  if(missing.length && similarity < 1){
-    fb.innerHTML += `<div class="mini">Fehlende Wörter: ${missing.join(", ")}</div>`;
-  }
+  fb.innerHTML = "";
 
   if(similarity === 1){
     fb.innerHTML = `<span class="ok">Richtig ✅</span>`;
-  }
-  else if(similarity >= 0.8){
+  } else if(similarity >= 0.8){
     fb.innerHTML = `<span class="warn">Fast richtig ⚠</span>`;
     showWordDifferences(correctRaw, typedRaw);
-  }
-  else{
+  } else {
     fb.innerHTML = `<span class="bad">Falsch ❌</span>`;
     showWordDifferences(correctRaw, typedRaw);
-
     if(!wrong.find(x => x.id === item.id)) wrong.push(item);
   }
 
-  setStatus();
-}
-function similarityScore(a, b){
-  if(!a || !b) return 0;
-
-  if(a === b) return 1;
-
-  const longer = a.length > b.length ? a : b;
-  const shorter = a.length > b.length ? b : a;
-
-  const longerLength = longer.length;
-  if(longerLength === 0) return 1;
-
-  return (longerLength - editDistance(longer, shorter)) / longerLength;
-}
-
-function editDistance(a, b){
-  const dp = Array.from({length: b.length + 1}, () => []);
-
-  for(let i=0;i<=b.length;i++){
-    for(let j=0;j<=a.length;j++){
-      if(i === 0) dp[i][j] = j;
-      else if(j === 0) dp[i][j] = i;
-      else if(b[i-1] === a[j-1])
-        dp[i][j] = dp[i-1][j-1];
-      else
-        dp[i][j] = Math.min(
-          dp[i-1][j-1] + 1,
-          dp[i][j-1] + 1,
-          dp[i-1][j] + 1
-        );
-    }
+  const miss = missingWords(correctRaw, typedRaw);
+  if(miss.length && similarity < 1){
+    fb.innerHTML += `<div class="mini">Fehlende Wörter: ${miss.map(escapeHtml).join(", ")}</div>`;
   }
-  return dp[b.length][a.length];
+
+  setStatus();
 }
 
 function showHint(){
@@ -460,6 +485,7 @@ function showHint(){
   const h = document.getElementById("hint");
   const previewLen = Math.min(14, correct.length);
   const preview = correct.slice(0, previewLen);
+
   h.style.display = "block";
   h.textContent = `Hinweis: Lösung beginnt mit: "${preview}${correct.length>previewLen ? "…" : ""}"`;
 }
@@ -482,92 +508,15 @@ function next(){
   render();
 }
 
-function showWordDifferences(correctRaw, typedRaw){
-  const correctWords = correctRaw.split(/\s+/);
-  const typedWords = typedRaw.split(/\s+/);
-
-  let result = "";
-
-  for(let i=0;i<correctWords.length;i++){
-    const cw = correctWords[i] || "";
-    const tw = typedWords[i] || "";
-
-    if(normalizeText(cw) === normalizeText(tw)){
-      result += `<span class="ok">${cw}</span> `;
-    } else if(!tw){
-      result += `<span class="bad">${cw}</span> `;
-    } else {
-      result += `<span class="warn">${cw}</span> `;
-    }
-  }
-
-  document.getElementById("hint").style.display = "block";
-  document.getElementById("hint").innerHTML =
-    `<div class="mini">Vergleich (korrekte Wörter):</div>${result}`;
-}
-
-function missingWords(correctRaw, typedRaw){
-  const correctWords = correctRaw.split(/\s+/);
-  const typedNorm = normalizeText(typedRaw);
-
-  return correctWords.filter(w =>
-    !typedNorm.includes(normalizeText(w))
-  );
-}
-
-
-function resetAll(){
-  wrongMode = false;
-
-  let base = [...(DATA.questions || [])];
-
-  if(selectedTopic !== "ALL"){
-    base = base.filter(q => (q.topic || "Ohne Thema") === selectedTopic);
-  }
-
-  queue = shuffle(base);
-  idx = 0;
-
-  if(queue.length === 0){
-    document.getElementById("quizCard").innerHTML =
-      "<p class='bad'>Keine Fragen in diesem Thema gefunden.</p>";
-    return;
-  }
-
-  render();
-}
-function repeatWrong(){
-  if(!wrong.length){
-    alert("Noch keine Fehler gesammelt.");
-    return;
-  }
-
-  wrongMode = true;
-
-  let base = [...wrong];
-
-  if(selectedTopic !== "ALL"){
-    base = base.filter(q => (q.topic || "Ohne Thema") === selectedTopic);
-  }
-
-  queue = shuffle(base);
-  idx = 0;
-
-  if(queue.length === 0){
-    alert("Keine Fehler in diesem Thema.");
-    return;
-  }
-
-  render();
-}
-
 /* -------------------------
    Load
 -------------------------- */
 async function loadData(){
-  // GitHub Pages / localhost: JSON via fetch laden
-  const r = await fetch("fragen_100_ihk_hwk_daz.json");
+  // Option A runtime:
+  //  - GitHub Pages / localhost: quiz_runtime.json
+  const r = await fetch("quiz_runtime.json");
   DATA = await r.json();
+
   initTopics();
 
   if(!DATA || !Array.isArray(DATA.questions) || DATA.questions.length === 0){
@@ -576,7 +525,7 @@ async function loadData(){
   }
 
   document.getElementById("status").innerHTML =
-    `<div class="muted">${DATA.meta?.title || "Quiz"} • Fragen: ${DATA.questions.length}</div>`;
+    `<div class="muted">${DATA.meta?.title || "Quiz"} • Fragen: ${DATA.questions.length} • Quelle: quiz_runtime.json</div>`;
 
   document.getElementById("check").onclick = check;
   document.getElementById("next").onclick = () => { stopSpeak(); next(); };
@@ -596,14 +545,18 @@ async function loadData(){
   document.getElementById("speakA").onclick = () => {
     const { a, a_ar } = getQAFromItem(queue[idx]);
     const useArabic = document.getElementById("toggleArabic").checked && a_ar;
-    speak(useArabic ? (a_ar || a) : a, useArabic ? "ar" : "de-DE");
+    const text = (useArabic ? (a_ar || a) : a);
+    // multi answers: \n -> small pauses
+    speak(String(text).replace(/\n+/g, ". "), useArabic ? "ar" : "de-DE");
   };
   document.getElementById("speakBoth").onclick = () => {
     const { q, a, q_ar, a_ar } = getQAFromItem(queue[idx]);
     const useArabic = document.getElementById("toggleArabic").checked && (q_ar || a_ar);
+    const qq = useArabic ? (q_ar || q) : q;
+    const aa = useArabic ? (a_ar || a) : a;
     const text = useArabic
-      ? `السؤال. ${q_ar || q}. الإجابة. ${a_ar || a}`
-      : `Frage. ${q}. Lösung. ${a}`;
+      ? `السؤال. ${qq}. الإجابة. ${String(aa).replace(/\n+/g, ". ")}`
+      : `Frage. ${qq}. Lösung. ${String(aa).replace(/\n+/g, ". ")}`;
     speak(text, useArabic ? "ar" : "de-DE");
   };
 
@@ -622,12 +575,7 @@ async function loadData(){
     box.focus();
   };
 
-  // Auto-resize beim Tippen
-  document.getElementById("copyInput").addEventListener("input", (e)=>{
-    autoResize(e.target);
-  });
-
-  // Enter: prüfen (auf iOS in textarea nicht immer praktisch – aber lassen wir drin)
+  document.getElementById("copyInput").addEventListener("input", (e)=> autoResize(e.target));
   document.getElementById("copyInput").addEventListener("keydown", (e) => {
     if(e.key === "Enter" && (e.ctrlKey || e.metaKey)){
       e.preventDefault();
