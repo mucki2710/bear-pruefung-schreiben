@@ -1,0 +1,719 @@
+{
+  "meta": {
+    "title": "Friseur Gesellenprüfung Theorie – 100 Fragen (IHK/HWK-Stil)",
+    "created": "2026-02-19",
+    "language": "de",
+    "version": "1.1-daz",
+    "daz_support": {
+      "fields_added": [
+        "simple",
+        "explanation_short",
+        "example"
+      ],
+      "note": "Einfache Sprache + kurze Erklärung + Beispiel pro Frage (Toggle in UI)."
+    },
+    "updated": "2026-02-20"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "Welche Schichten besitzt das menschliche Haar?",
+      "a": "Cuticula – Cortex – Medulla"
+    },
+    {
+      "id": 2,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "In welcher Schicht des Haares befinden sich die Farbpigmente (Melanin) überwiegend?",
+      "a": "Cortex"
+    },
+    {
+      "id": 3,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "Welche Aufgabe hat die Cuticula hauptsächlich?",
+      "a": "Schutzfunktion"
+    },
+    {
+      "id": 4,
+      "topic": "Chemie/pH",
+      "difficulty": 2,
+      "q": "Welcher pH-Wert gilt als neutral?",
+      "a": "7"
+    },
+    {
+      "id": 5,
+      "topic": "Chemie/pH",
+      "difficulty": 2,
+      "q": "Ein Produkt mit pH 9 wirkt:",
+      "a": "alkalisch"
+    },
+    {
+      "id": 6,
+      "topic": "Chemie/pH",
+      "difficulty": 2,
+      "q": "Warum quillt das Haar bei alkalischen Produkten stärker auf?",
+      "a": "Cuticula öffnet sich"
+    },
+    {
+      "id": 7,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "Was ist Seborrhoe?",
+      "a": "Übermäßige Talgproduktion"
+    },
+    {
+      "id": 8,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "Welche Funktion hat der Haarfollikel?",
+      "a": "Verankerung und Bildung des Haares"
+    },
+    {
+      "id": 9,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Was bewirkt Wasserstoffperoxid (H₂O₂) bei oxidativen Haarfarben?",
+      "a": "Entwickelt Farbstoffe durch Oxidation"
+    },
+    {
+      "id": 10,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Farbe neutralisiert einen Gelbstich am zuverlässigsten?",
+      "a": "Violett"
+    },
+    {
+      "id": 11,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Farbe neutralisiert einen Orangestich?",
+      "a": "Blau"
+    },
+    {
+      "id": 12,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Direktzieher wirken hauptsächlich:",
+      "a": "durch Einlagerung fertiger Farbmoleküle"
+    },
+    {
+      "id": 13,
+      "topic": "Umformung/Dauerwelle",
+      "difficulty": 2,
+      "q": "Welche Bindungen werden bei der Dauerwelle primär umgeformt?",
+      "a": "Disulfidbrücken"
+    },
+    {
+      "id": 14,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Warum ist eine Haaranalyse vor chemischer Behandlung wichtig?",
+      "a": "Zur Wahl des richtigen Produktes/Einwirkzeit"
+    },
+    {
+      "id": 15,
+      "topic": "Hygiene",
+      "difficulty": 2,
+      "q": "Desinfektion bedeutet:",
+      "a": "Reduzierung von Keimen auf ein ungefährliches Maß"
+    },
+    {
+      "id": 16,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Was sind Fixkosten im Salon?",
+      "a": "Miete"
+    },
+    {
+      "id": 17,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Variable Kosten sind z. B.:",
+      "a": "Verbrauchsmaterial"
+    },
+    {
+      "id": 18,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Was ist der Deckungsbeitrag (vereinfacht)?",
+      "a": "Umsatz minus variable Kosten"
+    },
+    {
+      "id": 19,
+      "topic": "Beratung",
+      "difficulty": 2,
+      "q": "Vor einer Farbveränderung muss mindestens:",
+      "a": "eine Beratung/Diagnose durchgeführt werden"
+    },
+    {
+      "id": 20,
+      "topic": "Recht/Dokumentation",
+      "difficulty": 2,
+      "q": "Warum ist Dokumentation bei chemischen Dienstleistungen wichtig?",
+      "a": "Für rechtliche Absicherung & Nachvollziehbarkeit"
+    },
+    {
+      "id": 21,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 2,
+      "q": "Was bewirkt ein hoher Abhebewinkel (Elevation) beim Schneiden?",
+      "a": "Mehr Stufung/Entlastung"
+    },
+    {
+      "id": 22,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 2,
+      "q": "Wozu dient eine Leitsträhne?",
+      "a": "Als Orientierung/Referenz beim Schneiden"
+    },
+    {
+      "id": 23,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 2,
+      "q": "Ein stumpfer Schnitt erzeugt typischerweise:",
+      "a": "eine klare, kompakte Linie"
+    },
+    {
+      "id": 24,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Warum sollten Metallgegenstände nicht mit Blondierung in Kontakt kommen?",
+      "a": "Sie können chemische Reaktionen beeinflussen"
+    },
+    {
+      "id": 25,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Aussage ist richtig?",
+      "a": "Blondierung baut Melanin ab"
+    },
+    {
+      "id": 26,
+      "topic": "Chemie/pH",
+      "difficulty": 2,
+      "q": "Welche Aussagen zu pH-Wert und Haar sind richtig?",
+      "a": "Der natürliche Säureschutzmantel ist leicht sauer.\nAlkalische Produkte lassen das Haar eher aufquellen."
+    },
+    {
+      "id": 27,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Wofür steht die Entwicklerstärke (z. B. 6%, 9%) hauptsächlich?",
+      "a": "Für die Oxidations-/Aufhellungsleistung"
+    },
+    {
+      "id": 28,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Faktoren beeinflussen das Farbergebnis oxidativer Haarfarben am stärksten?",
+      "a": "Ausgangshaarfarbe/Tonhöhe\nPorosität/Haarzustand\nEinwirkzeit"
+    },
+    {
+      "id": 29,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Was bedeutet „Tonhöhe 8“ in gängigen Farbsystemen?",
+      "a": "mittelblond"
+    },
+    {
+      "id": 30,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Was ist ein Strähnentest (Probesträhne) in erster Linie?",
+      "a": "Ein Test zur Bestimmung von Ergebnis und Haarreaktion"
+    },
+    {
+      "id": 31,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Aussagen zur Blondierung sind korrekt?",
+      "a": "Blondierung arbeitet meist alkalisch.\nBlondierung baut Naturpigment (Melanin) ab.\nZu starke Überlappung kann Haarbruch begünstigen."
+    },
+    {
+      "id": 32,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Maßnahme reduziert das Risiko von „Flecken“ bei Ansatzfärbung am besten?",
+      "a": "Gleichmäßige Sättigung + saubere Abteilungen"
+    },
+    {
+      "id": 33,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Was bedeutet „Porosität“ beim Haar?",
+      "a": "Aufnahme- und Abgabefähigkeit von Feuchtigkeit/Wirkstoffen"
+    },
+    {
+      "id": 34,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Warum kann stark poröses Haar Farbe schneller verlieren?",
+      "a": "Weil Farbmoleküle schlechter gehalten werden und schneller ausgespült werden"
+    },
+    {
+      "id": 35,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche sind typische Beratungspunkte vor einer starken Aufhellung?",
+      "a": "Haardiagnose/Elastizität/Porosität\nErwartungsmanagement (machbar/nicht machbar)\nPflege- und Erhaltungsaufwand"
+    },
+    {
+      "id": 36,
+      "topic": "Umformung/Dauerwelle",
+      "difficulty": 2,
+      "q": "Welche Schritte gehören grundsätzlich zu einer Dauerwellenbehandlung?",
+      "a": "Vorbehandlung/Diagnose\nReduktion (Umformmittel)\nFixierung/Neutralisation"
+    },
+    {
+      "id": 37,
+      "topic": "Umformung/Dauerwelle",
+      "difficulty": 2,
+      "q": "Warum wird nach der Reduktion fixiert?",
+      "a": "Um die umgeformten Bindungen zu stabilisieren"
+    },
+    {
+      "id": 38,
+      "topic": "Hygiene",
+      "difficulty": 2,
+      "q": "Welche Maßnahmen sind typische Hygienestandards im Salon?",
+      "a": "Werkzeuge nach Kundenkontakt reinigen/desinfizieren (je nach Einsatz).\nHandhygiene vor/nach Kundenkontakt.\nBenutzte Wäsche/Textilien wechseln."
+    },
+    {
+      "id": 39,
+      "topic": "Arbeitsschutz",
+      "difficulty": 2,
+      "q": "Welche Aussage zu Handschuhen bei chemischen Arbeiten ist richtig?",
+      "a": "Handschuhe schützen Haut vor Reizungen/Allergien und vor Chemikalienkontakt."
+    },
+    {
+      "id": 40,
+      "topic": "Arbeitsschutz",
+      "difficulty": 2,
+      "q": "Welche Symptome können auf eine Kontaktdermatitis hinweisen?",
+      "a": "Juckreiz\nRötung\nRissige/Schuppige Haut"
+    },
+    {
+      "id": 41,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Ein Salon verkauft eine Pflegekur für 20 €. Der Wareneinsatz beträgt 6 €. Wie hoch ist der Deckungsbeitrag?",
+      "a": "14 €"
+    },
+    {
+      "id": 42,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Welche Aussagen zur Kalkulation sind richtig?",
+      "a": "Der Wareneinsatz zählt i. d. R. zu variablen Kosten.\nFixkosten fallen auch ohne Kunden an.\nEin höherer Deckungsbeitrag hilft, Fixkosten zu decken."
+    },
+    {
+      "id": 43,
+      "topic": "Recht/Dokumentation",
+      "difficulty": 2,
+      "q": "Welche Inhalte sind sinnvoll in einer Farbdokumentation festzuhalten?",
+      "a": "Ausgangsbasis/Tonhöhe\nProdukt/Marke/Mischungsverhältnis/Entwickler\nEinwirkzeit/Technik"
+    },
+    {
+      "id": 44,
+      "topic": "Beratung",
+      "difficulty": 2,
+      "q": "Welche Formulierung ist in der Beratung am professionellsten?",
+      "a": "Wir prüfen Haarzustand und Ziel; ich erkläre Chancen/Risiken und Alternativen."
+    },
+    {
+      "id": 45,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 2,
+      "q": "Welche Aussagen zu Abteilungen und Kontrolle sind richtig?",
+      "a": "Saubere Abteilungen erleichtern Symmetrie und Kontrolle.\nKontrollchecks (Spiegel/Diagonalen) helfen Fehler zu finden.\nLeitsträhne gibt Orientierung."
+    },
+    {
+      "id": 46,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 3,
+      "q": "Was beschreibt „Überdirektion“ (Overdirection) beim Schneiden am besten?",
+      "a": "Haar wird aus dem natürlichen Fall heraus zur Seite/gegen die Fallrichtung geführt"
+    },
+    {
+      "id": 47,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Komplementärfarbe neutralisiert einen Grünstich?",
+      "a": "Rot"
+    },
+    {
+      "id": 48,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Situationen erhöhen das Risiko von Haarbruch bei Blondierung?",
+      "a": "Vorher stark geschädigtes/poröses Haar\nMehrfaches Überlappen auf bereits aufgehellte Längen\nZu lange Einwirkzeit"
+    },
+    {
+      "id": 49,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 1,
+      "q": "Was bedeutet „Ansatz“ in der Farbdienstleistung?",
+      "a": "Die frisch gewachsene Naturhaarzone am Haaransatz"
+    },
+    {
+      "id": 50,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Aussagen zu Grauhaardeckung sind typischerweise richtig (allgemein, herstellerabhängig)?",
+      "a": "Höherer Naturtonanteil kann Deckkraft verbessern.\nSehr transparente Nuancen decken oft schlechter.\nHaaranalyse (Grauanteil) ist wichtig."
+    },
+    {
+      "id": 51,
+      "topic": "Warenkunde",
+      "difficulty": 1,
+      "q": "Welche Aussage trifft auf Conditioner am ehesten zu?",
+      "a": "Glättet die Oberfläche und verbessert Kämmbarkeit"
+    },
+    {
+      "id": 52,
+      "topic": "Warenkunde",
+      "difficulty": 2,
+      "q": "Welche Faktoren begünstigen Farbverlust im Alltag?",
+      "a": "Häufiges Waschen mit stark reinigenden Shampoos\nHohe Hitze (Glätteisen) ohne Hitzeschutz\nUV-Strahlung"
+    },
+    {
+      "id": 53,
+      "topic": "Hygiene",
+      "difficulty": 2,
+      "q": "Was ist der richtige Ablauf bei sichtbarer Verschmutzung eines Werkzeugs?",
+      "a": "Zuerst reinigen, dann (bei Bedarf) desinfizieren"
+    },
+    {
+      "id": 54,
+      "topic": "Arbeitsschutz",
+      "difficulty": 3,
+      "q": "Welche Aussagen zu Blondierpulver/Persulfaten sind als Arbeitsschutz relevant?",
+      "a": "Staub möglichst vermeiden (z. B. vorsichtig dosieren).\nEinatmen kann reizen.\nHandschutz ist wichtig."
+    },
+    {
+      "id": 55,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Welche Aussage zur Preisabsprache ist am korrektesten?",
+      "a": "Vorher eine realistische Preisinformation/Spanne kommunizieren."
+    },
+    {
+      "id": 56,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "Wodurch wächst das Haar?",
+      "a": "Durch Zellteilung in der Haarmatrix"
+    },
+    {
+      "id": 57,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "Welche Aufgaben hat Talg auf der Kopfhaut?",
+      "a": "Schutz vor Austrocknung\nUnterstützung des Säureschutzmantels\nMechanischer Schutz/Glanz"
+    },
+    {
+      "id": 58,
+      "topic": "Chemie/pH",
+      "difficulty": 1,
+      "q": "Ein Produkt mit pH 4,5 wirkt:",
+      "a": "sauer"
+    },
+    {
+      "id": 59,
+      "topic": "Chemie/pH",
+      "difficulty": 3,
+      "q": "Welche Aussagen sind korrekt?",
+      "a": "Oxidation bedeutet Elektronenabgabe (im Friseurkontext: oft 'Sauerstoffwirkung').\nReduktion und Oxidation treten oft gekoppelt auf.\nH₂O₂ ist ein Oxidationsmittel."
+    },
+    {
+      "id": 60,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Warum sollte man bei stark geschädigtem Haar vorsichtig aufhellen?",
+      "a": "Weil die Haarstruktur weniger stabil ist und schneller bricht"
+    },
+    {
+      "id": 61,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Punkte gehören in eine Risikoaufklärung vor Aufhellung?",
+      "a": "Mögliche Haarstrukturbelastung\nMögliche Abweichung zum Wunschbild\nNotwendige Heimpflege"
+    },
+    {
+      "id": 62,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Was ist der Hauptzweck eines Toners/Glossings (allgemein)?",
+      "a": "Nuancieren/Neutralisieren und Glanz geben"
+    },
+    {
+      "id": 63,
+      "topic": "Umformung/Dauerwelle",
+      "difficulty": 2,
+      "q": "Welche Haarstruktur ist für eine Dauerwelle besonders kritisch?",
+      "a": "Sehr porös/chemisch vorgeschädigt"
+    },
+    {
+      "id": 64,
+      "topic": "Hygiene",
+      "difficulty": 2,
+      "q": "Welche Aussagen zur Händehygiene sind korrekt?",
+      "a": "Hände vor und nach dem Kunden kontakt reinigen/desinfizieren (je nach Standard).\nSchmuck kann Händehygiene erschweren.\nHautschutzplan kann berufsbedingte Ekzeme reduzieren."
+    },
+    {
+      "id": 65,
+      "topic": "Arbeitsschutz",
+      "difficulty": 2,
+      "q": "Was bedeutet PSA im Arbeitsschutz?",
+      "a": "Persönliche Schutzausrüstung"
+    },
+    {
+      "id": 66,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 1,
+      "q": "Ein Haarschnitt kostet 35 €. Variable Kosten (Material) 3 €. Deckungsbeitrag?",
+      "a": "32 €"
+    },
+    {
+      "id": 67,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Welche Beispiele zählen typischerweise zu Fixkosten?",
+      "a": "Miete\nGrundgebühr Telefon/Internet\nVersicherung"
+    },
+    {
+      "id": 68,
+      "topic": "Recht/Dokumentation",
+      "difficulty": 3,
+      "q": "Wie sollte mit Kundendaten (Dokumentation) grundsätzlich umgegangen werden?",
+      "a": "Zweckgebunden, vertraulich und sicher speichern"
+    },
+    {
+      "id": 69,
+      "topic": "Beratung",
+      "difficulty": 2,
+      "q": "Welche Fragen sind in der Bedarfsermittlung hilfreich?",
+      "a": "Wie stylen Sie Ihre Haare im Alltag?\nWelche chemischen Behandlungen hatten Sie zuletzt?\nWas gefällt Ihnen am Wunschbild besonders?"
+    },
+    {
+      "id": 70,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 3,
+      "q": "Was beschreibt 'Graduation' (Graduierung) am besten?",
+      "a": "Aufbau von Gewicht/Volumen durch mittlere Elevation"
+    },
+    {
+      "id": 71,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 2,
+      "q": "Welche Faktoren beeinflussen die Schnittform sichtbar?",
+      "a": "Haarwuchsrichtung/Wirbel\nKopf- und Gesichtsform\nAbteilungen und Zugwinkel"
+    },
+    {
+      "id": 72,
+      "topic": "Warenkunde",
+      "difficulty": 1,
+      "q": "Was macht ein Hitzeschutzprodukt hauptsächlich?",
+      "a": "Reduziert thermische Schädigung und Feuchtigkeitsverlust"
+    },
+    {
+      "id": 73,
+      "topic": "Warenkunde",
+      "difficulty": 2,
+      "q": "Welche Inhaltsstoffgruppen sind in vielen Conditionern/Masken typisch?",
+      "a": "Kationische Pflegestoffe/Quats\nÖle/Lipide\nSilikone (je nach Produkt)"
+    },
+    {
+      "id": 74,
+      "topic": "Hygiene",
+      "difficulty": 1,
+      "q": "Wofür wird ein Einweg-Nackenschutzband am Umhang eingesetzt?",
+      "a": "Zur zusätzlichen Hygiene/Schutz vor Hautkontakt mit Umhang"
+    },
+    {
+      "id": 75,
+      "topic": "Arbeitsschutz",
+      "difficulty": 2,
+      "q": "Welche Maßnahmen helfen bei Hautschutz im Friseurberuf?",
+      "a": "Hautschutz-/Pflegeplan\nGeeignete Handschuhe bei Chemiearbeiten\nMilde Wasch-/Pflegeprodukte"
+    },
+    {
+      "id": 76,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Was ist eine häufige Ursache für ungleichmäßige Farbergebnisse in Längen/Spitzen?",
+      "a": "Ungleichmäßige Porosität/Schädigung"
+    },
+    {
+      "id": 77,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 2,
+      "q": "Welche Schritte reduzieren Reizungen bei Farbdienstleistungen?",
+      "a": "Kopfhaut nicht unnötig mechanisch reizen (z. B. starkes Kratzen)\nSchutzcreme am Haaransatz (wenn herstellerkonform)\nHandschuhe tragen"
+    },
+    {
+      "id": 78,
+      "topic": "Umformung/Dauerwelle",
+      "difficulty": 2,
+      "q": "Welche Punkte können die Haltbarkeit einer Umformung beeinflussen?",
+      "a": "Wickelspannung/Größe\nEinwirkzeit/Diagnose\nFixierung korrekt"
+    },
+    {
+      "id": 79,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Was ist ein typischer Zweck einer Inventur im Salon?",
+      "a": "Bestandsaufnahme von Waren/Material"
+    },
+    {
+      "id": 80,
+      "topic": "Recht/Dokumentation",
+      "difficulty": 2,
+      "q": "Welche Aussagen sind in Reklamationen sinnvoll?",
+      "a": "Sachlich bleiben und zuhören\nLösung anbieten (Korrekturtermin/Pflege)\nDokumentation prüfen"
+    },
+    {
+      "id": 81,
+      "topic": "Beratung",
+      "difficulty": 2,
+      "q": "Welche Reihenfolge ist in der Beratung sinnvoll?",
+      "a": "Wunsch → Diagnose → Machbarkeit/Risiken → Vorgehen/Preis → Pflege"
+    },
+    {
+      "id": 82,
+      "topic": "Chemie/pH",
+      "difficulty": 2,
+      "q": "Welche Wirkung hat eine saure Nachbehandlung nach einer alkalischen Behandlung typischerweise?",
+      "a": "Sie hilft, die Cuticula zu schließen/zu glätten"
+    },
+    {
+      "id": 83,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 1,
+      "q": "Was ist die Hauptfunktion von Keratin im Haar?",
+      "a": "Struktur/ Festigkeit als Faserprotein"
+    },
+    {
+      "id": 84,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 2,
+      "q": "Welche Aussagen zu Haarfarben sind korrekt?",
+      "a": "Eumelanin steht eher für braun/schwarz.\nPhäomelanin steht eher für rot/gelb.\nNaturpigmentabbau führt zu Aufhellung."
+    },
+    {
+      "id": 85,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 2,
+      "q": "Was ist der Unterschied zwischen 'Point Cutting' und stumpfem Schnitt?",
+      "a": "Point Cutting erzeugt eine weichere, texturierte Kante."
+    },
+    {
+      "id": 86,
+      "topic": "Warenkunde",
+      "difficulty": 2,
+      "q": "Welcher Produkttyp ist am ehesten zur neutralisierenden Pigmentkorrektur nach Blondierung gedacht?",
+      "a": "Silber-/Violett-Shampoo oder Toner (je nach Ziel)"
+    },
+    {
+      "id": 87,
+      "topic": "Hygiene",
+      "difficulty": 3,
+      "q": "Was gehört zu einer korrekten Werkzeugaufbereitung (allgemein)?",
+      "a": "Herstellerangaben zu Konzentration/Einwirkzeit beachten\nRegelmäßige Lösungserneuerung/Wechsel (je nach System)\nVerschmutzung vorher entfernen"
+    },
+    {
+      "id": 88,
+      "topic": "Arbeitsschutz",
+      "difficulty": 2,
+      "q": "Warum ist Lüften bei chemischen Dienstleistungen sinnvoll?",
+      "a": "Zur Reduktion von Dämpfen/Belastung"
+    },
+    {
+      "id": 89,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 2,
+      "q": "Welche Kennzahlen können für Salonsteuerung nützlich sein?",
+      "a": "Umsatz pro Stunde\nWareneinsatzquote\nAuslastung/Terminquote"
+    },
+    {
+      "id": 90,
+      "topic": "Recht/Dokumentation",
+      "difficulty": 2,
+      "q": "Wann ist ein schriftlicher Hinweis/Einverständnis besonders sinnvoll?",
+      "a": "Bei risikoreichen chemischen Veränderungen"
+    },
+    {
+      "id": 91,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 3,
+      "q": "Welche Aussagen zur Einwirkzeit sind korrekt?",
+      "a": "Zu kurze Einwirkzeit kann zu schlechter Deckung führen.\nZu lange Einwirkzeit kann unnötig belasten oder unerwünscht nachdunkeln (herstellerabhängig).\nHerstellerangaben sind zu beachten."
+    },
+    {
+      "id": 92,
+      "topic": "Umformung/Dauerwelle",
+      "difficulty": 2,
+      "q": "Was kann passieren, wenn Fixierung zu kurz einwirkt?",
+      "a": "Form kann sich schneller aushängen"
+    },
+    {
+      "id": 93,
+      "topic": "Hygiene",
+      "difficulty": 2,
+      "q": "Warum sollten Kämme/Bürsten regelmäßig gereinigt werden?",
+      "a": "Um Keimübertragung und Produktablagerungen zu vermeiden"
+    },
+    {
+      "id": 94,
+      "topic": "Arbeitsschutz",
+      "difficulty": 3,
+      "q": "Wofür steht das Gefahrstoffpiktogramm mit Ausrufezeichen (GHS07) typischerweise?",
+      "a": "Reizend/gesundheitsschädlich"
+    },
+    {
+      "id": 95,
+      "topic": "BWL/Kalkulation",
+      "difficulty": 3,
+      "q": "Was beschreibt die Wareneinsatzquote am besten?",
+      "a": "Anteil der Materialkosten am Umsatz"
+    },
+    {
+      "id": 96,
+      "topic": "Beratung",
+      "difficulty": 2,
+      "q": "Welche Aussagen gehören zu einem guten Abschluss der Beratung?",
+      "a": "Pflege-/Stylingempfehlung\nRealistische Erwartung für Haltbarkeit\nTermin-/Nachbehandlungsoptionen"
+    },
+    {
+      "id": 97,
+      "topic": "Recht/Dokumentation",
+      "difficulty": 3,
+      "q": "Was ist bei der Aufbewahrung von Kundenkarteien grundsätzlich wichtig?",
+      "a": "Zugriff beschränken und sicher verwahren"
+    },
+    {
+      "id": 98,
+      "topic": "Schnitt-Theorie",
+      "difficulty": 2,
+      "q": "Welche Kontrolle hilft, horizontale Ungleichheiten im Nacken zu erkennen?",
+      "a": "Quercheck (horizontale Kontrollabteilung)"
+    },
+    {
+      "id": 99,
+      "topic": "Warenkunde",
+      "difficulty": 2,
+      "q": "Welche Aussagen zu Shampoo sind korrekt?",
+      "a": "Shampoo dient primär der Reinigung.\nSehr stark entfettende Shampoos können Farbe schneller auswaschen."
+    },
+    {
+      "id": 100,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 1,
+      "q": "Wie heißt die äußere Hautschicht?",
+      "a": "Epidermis"
+    }
+  ]
+}
