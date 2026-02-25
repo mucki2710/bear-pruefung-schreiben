@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Friseur Gesellenprüfung Theorie – 100 Fragen (IHK/HWK-Stil)",
+    "title": "Friseur Gesellenprüfung Theorie – 100 Fragen (IHK/HWK-Stil) + Level 4",
     "created": "2026-02-19",
     "language": "de",
     "version": "1.1-daz",
@@ -714,6 +714,398 @@
       "difficulty": 1,
       "q": "Wie heißt die äußere Hautschicht?",
       "a": "Epidermis"
+    },
+    {
+      "id": 101,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Was verstehen wir unter Hygiene?",
+      "a": "Hygiene ist vorbeugende\nKrankheitsbekämpfung\ndurch Ausschalten\ngesundheitsschädlicher\nUmwelteinflüsse."
+    },
+    {
+      "id": 102,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Führen Sie Beispiele für Hygienemaßnahmen in diesen Bereichen an.\nÖffentliche Hygiene,\n Gewerbliche Hygiene,\n Persönliche Hygiene",
+      "a": "Öffentliche Hygiene\nMüllabfuhr,\nStraßenreinigung,\n\nGewerbliche Hygiene\nReinigen und Lüften,\nDesinfezieren\n\nPersönliche Hygiene\nHautpflege,\nHaarpflege"
+    },
+    {
+      "id": 103,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Wo sind die vom Friseur zu beachtenden Hygienevorschriften festgelegt?",
+      "a": "In der Hygieneverordnung"
+    },
+    {
+      "id": 104,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Tragen Sie bei a) die Hauptgruppen von Krankheitserregern und bei b) Beispiele für die von\ndiesen Erregern verursachten Krankheiten ein.",
+      "a": "a) Viren, Bakterien, Pilze\n\nb) Viren: Grippe, Corona\nBakterien: Masern, Cholera\nPilze: Fußpilz, Nagelpilz"
+    },
+    {
+      "id": 105,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Woran können Sie bei Kunden Läusebefall erkennen?",
+      "a": "Läusebefall ist an den Eiern der Kopfläuse, den Nissen, zu erkennen.\nDie Nissen kleben als weißliche Knötchen fest am Haar."
+    },
+    {
+      "id": 106,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Sie stellen bei einer Kundin/einem Kunden Läusebefall fest. Wie verhalten Sie sich richtig?",
+      "a": "Sie berichten unauffällig Ihrem Chef von Ihrer Beobachtung und bitten ihn, mit\nder Kundin/dem Kunden zu sprechen.\nSie desinfizieren alle bei der Behandlung benutzten Geräte und Wäschestücke"
+    },
+    {
+      "id": 107,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Was versteht man unter Infektion?",
+      "a": "Ansteckung durch Übertragung von Krankheitserregern"
+    },
+    {
+      "id": 108,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Nennen Sie die drei wichtigsten Arten der direkten Übertragung von Krankheitserregern und\nführen Sie zu jeder Art ein Beispiel an:",
+      "a": "1. Kontaktinfektion, z. B. durch Berühren eines infizierten Gegenstands\n2. Tröpfcheninfektion, z. B. durch Schleimhautpartikel und Aerosole in der Atemluft\n3. Selbstübertragung, z. B. durch Berühren von Wunden mit den Fingern"
+    },
+    {
+      "id": 109,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Was bezweckt eine Desinfektion?",
+      "a": "Die Desinfektion soll Bakterien und Viren auf Gegenständen oder auf der Haut unschädlich machen."
+    },
+    {
+      "id": 110,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Nennen Sie a) physikalische Methoden und b) chemische Mittel, die desinfizierend wirken.",
+      "a": "a) Auskochen (Wäsche), trockene Hitze (Metallgeräte)\nb) Alkohol, Wasserstoffperoxid, Formaldehyd"
+    },
+    {
+      "id": 111,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "In welcher Reihenfolge müssen die Reinigungs- und Desinfektionsmaßnahmen durchgeführt\nwerden?",
+      "a": "1. Desinfektion, z. B. Einlegen in Desinfektionslösung\n2. Vorreinigung, z. B. Entfernen von Haaren oder Präparatresten\n3. Nassreinigung, z. B. mit Waschmittel- oder Shampoolösung"
+    },
+    {
+      "id": 112,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "Wie werden Flächen und Hände desinfiziert? (Lesen Sie die Gebrauchsanweisungen!)",
+      "a": "Flächen, z. B. Waschbecken, Tische, Armlehnen, mit Desinfektionslösung abwischen\nHände vor und nach der Kundenbedienung mit Desinfektionslösung einreiben, anschließend eincremen!"
+    },
+    {
+      "id": 113,
+      "topic": "Hygiene",
+      "difficulty": 4,
+      "q": "In welchen Fällen muss unbedingt sofort desinfiziert werden?",
+      "a": "Wenn Geräte oder Flächen mit Blut verunreinigt wurden."
+    },
+    {
+      "id": 114,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie wird a) der obere und b) der untere Bereich der Oberhaut genannt?",
+      "a": "a) Verhornungszone b) Keimzone"
+    },
+    {
+      "id": 115,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Welcher Begriff bezeichnet die Einstülpung der Oberhaut, aus der das Haar wächst? a) Haarbalg b) Haarwurzel c) Wurzelscheide d) Haarfollikel",
+      "a": "d) Haarfollikel"
+    },
+    {
+      "id": 116,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Welche Schicht des Haarfollikels kann als Fortsetzung der Verhornungszone der Oberhaut betrachtet werden?",
+      "a": "Die innere Wurzelscheide"
+    },
+    {
+      "id": 117,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Welche Aufgaben hat der Hauttalg?",
+      "a": "Fettung von Haut und Haar sowie Schutz der Haut und des empfindlichen Haaransatzes"
+    },
+    {
+      "id": 118,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie heißen die Zellen, von denen das Haarwachstum ausgeht?",
+      "a": "Keratinozyten"
+    },
+    {
+      "id": 119,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Beschreiben Sie die Wachstumsvorgänge beim Haar.",
+      "a": "In der Matrix der Haarpapille werden ständig Zellen gebildet\nund nach oben geschoben."
+    },
+    {
+      "id": 120,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie verändern sich die Zellen in der Haarwurzel?",
+      "a": "Sie verhornen allmählich"
+    },
+    {
+      "id": 121,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie wird die Entstehung der Naturkrause erklärt?",
+      "a": "Der Haarfollikel liegt gekrümmt in der Kopfhaut. Außerdem wird vermutet, dass\ndie Naturkrause durch unterschiedliche Keratinstrukturen verursacht wird"
+    },
+    {
+      "id": 122,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie viel beträgt das durchschnittliche Wachstum eines Kopfhaares im Monat?",
+      "a": "ca. 1 cm"
+    },
+    {
+      "id": 123,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie erhält das Haar seine Farbe? Ergänzen Sie die Beschreibung.\nBesondere Zellen in der Matrix, die /Mela.../,\nerzeugen den Farbstoff des Haares, das /Mela.../,\nTeile dieses Farbstoffes, sogenannte /Pi.../,\nwerden von den Keratinozyten aufgenommen\nund dadurch in das /Ha.../\neingelagert.\nIn den Haaren kommen unterschiedliche /Pi.../\nund /Pi.../ vor.\nDas erklärt die /Vie.../ der natürlichen Haarfarben",
+      "a": "Melanozyten, Melanin, Pigmente, Haarkeratin, Pigmentarten, Pigmentmengen, Vielfalt"
+    },
+    {
+      "id": 124,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie nennt man …\na) die farbstoffbildenden Zellen?\nb) den von ihnen gebildeten Farbstoff?\nc) die großen dunklen Pigmente?\nd) die kleineren hellen bzw. gelbroten Pigmente?",
+      "a": "a) Melanozyten\nb) Melanin\nc) Eumelanine\nd) Phäomelanine"
+    },
+    {
+      "id": 125,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wovon hängen Farbtiefe und Farbrichtung ab?",
+      "a": "Von der Menge und dem Mischverhältnis der Pigmente"
+    },
+    {
+      "id": 126,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Welche Folgen hat es, wenn die Melanozyten sich zurückbilden oder ihre Funktion ganz einstellen?",
+      "a": "Die Haare sind nicht mehr pigmentiert und wachsen weiß nach"
+    },
+    {
+      "id": 127,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wie alt werden a) Kopfhaare? b) Brauen und Wimpern?",
+      "a": "a) ca. 5 Jahre\nb) ca. 3 bis 5 Monate"
+    },
+    {
+      "id": 128,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Bezeichnen/ Nennen Sie die einzelnen Entwicklungsphasen des Haares \nund geben Sie deren ungefähre Dauer an.",
+      "a": "Wachstumsphase (4 bis 6 Jahre)\nÜbergangssphase (2–3 Wochen)\nRuhephase (2–3 Monate)"
+    },
+    {
+      "id": 129,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Ordnen Sie den Phasen des Haarzyklus die richtigen Haarbezeichnungen zu.\nWachstumsphase /Papi.../, Übergangsphase /Beet.../, Ruhephase /Kol.../",
+      "a": "Papillarhaar, Beethaar, Kolbenhaar"
+    },
+    {
+      "id": 130,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Geben Sie an, wie viel Prozent der Haare zu den einzelnen Phasen gehören.\nWachstumsphase Papillarhaar x %, Übergangsphase Beethaar y %, Ruhephase Kolbenhaar z %",
+      "a": "Wachstumsphase Papillarhaar 85 %,\nÜbergangsphase Beethaar ca. 1 %,\nRuhephase Kolbenhaar ca. 14 %"
+    },
+    {
+      "id": 131,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Warum treten beim Haarwechsel normalerweise keine Kahlstellen auf?",
+      "a": "Weil der Haarwechsel fortwährend und in der Regel gleichmäßig\nüber den ganzen Kopf verteilt stattfindet."
+    },
+    {
+      "id": 132,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Bei starker Vergrößerung des Haares erkennt man eine schuppige Oberfläche.\nBeschreiben Sie diese Schuppenschicht.\nDie Schuppenschicht besteht aus /se.../ bis /zeh../\nLagen übereinandergreifender /fla../ Zellen, die das\nHaar /schü.../ umgeben. Die Schuppenränder zeigen\nzur /Haa.../\nBeim gesunden Haar sind diese Zellen durch eine Substanz verbunden, die wie ein /Ki.../ wirkt. Die Schuppen liegen /fla.../ an und das Haar zeigt einen natürlichen /Gla.../",
+      "a": "6, 10, flacher, schützend, Haarspitze, Kitt, flach, Glanz"
+    },
+    {
+      "id": 133,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Welche Haarbehandlungsmittel bewirken eine Lockerung der\nSchuppenschicht?",
+      "a": "Basische (alkalische) Mittel, z. B. Wellmittel und\nHaarfarben"
+    },
+    {
+      "id": 134,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Welche Folgen hat eine stärkere Lockerung oder gar eine Schädigung der Schuppenschicht für das Aussehen des Haares?",
+      "a": "Die Haare sehen dann stumpf und glanzlos aus."
+    },
+    {
+      "id": 135,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Ein in Längsrichtung aufgerissenes Haar lässt bei\nentsprechend starker Vergrößerung deutlich eine\nfaserige Struktur erkennen.\nBeschreiben Sie diese Faserschicht.\nDie Faserschicht, auch /Fa.../ genannt,\nbesteht aus vielen feinsten /Ke.../,\nsogenannten /Fi.../. Diese sind zu\n/Fa.../ geordnet. Durch eine\n/ki.../ Substanz werden diese Faserbündel zu\n/Fa.../ und /Fa.../\nzusammengefasst.",
+      "a": "Faserstamm, Keratinfasern, Fibrillen, Faserbündeln, kittartige, Fasersträngen, Faserstrangbündeln"
+    },
+    {
+      "id": 136,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Warum kann man sagen, dass die Faserschicht die wichtigste Schicht des Haares ist?",
+      "a": "In der Faserschicht spielen sich die\nwesentlichen Vorgänge beim\nDauerwellen,\nFärben und \nBlondieren ab."
+    },
+    {
+      "id": 137,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Wodurch kann der Kitt auch in der Faserschicht ausgelaugt\nund dadurch die Faserschicht geschädigt werden?",
+      "a": "durch chemische Mittel\ndurch Witterungseinflüsse"
+    },
+    {
+      "id": 138,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Benennen Sie die Schichten des Haares mit ihren deutschen und\nlateinischen Namen.",
+      "a": "Schuppenschicht (Cuticula)\nFaserschicht (Cortex)\nMark (Medulla)"
+    },
+    {
+      "id": 139,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Nennen Sie die im Haar gebundenen Elemente.",
+      "a": "Kohlenstoff,\nSauerstoff,\nStickstoff,\nWasserstoff,\nSchwefel"
+    },
+    {
+      "id": 140,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Wie heißen die für die Eigenschaften des\nHaares wichtigen Bindekräfte („Brücken“)\nim Haarkeratin?",
+      "a": "a) Disulfidbrücken\nb) Salzbrücken\nc) Wasserstoffbrücken"
+    },
+    {
+      "id": 141,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Warum sollte die Ausgangsfarbe grundsätzlich anhand einer Farbmusterkarte bzw. Strähnentafel ermittelt werden?",
+      "a": "Die genaue Bestimmung der Ausgangsfarbe ist für\ndie Wahl der Farbe und\nder H2O2-Konzentration notwendig."
+    },
+    {
+      "id": 142,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Wie wirkt sich der Unterschied zwischen Ausgangs- und Zielfarbe auf die Wahl der H2O2-Konzentration aus?",
+      "a": "Die H2O2-Konzentration muss umso höher sein,\nje dunkler das Haar ist oder je stärker es rotorange\npigmentiert ist."
+    },
+    {
+      "id": 143,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Was ist beim Behandlungsplan für eine Haarfärbung zu berücksichtigen?",
+      "a": "Ausgangs-und Zielfarbe,\nWeißanteil,\nHaarqualität und Haarstärke"
+    },
+    {
+      "id": 144,
+      "topic": "Beratung",
+      "difficulty": 4,
+      "q": "Was sind die wichtigsten Ursachen für die Unzufriedenheit mit der eigenen Haarfarbe?",
+      "a": "– Die eigene Haarfarbe wird als ausdruckslos empfunden.\n– Graues bzw. weißes Haar wird als unerwünschte Alterserscheinung angesehen."
+    },
+    {
+      "id": 145,
+      "topic": "Beratung",
+      "difficulty": 4,
+      "q": "Gegen eine Haarfarbenbehandlung haben viele Kundinnen Bedenken.\nFormulieren Sie Gegenargumente zu dem folgenden Kundeneinwand:\nK: „Ich hätte ja gerne einen lebendigeren Farbton, aber ich fürchte, dass jedem dann auffällt, dass meine\nHaare gefärbt sind.“",
+      "a": "B: „Ich würde Ihnen deshalb zu Strähnen in einem modischen Ton raten.\nDas sieht natürlich aus und lässt Ihr Haar noch schöner glänzen.“"
+    },
+    {
+      "id": 146,
+      "topic": "Beratung",
+      "difficulty": 4,
+      "q": "Gegen eine Haarfarbenbehandlung haben viele Kundinnen Bedenken.\nFormulieren Sie Gegenargumente zu dem folgenden Kundeneinwand:\nK: „Das Grau gefällt mir zwar nicht, aber durch eine Färbung gehen die Haare doch kaputt.“",
+      "a": "B: „Wenn Ihre Haare schon recht strapaziert wären, würde ich Ihnen auch von einer Färbung abraten.\nAber bei Ihrem kräftigen Haar ist eine Färbung genau das Richtige, um den vorhandenen Weißanteil zuverlässig abzudecken.“"
+    },
+    {
+      "id": 147,
+      "topic": "Beratung",
+      "difficulty": 4,
+      "q": "Welche Grundsätze sollte man bei der Beratung von Färbekunden beachten?",
+      "a": "– Bei der Empfehlung immer von der mildesten Behandlung ausgehen\n– Positiv argumentieren\n– Mit dem eigenen Beispiel vorangehen"
+    },
+    {
+      "id": 148,
+      "topic": "Beratung",
+      "difficulty": 4,
+      "q": "Welche Formulierungen sind für die Kundenberatung geeignet?\na) „Ihre Haarfarbe macht Sie ja noch älter, als Sie sind. Sie sollten Ihre Haare unbedingt färben lassen.“\nb) „Die Sonne hat Ihre Haarfarbe ziemlich aufgehellt. Das steht Ihnen gut. Wir sollten das durch Strähnen noch mehr betonen.“\nc) „Was haben Sie bloß mit Ihrem Haar gemacht? Das ist ja ganz ausgeblichen.“\nd) „Sie sind nach Ihrem Urlaub mit Ihrer Haarfarbe nicht mehr zufrieden? Durch Sonne und Wasser\nkann die Haarfarbe schon ein wenig leiden, aber das können wir leicht wieder ausgleichen.“\ne) „Heute braucht doch niemand mehr so alt auszusehen und mit grauen Haaren herumzulaufen. Mit einer Färbung kriegen wir Ihre Naturfarbe wieder genau hin.“",
+      "a": "b), d)"
+    },
+    {
+      "id": 149,
+      "topic": "Beratung",
+      "difficulty": 4,
+      "q": "Viele Kundinnen sind für Farbbehandlungen zu gewinnen, wenn ihre /Be.../\nausgeräumt und sachliche /A.../ gebraucht werden und die Mitarbeiter im Salon gute /Bei.../ geben.",
+      "a": "Bedenken, Argumente, Beispiele"
+    },
+    {
+      "id": 150,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "In welchen Fällen ist Vorpigmentieren angebracht?",
+      "a": "Wenn poröse Haarpartien, besonders die Spitzen, zu matt sind,\noder wenn schwer anfärbbares Weißhaar zu färben ist."
+    },
+    {
+      "id": 151,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Die Längen und besonders die Spitzen sind „ausgewaschen“. a) Welche Mittel und Methoden des Vorpigmentierens sind in diesem Fall angebracht? b) Begründen Sie Ihre Empfehlung.",
+      "a": "a) Vorpigmentieren mit Tönungsmittel\nb) Tönungsmittel sind haarschonend und in diesem Fall ausreichend"
+    },
+    {
+      "id": 152,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "An den Schläfen ist ein hoher Anteil an schwer anfärbbarem Weißhaar vorhanden. a) Welche Mittel und Methoden des Vorpigmentierens sind in diesem Fall angebracht? b) Begründen Sie Ihre Empfehlung.",
+      "a": "a) Vorpigmentieren mit Oxidationshaarfarbe ohne H2O2\nb) Bessere Aufnahmefähigkeit des Haares durch höhere Basenstärke"
+    },
+    {
+      "id": 153,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Das Weißhaar ist im Ganzen hart und glasig. a) Welche Mittel und Methoden des Vorpigmentierens sind in diesem Fall angebracht? b) Begründen Sie Ihre Empfehlung.",
+      "a": "a) Behandeln mit einer sogenannten „Borstenmischung“\nb) Intensivere Wirkung durch stärkere Base, höhere Wirkstoff- und H2O2-Konzentration"
+    },
+    {
+      "id": 154,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Beschreiben Sie das Vorpigmentieren mit Oxidationshaarfarben.",
+      "a": "Die Farbcreme (ohne H2O2) wird auf die weißen Haare aufgetragen. Nach ca. 10 Minuten\nwird der normal zubereitete Färbebrei auf das gesamte Haar aufgetragen.\nDie vorpigmentierten Partien werden nur dünn eingestrichen."
+    },
+    {
+      "id": 155,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Wie wird eine sogenannte Borstenmischung zubereitet?",
+      "a": "Die Farbcreme wird im Verhältnis 2:1 mit H2O2 gemischt,\ndabei den Farbton etwas heller wählen\nund die H2O2-Konzentration erhöhen."
+    },
+    {
+      "id": 156,
+      "topic": "Farb- & Chemiekunde",
+      "difficulty": 4,
+      "q": "Manche Farbbehandlungen verlangen besondere Techniken, nennen sie drei Beispiele:",
+      "a": "Vorpigmentieren mit Tönungsmitteln,\nVorpigmentieren mit Oxidationshaarfarben,\nAnwenden einer Borstenmischung"
     }
   ]
 }
