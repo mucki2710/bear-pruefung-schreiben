@@ -426,6 +426,17 @@ function sttStop(){
 }
 
 /* Glossar */
+function blurActiveElement(){
+  try{
+    const el = document.activeElement;
+    if(el && typeof el.blur === "function") el.blur();
+  }catch(e){}
+  try{
+    const box = document.getElementById("copyInput");
+    if(box && typeof box.blur === "function") box.blur();
+  }catch(e){}
+}
+
 let ttBox=null, ttArrow=null, ttAnchorEl=null;
 function closeTooltip(){
   if(ttBox){ ttBox.remove(); ttBox=null; }
@@ -802,6 +813,7 @@ function next(){
 
 /* Wörterbuch */
 function openDict(){
+  blurActiveElement();     // 👈 doppelt hält besser
   closeTooltip();
   const backdrop = document.getElementById("modalBackdrop");
   const modal = document.getElementById("dictModal");
@@ -944,7 +956,7 @@ async function loadData(){
     const box = document.getElementById("copyInput");
     box.value = "";
     autoResize(box);
-    
+    box.focus();
   };
 
   document.getElementById("copyInput").addEventListener("input", (e)=> autoResize(e.target));
@@ -955,7 +967,12 @@ async function loadData(){
     }
   });
 
-  document.getElementById("btnDict").onclick = openDict;
+  document.getElementById("btnDict").onclick = () => {
+    stopSpeak();
+    blurActiveElement();     // 👈 wichtig: Tastatur weg
+    openDict();
+  };
+
   document.getElementById("dictClose").onclick = closeDict;
   document.getElementById("modalBackdrop").onclick = closeDict;
   document.getElementById("dictSearch").addEventListener("input", renderDictList);
