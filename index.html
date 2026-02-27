@@ -822,7 +822,12 @@ function openDict(){
   renderDictList();
   const first = document.querySelector('#dictBody .dictTerm');
   if(first) first.click();
-  document.getElementById("dictSearch").focus();
+  const s = document.getElementById("dictSearch");
+    if (s && !isIOS()) {
+      s.focus();               // Desktop ok
+    } else if (s) {
+      s.blur();                // iPad: sicher keine Tastatur
+    }
 }
 function closeDict(){
   document.getElementById("modalBackdrop").style.display = "none";
