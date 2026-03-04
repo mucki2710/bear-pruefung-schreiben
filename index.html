@@ -207,6 +207,7 @@
     <textarea id="copyInput" placeholder="Hier die Lösung abschreiben…" autocomplete="off" spellcheck="false"></textarea>
 
     <div class="row" style="margin-top:10px">
+      <button id="prev">Zurück</button>
       <button id="check" class="primary">Prüfen</button>
       <button id="showHint">Hinweis</button>
       <button id="next">Weiter</button>
@@ -707,7 +708,8 @@ function resetAll(){
     base = base.filter(q => String(q.difficulty) === selectedDifficulty);
   }
 
-  queue = shuffle(base);
+  //queue = shuffle(base);
+  queue = base;   // ✅ feste Reihenfolge
   idx = 0;
 
   if(queue.length === 0){
@@ -733,7 +735,8 @@ function repeatWrong(){
     base = base.filter(q => String(q.difficulty) === selectedDifficulty);
   }
 
-  queue = shuffle(base);
+  //queue = shuffle(base);
+  queue = base;   // ✅ feste Reihenfolge
   idx = 0;
 
   if(queue.length === 0){
@@ -809,6 +812,13 @@ function next(){
     return;
   }
   render();
+}
+
+function prev(){
+  if(idx > 0){
+    idx--;
+    render();
+  }
 }
 
 /* Wörterbuch */
@@ -921,6 +931,8 @@ async function loadData(){
 
   document.getElementById("check").onclick = check;
   document.getElementById("next").onclick = () => { stopSpeak(); next(); };
+  document.getElementById("prev").onclick = () => { stopSpeak(); prev(); };
+
   document.getElementById("showHint").onclick = showHint;
 
   document.getElementById("btnShuffle").onclick = () => { stopSpeak(); resetAll(); };
