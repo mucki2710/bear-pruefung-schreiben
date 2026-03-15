@@ -238,8 +238,6 @@
   </div>
 </div>
 
-    <div class="modalBody" id="dictBody"></div>
-  </div>
 
 <script>
 let selectedDifficulty = "ALL";
@@ -348,34 +346,59 @@ function ttsAvailable(){
 function stopSpeak(){
   try{ if(ttsAvailable()) window.speechSynthesis.cancel(); }catch(e){}
 }
-function pickBestVoice(langPrefix){
+function pickBestVoice(lang){
   const voices = (ttsAvailable() ? window.speechSynthesis.getVoices() : []) || [];
-  const want = (langPrefix || "de").toLowerCase();
-  const pref = voices.find(v => v.lang && v.lang.toLowerCase().startsWith(want) && /google/i.test(v.name))
-            || voices.find(v => v.lang && v.lang.toLowerCase().startsWith(want))
-            || null;
-  return pref;
+  const want = String(lang || "de-DE").toLowerCase();
+  const base = want.split("-")[0];
+
+  return voices.find(v => v.lang && v.lang.toLowerCase() === want)
+      || voices.find(v => v.lang && v.lang.toLowerCase().startsWith(base))
+      || null;
 }
-function speak(text, lang){
+function speak(text, lang = "de-DE"){
   if(!ttsAvailable()){
     alert("Vorlesen ist in diesem Browser nicht verfügbar.");
     return;
   }
+
+  const content = String(text || "").trim();
+  if(!content) return;
+
   try{
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(String(text));
-    u.lang = lang || "de-DE";
+    const synth = window.speechSynthesis;
+    synth.cancel();
+
+    const u = new SpeechSynthesisUtterance(content);
+    u.lang = lang;
     u.rate = 0.95;
     u.pitch = 1.0;
 
-    const want = (lang || "de").toLowerCase().startsWith("ar") ? "ar" : "de";
-    const voice = pickBestVoice(want);
+    const voice = pickBestVoice(lang);
     if(voice) u.voice = voice;
 
-    window.speechSynthesis.speak(u);
+    u.onerror = (ev) => {
+      console.error("TTS-Fehler:", ev);
+    };
+
+    window.setTimeout(() => {
+      try{
+        synth.speak(u);
+      }catch(err){
+        console.error("Vorlesen-Fehler:", err);
+        alert("Vorlesen-Fehler: " + err.message);
+      }
+    }, 80);
   }catch(e){
-    alert("Vorlesen-Fehler: " + e);
+    console.error("Vorlesen-Fehler:", e);
+    alert("Vorlesen-Fehler: " + e.message);
   }
+}
+
+if(ttsAvailable()){
+  window.speechSynthesis.getVoices();
+  window.speechSynthesis.onvoiceschanged = () => {
+    window.speechSynthesis.getVoices();
+  };
 }
 
 /* STT */
@@ -514,8 +537,8 @@ function showTooltipFor(anchorEl, term){
   document.body.appendChild(ttArrow);
 
   ttBox.querySelector("#ttClose").onclick = (e)=>{ e.stopPropagation(); closeTooltip(); };
-  ttBox.querySelector("#ttSpeakTerm").onclick = (e)=>{ e.stopPropagation(); speak(term, useArabic ? "ar" : "de-DE"); };
-  ttBox.querySelector("#ttSpeakDef").onclick = (e)=>{ e.stopPropagation(); speak(def, useArabic ? "ar" : "de-DE"); };
+  ttBox.querySelector("#ttSpeakTerm").onclick = (e)=>{ e.stopPropagation(); speak(term, useArabic ? "ar-SA" : "de-DE"); };
+  ttBox.querySelector("#ttSpeakDef").onclick = (e)=>{ e.stopPropagation(); speak(def, useArabic ? "ar-SA" : "de-DE"); };
 
   positionTooltip(anchorEl);
   ttBox.addEventListener("click", (e)=>e.stopPropagation());
@@ -944,13 +967,13 @@ async function loadData(){
   document.getElementById("speakQ").onclick = () => {
     const qa = getQAFromItem(queue[idx]);
     const useArabic = document.getElementById("toggleArabic").checked && qa.q_ar;
-    speak(useArabic ? (qa.q_ar || qa.q) : qa.q, useArabic ? "ar" : "de-DE");
+    speak(useArabic ? (qa.q_ar || qa.q) : qa.q, useArabic ? "ar-SA" : "de-DE");
   };
   document.getElementById("speakA").onclick = () => {
     const qa = getQAFromItem(queue[idx]);
     const useArabic = document.getElementById("toggleArabic").checked && qa.a_ar;
     const text = useArabic ? (qa.a_ar || qa.a) : qa.a;
-    speak(String(text).replace(/\n+/g, ". "), useArabic ? "ar" : "de-DE");
+    speak(String(text).replace(/\n+/g, ". "), useArabic ? "ar-SA" : "de-DE");
   };
   document.getElementById("speakBoth").onclick = () => {
     const qa = getQAFromItem(queue[idx]);
@@ -960,12 +983,12 @@ async function loadData(){
     const text = useArabic
       ? ("السؤال. " + qq + ". الإجابة. " + String(aa).replace(/\n+/g, ". "))
       : ("Frage. " + qq + ". Lösung. " + String(aa).replace(/\n+/g, ". "));
-    speak(text, useArabic ? "ar" : "de-DE");
+    speak(text, useArabic ? "ar-SA" : "de-DE");
   };
 
   document.getElementById("mic").onclick = () => {
     const useArabic = document.getElementById("toggleArabic").checked;
-    const lang = useArabic ? "ar" : "de-DE";
+    const lang = useArabic ? "ar-SA" : "de-DE";
     if(recording) sttStop(); else sttStart(lang);
   };
 
@@ -998,14 +1021,14 @@ async function loadData(){
       const first = document.querySelector("#dictBody .dictTerm");
       if(first) first.click();
     }
-    if(currentDictEntry) speak(currentDictEntry.term);
+    if(currentDictEntry) speak(currentDictEntry.term, document.getElementById("toggleArabic").checked ? "ar-SA" : "de-DE");
   };
   document.getElementById("dictSpeakDef").onclick = ()=>{
     if(!currentDictEntry){
       const first = document.querySelector("#dictBody .dictTerm");
       if(first) first.click();
     }
-    if(currentDictEntry) speak(currentDictEntry.def);
+    if(currentDictEntry) speak(currentDictEntry.def, document.getElementById("toggleArabic").checked ? "ar-SA" : "de-DE");
   };
 
 
