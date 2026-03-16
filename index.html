@@ -340,22 +340,38 @@ function isIOS(){
     return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   }catch(e){ return false; }
 }
+var currentUtterance = null;
+var ttsTimer = null;
+
 function ttsAvailable(){
   return ("speechSynthesis" in window) && ("SpeechSynthesisUtterance" in window);
 }
+
 function stopSpeak(){
-  try{ if(ttsAvailable()) window.speechSynthesis.cancel(); }catch(e){}
+  try{
+    if(!ttsAvailable()) return;
+    window.speechSynthesis.cancel();
+    currentUtterance = null;
+    if(ttsTimer){
+      clearTimeout(ttsTimer);
+      ttsTimer = null;
+    }
+  }catch(e){}
 }
+
 function pickBestVoice(lang){
   const voices = (ttsAvailable() ? window.speechSynthesis.getVoices() : []) || [];
   const want = String(lang || "de-DE").toLowerCase();
   const base = want.split("-")[0];
 
-  return voices.find(v => v.lang && v.lang.toLowerCase() === want)
-      || voices.find(v => v.lang && v.lang.toLowerCase().startsWith(base))
-      || null;
+  return voices.find(function(v){
+    return v.lang && v.lang.toLowerCase() === want;
+  }) || voices.find(function(v){
+    return v.lang && v.lang.toLowerCase().startsWith(base);
+  }) || null;
 }
-function speak(text, lang = "de-DE"){
+
+function speak(text, lang){
   if(!ttsAvailable()){
     alert("Vorlesen ist in diesem Browser nicht verfügbar.");
     return;
@@ -366,28 +382,56 @@ function speak(text, lang = "de-DE"){
 
   try{
     const synth = window.speechSynthesis;
-    synth.cancel();
+
+    if(ttsTimer){
+      clearTimeout(ttsTimer);
+      ttsTimer = null;
+    }
+
+    if(synth.speaking || synth.pending){
+      synth.cancel();
+    }
 
     const u = new SpeechSynthesisUtterance(content);
-    u.lang = lang;
+    currentUtterance = u;
+
+    u.lang = lang || "de-DE";
     u.rate = 0.95;
     u.pitch = 1.0;
 
     const voice = pickBestVoice(lang);
     if(voice) u.voice = voice;
 
-    u.onerror = (ev) => {
+    u.onstart = function(){
+      console.log("TTS Start:", content.slice(0, 60));
+    };
+
+    u.onend = function(){
+      if(currentUtterance === u){
+        currentUtterance = null;
+      }
+      console.log("TTS Ende");
+    };
+
+    u.onerror = function(ev){
+      if(ev && ev.error === "interrupted"){
+        console.warn("TTS unterbrochen:", ev.error);
+        return;
+      }
       console.error("TTS-Fehler:", ev);
     };
 
-    window.setTimeout(() => {
+    ttsTimer = window.setTimeout(function(){
       try{
         synth.speak(u);
+        ttsTimer = null;
       }catch(err){
+        ttsTimer = null;
         console.error("Vorlesen-Fehler:", err);
         alert("Vorlesen-Fehler: " + err.message);
       }
-    }, 80);
+    }, 120);
+
   }catch(e){
     console.error("Vorlesen-Fehler:", e);
     alert("Vorlesen-Fehler: " + e.message);
@@ -396,11 +440,10 @@ function speak(text, lang = "de-DE"){
 
 if(ttsAvailable()){
   window.speechSynthesis.getVoices();
-  window.speechSynthesis.onvoiceschanged = () => {
+  window.speechSynthesis.onvoiceschanged = function(){
     window.speechSynthesis.getVoices();
   };
 }
-
 /* STT */
 let rec=null, recording=false;
 function sttAvailable(){
