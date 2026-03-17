@@ -1,0 +1,122 @@
+{
+"id": 2001,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Welche drei Hauptschichten besitzt das Haar?",
+"a": "Schuppenschicht (Cuticula)\nFaserschicht (Cortex)\nMarkschicht (Medulla)"
+},
+{
+"id": 2002,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Welche zwei Pigmentarten bestimmen die natürliche Haarfarbe?",
+"a": "Eumelanin\nPhäomelanin"
+},
+{
+"id": 2003,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Welche Aufgabe hat Wasserstoffperoxid bei Oxidationshaarfarben?",
+"a": "Öffnet die Schuppenschicht\nOxidiert die Farbstoffvorstufen\nHelllt natürliche Pigmente auf"
+},
+{
+"id": 2004,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Welche drei Faktoren müssen vor einer Blondierung beurteilt werden?",
+"a": "Ausgangshaarfarbe\nHaarzustand\nVorbehandlungen"
+},
+{
+"id": 2005,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Warum wird nach einer Blondierung häufig eine Tönung verwendet?",
+"a": "Zur Neutralisation unerwünschter Farbstiche"
+},
+{
+"id": 2006,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Welche chemischen Schritte laufen bei einer Dauerwelle ab?",
+"a": "Reduktion\nFormung\nOxidation"
+},
+{
+"id": 2007,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Warum haben Blondierungen einen alkalischen pH-Wert?",
+"a": "Damit sich die Schuppenschicht öffnet und Wirkstoffe in das Haar eindringen können"
+},
+{
+"id": 2008,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Was bedeutet Porosität beim Haar?",
+"a": "Der Zustand der Schuppenschicht und die Aufnahmefähigkeit des Haares für chemische Stoffe"
+},
+{
+"id": 2009,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Was versteht man unter Tonhöhe im Friseurhandwerk?",
+"a": "Die Helligkeitsstufe der Haarfarbe"
+},
+{
+"id": 2010,
+"topic": "Friseurtechnik",
+"difficulty": 4,
+"q": "Welche Aufgabe hat die Schuppenschicht des Haares?",
+"a": "Sie schützt das Haarinnere und reguliert den Feuchtigkeitsgehalt"
+},
+{
+      "id": 138,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Benennen Sie die Schichten des Haares mit ihren deutschen und\nlateinischen Namen.",
+      "a": "Schuppenschicht (Cuticula)\nFaserschicht (Cortex)\nMark (Medulla)"
+},
+{
+      "id": 128,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Bezeichnen/ Nennen Sie die einzelnen Entwicklungsphasen des Haares \nund geben Sie deren ungefähre Dauer an.",
+      "a": "Wachstumsphase (4 bis 6 Jahre)\nÜbergangssphase (2–3 Wochen)\nRuhephase (2–3 Monate)"
+},
+{
+      "id": 129,
+      "topic": "Haar- und Hautkunde",
+      "difficulty": 4,
+      "q": "Stellen Sie den Arbeitsablauf bei einer Dauerwelle dar.",
+      "a": "Wickeln\nReduktion\nFixierung"
+},
+
+{
+      "id": 130,
+      "topic": "Kundenbetreuung",
+      "difficulty": 4,
+      "q": "Wie begrüße ich einen Kunden?",
+      "a": "Blickkontakt\nfreundliche Mimik\nmit Namen ansprechen\nJacke abnehmen\nsich vorstellen\nWas kann ich für Sie tun?"
+
+},
+{
+      "id": 131,
+      "topic": "Kundenbetreuung",
+      "difficulty": 4,
+      "q": "Welche Informationen sind für die Beratung eines Kunden wichtig?",
+      "a": "Stil, Alter, Farbtyp\nBeruf\nKundenwunsch\nHaarqualität"
+},
+{
+      "id": 132,
+      "topic": "Betriebsorganisation",
+      "difficulty": 4,
+      "q": "Nennen Sie die wichtigsten Kriterien für die Außengestaltung eines Friseursalons.",
+      "a": "Salonschild / Logo gut sichtbar\nEinladender Eingangsbereich\nGute Außenbeleuchtung\nSaubere Schaufenster\nBlickfang im Schaufenster"
+},
+{
+      "id": 133,
+      "topic": "Betriebsorganisation",
+      "difficulty": 4,
+      "q": "Nennen Sie die wichtigsten Kriterien für die Innengestaltung eines Friseursalons.",
+      "a": "Moderner Schneidebereich\nWaschstation\nGemütliche Wartezone\nStimmungsvolle Beleuchtung\nHelle und Freundliche Farben"
+},
+
