@@ -15,6 +15,124 @@
     "updated": "2026-02-20"
   },
   "questions": [
+
+{
+    "id": 16,
+    "topic": "BWL/Kalkulation",
+    "difficulty": 2,
+    "q": "Was sind Fixkosten im Salon?",
+    "a": "Miete",
+    "q_ar": "ما هي التكاليف الثابتة في الصالون؟",
+    "a_ar": "الإيجار"
+  },
+  {
+    "id": 17,
+    "topic": "BWL/Kalkulation",
+    "difficulty": 2,
+    "q": "Was sind variable Kosten?",
+    "a": "Verbrauchsmaterial",
+    "q_ar": "ما هي التكاليف المتغيرة؟",
+    "a_ar": "المواد الاستهلاكية"
+  },
+  {
+    "id": 18,
+    "topic": "BWL/Kalkulation",
+    "difficulty": 2,
+    "q": "Was ist der Deckungsbeitrag (vereinfacht)?",
+    "a": "Umsatz minus variable Kosten",
+    "q_ar": "ما هو هامش المساهمة (بشكل مبسط)؟",
+    "a_ar": "الإيرادات ناقص التكاليف المتغيرة"
+  },
+  {
+    "id": 21,
+    "topic": "Schnitt-Theorie",
+    "difficulty": 2,
+    "q": "Was bewirkt ein hoher Abhebewinkel (Elevation) beim Schneiden?",
+    "a": "Mehr Stufung/Entlastung",
+    "q_ar": "ما تأثير زاوية الرفع العالية عند قص الشعر؟",
+    "a_ar": "مزيد من التدرج والخفة"
+  },
+  {
+    "id": 27,
+    "topic": "Farb- & Chemiekunde",
+    "difficulty": 2,
+    "q": "Wofür steht die Entwicklerstärke (z. B. 6%, 9%) hauptsächlich?",
+    "a": "Für die Oxidations-/Aufhellungsleistung",
+    "q_ar": "ماذا تعني قوة المُؤكسِد (مثل 6٪ أو 9٪) بشكل أساسي؟",
+    "a_ar": "قدرة الأكسدة والتفتيح"
+  },
+  {
+    "id": 28,
+    "topic": "Farb- & Chemiekunde",
+    "difficulty": 2,
+    "q": "Welche Faktoren beeinflussen das Farbergebnis oxidativer Haarfarben am stärksten?",
+    "a": "Ausgangshaarfarbe/Tonhöhe\nPorosität/Haarzustand\nEinwirkzeit",
+    "q_ar": "ما العوامل التي تؤثر بشكل أكبر على نتيجة صبغات الشعر المؤكسدة؟",
+    "a_ar": "لون الشعر الأساسي/درجة اللون\nمسامية الشعر/حالته\nمدة التأثير"
+  },
+  {
+    "id": 34,
+    "topic": "Farb- & Chemiekunde",
+    "difficulty": 2,
+    "q": "Warum kann stark poröses Haar Farbe schneller verlieren?",
+    "a": "Farbmoleküle werden schlechter gehalten und schneller ausgespült.",
+    "q_ar": "لماذا يفقد الشعر شديد المسامية اللون بشكل أسرع؟",
+    "a_ar": "لأن جزيئات اللون لا تثبت جيدًا وتُغسل بسرعة"
+  },
+  {
+    "id": 35,
+    "topic": "Farb- & Chemiekunde",
+    "difficulty": 2,
+    "q": "Welche sind typische Beratungspunkte vor einer starken Aufhellung?",
+    "a": "Haardiagnose\nErwartungsmanagement (machbar/nicht machbar)\nPflege- und Erhaltungsaufwand",
+    "q_ar": "ما هي نقاط الاستشارة المهمة قبل تفتيح الشعر بشكل قوي؟",
+    "a_ar": "تشخيص الشعر\nإدارة التوقعات (ممكن/غير ممكن)\nالعناية والمتابعة"
+  },
+  {
+    "id": 36,
+    "topic": "Umformung/Dauerwelle",
+    "difficulty": 2,
+    "q": "Welche Schritte gehören zu einer Dauerwellenbehandlung?",
+    "a": "Diagnose\nReduktion (Umformmittel)\nFixierung",
+    "q_ar": "ما هي خطوات عمل البرماننت (الدائم)؟",
+    "a_ar": "تشخيص\nالاختزال (مادة التشكيل)\nالتثبيت"
+  },
+  {
+    "id": 41,
+    "topic": "BWL/Kalkulation",
+    "difficulty": 2,
+    "q": "Ein Salon verkauft eine Pflegekur für 20 €. Der Wareneinsatz beträgt 6 €. Wie hoch ist der Deckungsbeitrag?",
+    "a": "14 €",
+    "q_ar": "يبيع الصالون علاج شعر مقابل 20 يورو، وتكلفة المنتج 6 يورو. كم هامش المساهمة؟",
+    "a_ar": "14 يورو"
+  },
+  {
+    "id": 43,
+    "topic": "Recht/Dokumentation",
+    "difficulty": 2,
+    "q": "Welche Inhalte werden in einer Farbdokumentation festgehalten?",
+    "a": "Ausgangsbasis/Tonhöhe\nProdukt/Marke/Mischungsverhältnis/Entwickler\nEinwirkzeit/Technik",
+    "q_ar": "ما الذي يتم توثيقه في سجل صبغ الشعر؟",
+    "a_ar": "اللون الأساسي/درجة اللون\nالمنتج/العلامة/نسبة الخلط/المُؤكسِد\nمدة التأثير/التقنية"
+  },
+  {
+    "id": 66,
+    "topic": "BWL/Kalkulation",
+    "difficulty": 1,
+    "q": "Ein Haarschnitt kostet 35 €. Variable Kosten (Material) 3 €. Wie hoch ist der Deckungsbeitrag?",
+    "a": "32 €",
+    "q_ar": "تكلفة قص الشعر 35 يورو، والتكاليف المتغيرة 3 يورو. كم هامش المساهمة؟",
+    "a_ar": "32 يورو"
+  },
+  {
+    "id": 67,
+    "topic": "BWL/Kalkulation",
+    "difficulty": 2,
+    "q": "Nenne drei Beispiele für Fixkosten?",
+    "a": "Miete\nGrundgebühr Telefon/Internet\nVersicherung",
+    "q_ar": "اذكر ثلاثة أمثلة على التكاليف الثابتة",
+    "a_ar": "الإيجار\nرسوم الهاتف/الإنترنت\nالتأمين"
+  },
 {
   "id": 2001,
   "topic": "Friseurtechnik",
