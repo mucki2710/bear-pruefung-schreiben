@@ -97,14 +97,14 @@
     .dictDef{margin-top:4px; white-space:pre-wrap}
     .dictBtns{display:none} /* legacy: hidden */
 
-.dictGrid{
-  display:grid;
-  grid-template-columns:1fr 2fr;
-  gap:8px 20px;
-  margin-top:12px;
-}
-.dictTerm{font-weight:800;cursor:pointer}
-.dictDef{white-space:pre-wrap}
+    .dictGrid{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:8px 20px;
+    margin-top:12px;
+    }
+    .dictTerm{font-weight:800;cursor:pointer}
+    .dictDef{white-space:pre-wrap}
 
     /* Wörterbuch: Auswahl-Markierung */
     .dictTerm{padding:8px 10px;border-radius:10px}
@@ -138,10 +138,10 @@
         <span class="pill" id="pillIdx">Frage: -/-</span>
         <span class="pill" id="pillWrong">Fehler: 0</span>
 
-        <label class="mini">Thema:</label>
+        <label class="mini" for="topicSelect">Thema:</label>
         <select id="topicSelect"></select>
 
-        <label class="mini">Schwierigkeit:</label>
+        <label class="mini" for="difficultySelect">Schwierigkeit:</label>
         <select id="difficultySelect">
           <option value="ALL">Alle</option>
           <option value="1">1 (leicht)</option>
@@ -227,6 +227,7 @@
       <span class="muted mini" id="dictCount"></span>
     </div>
     <div class="row">
+      <label class="mini" for="dictSearch">Suche Begriff:</label>
       <input id="dictSearch" type="text" placeholder="Suche Begriff..." style="min-width:240px"/>
       <button id="dictSpeakTerm">🔊 Begriff</button>
       <button id="dictSpeakDef">🔊 Erklärung</button>
@@ -512,9 +513,9 @@ function closeTooltip(){
 }
 function getGlossEntry(term){
   const raw = GLOSSARY[term];
-  if(!raw) return null;
+  if(raw === undefined || raw === null) return null;
   if(typeof raw === "string") return { term, def: raw };
-  return { term, def: raw.def || raw.expl || raw.explanation || String(raw), def_ar: raw.def_ar || raw.ar || "" };
+  return { term, def: raw.def || raw.expl || raw.explanation || "—", def_ar: raw.def_ar || raw.ar || "" };
 }
 function clamp(n, min, max){ return Math.max(min, Math.min(max, n)); }
 function positionTooltip(anchor){
@@ -570,6 +571,7 @@ function showTooltipFor(anchorEl, term){
     '<div class="ttrow">' +
       '<button class="ttbtn" id="ttSpeakTerm">🔊 Begriff</button>' +
       '<button class="ttbtn" id="ttSpeakDef">🔊 Erklärung</button>' +
+      '<button class="ttbtn" id="ttOpenDict">📖 Wörterbuch</button>' +
       '<button class="ttbtn" id="ttClose">Schließen</button>' +
     '</div>';
 
@@ -582,6 +584,7 @@ function showTooltipFor(anchorEl, term){
   ttBox.querySelector("#ttClose").onclick = (e)=>{ e.stopPropagation(); closeTooltip(); };
   ttBox.querySelector("#ttSpeakTerm").onclick = (e)=>{ e.stopPropagation(); speak(term, useArabic ? "ar-SA" : "de-DE"); };
   ttBox.querySelector("#ttSpeakDef").onclick = (e)=>{ e.stopPropagation(); speak(def, useArabic ? "ar-SA" : "de-DE"); };
+  ttBox.querySelector("#ttOpenDict").onclick = (e)=>{ e.stopPropagation(); openDictAtTerm(term); };
 
   positionTooltip(anchorEl);
   ttBox.addEventListener("click", (e)=>e.stopPropagation());
@@ -889,25 +892,50 @@ function prev(){
 
 /* Wörterbuch */
 function openDict(){
-  blurActiveElement();     // 👈 doppelt hält besser
+  blurActiveElement();
   closeTooltip();
   const backdrop = document.getElementById("modalBackdrop");
   const modal = document.getElementById("dictModal");
+  const s = document.getElementById("dictSearch");
+
+  if(s) s.value = "";
+
   backdrop.style.display = "block";
   modal.style.display = "block";
   renderDictList();
-  const first = document.querySelector('#dictBody .dictTerm');
+
+  const first = document.querySelector("#dictBody .dictTerm");
   if(first) first.click();
-  const s = document.getElementById("dictSearch");
-    if (s && !isIOS()) {
-      s.focus();               // Desktop ok
-    } else if (s) {
-      s.blur();                // iPad: sicher keine Tastatur
-    }
+
+  if (s && !isIOS()) s.focus();
+  else if (s) s.blur();
 }
 function closeDict(){
   document.getElementById("modalBackdrop").style.display = "none";
   document.getElementById("dictModal").style.display = "none";
+}
+function openDictAtTerm(term){
+  const backdrop = document.getElementById("modalBackdrop");
+  const modal = document.getElementById("dictModal");
+  const s = document.getElementById("dictSearch");
+
+  blurActiveElement();
+  closeTooltip();
+
+  if(s) s.value = term || "";
+  backdrop.style.display = "block";
+  modal.style.display = "block";
+  renderDictList();
+
+  const terms = [...document.querySelectorAll("#dictBody .dictTerm")];
+  const match = terms.find(el => el.textContent === term) || terms[0];
+  if(match){
+    match.click();
+    match.scrollIntoView({block:"center", behavior:"smooth"});
+  }
+
+  if(s && !isIOS()) s.focus();
+  else if(s) s.blur();
 }
 function dictEntries(){
   const terms = Object.keys(GLOSSARY || {}).sort((a,b)=>a.localeCompare(b,"de"));
@@ -960,11 +988,11 @@ function renderDictList(){
 
 /* Load */
 async function loadData(){
-  const r = await fetch("quiz_runtime.json");
+  const r = await fetch("quiz_runtime-v1.json", { cache: "no-store" });
   DATA = await r.json();
 
   try{
-    const gr = await fetch("glossar.json");
+    const gr = await fetch("glossar-v1.json", { cache: "no-store" });
     if(gr.ok){
       const gj = await gr.json();
       GLOSSARY = gj.terms || gj || {};
