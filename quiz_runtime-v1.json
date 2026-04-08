@@ -1,0 +1,652 @@
+{
+  "meta": {
+    "title": "Friseur Gesellenprüfung Theorie Teil 2 - vollständiges Quizset",
+    "source_file": "Prüfung-theorie-2-28-03-26",
+    "description": "Verdichtete, vorlesefreundliche Fragen und Antworten aus den Prüfungsunterlagen. Rechenaufgaben enthalten einen kompakten Lösungsweg.",
+    "question_count": 91,
+    "notes": [
+      "Zeichen- und Skizzieraufgaben wurden in textgeeignete Wissensfragen umformuliert.",
+      "Antworten sind bewusst gekürzt und quizgeeignet formuliert.",
+      "Rechenaufgaben enthalten Schrittfolge und Ergebnis."
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Dauerwelle",
+      "difficulty": 2,
+      "q": "Nenne vier mögliche Fehlerbilder oder Probleme bei einer Dauerwelle.",
+      "a": "Zu schwache Umformung\nKnicke in den Spitzen\nEkzem/Rötungen/Brennen\nZu starke Umformung (Überkrausung)"
+    },
+    {
+      "id": 2,
+      "topic": "Dauerwelle",
+      "difficulty": 2,
+      "q": "Warum kann eine Dauerwelle zu schwach werden?",
+      "a": "Zu schwaches Wellmittel\nZu kurze Einwirkzeit\nZu große Wickler\nZu wenig oder falsche Fixierung"
+    },
+    {
+      "id": 3,
+      "topic": "Dauerwelle",
+      "difficulty": 2,
+      "q": "Warum entstehen Knicke in den Spitzen bei der Dauerwelle?",
+      "a": "Oft wurde ohne Spitzenpapier gewickelt. Die Haare liegen dann nicht glatt im Wickler und verformen sich fehlerhaft."
+    },
+    {
+      "id": 4,
+      "topic": "Dauerwelle",
+      "difficulty": 2,
+      "q": "Wie kann es bei einer Dauerwelle zu Hautreizungen oder Ekzemen kommen?",
+      "a": "Durch unsauberes Arbeiten, zu viel Wellflüssigkeit oder zu starkes Massieren. Wellmittel gelangt auf die Haut und reizt sie."
+    },
+    {
+      "id": 5,
+      "topic": "Dauerwelle",
+      "difficulty": 2,
+      "q": "Warum kann eine Dauerwelle zu stark oder überkraust werden?",
+      "a": "Zu starkes Wellmittel\nZu kleine Wickler\nZu lange Einwirkzeit\nZu viel Wärme"
+    },
+    {
+      "id": 6,
+      "topic": "Dauerwelle",
+      "difficulty": 3,
+      "q": "Erkläre die chemische Aufgabe der Fixierung bei der Dauerwelle.",
+      "a": "Bei der Fixierung werden die zuvor geöffneten Schwefelbrücken wieder geschlossen - jetzt in der neuen Form. Das Oxidationsmittel, meist Wasserstoffperoxid, entzieht dem Schwefel den angelagerten Wasserstoff. So können neue Schwefelbrücken entstehen. Organische Säuren neutralisieren außerdem Restalkali und helfen, die Schuppenschicht wieder zu schließen."
+    },
+    {
+      "id": 7,
+      "topic": "Nichtdauerhafte Umformung",
+      "difficulty": 2,
+      "q": "Nenne drei nichtdauerhafte Umformungstechniken mit passender Stilepoche.",
+      "a": "Beispiele:\nCalamistrum - Römer\nPapillotiereisen - Mittelalter\nLockenholz - Biedermeier/Empire\nOnduliereisen - Gründerzeit/Jahrhundertwende\nHandgelegte Wasserwelle - 1920er"
+    },
+    {
+      "id": 8,
+      "topic": "Nichtdauerhafte Umformung",
+      "difficulty": 3,
+      "q": "Beschreibe den Vorgang der nichtdauerhaften Umformung im Haar.",
+      "a": "Wasser lässt das Haar quellen und öffnet die Schuppenschicht. Dabei werden Wasserstoffbrücken und teilweise Salzbrücken gelöst. Das Haar wird in eine neue Form gebracht. Beim Trocknen entstehen neue Brücken in dieser Form. Wärme kann den Vorgang unterstützen."
+    },
+    {
+      "id": 9,
+      "topic": "Haarschnitt",
+      "difficulty": 2,
+      "q": "Nenne fünf Regeln aus Ergonomie und Arbeitsschutz bei Haarschneidegeräten.",
+      "a": "Ergonomische Schere verwenden\nScheren sicher im Futteral oder in der Scherentasche aufbewahren\nScheren geschlossen und sichtbar ablegen\nRasiermesser zugeklappt ablegen\nSchneidegeräte regelmäßig reinigen und desinfizieren\nGeschlossene Schuhe tragen\nKonzentriert entlang der Schnittlinie arbeiten"
+    },
+    {
+      "id": 10,
+      "topic": "Reklamation",
+      "difficulty": 2,
+      "q": "Wie reagierst du professionell auf eine Reklamation? Nenne drei bis fünf Schritte.",
+      "a": "Ruhig und freundlich bleiben\nVerständnis zeigen und aktiv zuhören\nNachfragen, worin genau das Problem liegt\nEine Lösung oder Nachbesserung anbieten\nAm Ende prüfen, ob die Kundin wieder zufrieden ist\nKeine Schuldzuweisung an die Kundin"
+    },
+    {
+      "id": 11,
+      "topic": "Reklamation",
+      "difficulty": 2,
+      "q": "Welche Folgen kann eine unzufriedene Kundin für den Salon haben?",
+      "a": "Schlechte Mundpropaganda\nWeniger Neukunden\nStammkunden bleiben eventuell auch weg\nUmsatzrückgang\nSchlechteres Image des Salons"
+    },
+    {
+      "id": 12,
+      "topic": "Rabattrechnung",
+      "difficulty": 2,
+      "q": "Eine Erstausstattung kostet 110 Euro, darauf gibt es 18 % Rabatt. Ein Shampoo kostet 9,80 Euro, darauf gibt es 7 % Rabatt. Wie viel ist insgesamt brutto zu zahlen?",
+      "a": "Schneidewerkzeug:\n110,00 - 19,80 = 90,20 Euro\nShampoo:\n9,80 - 0,69 = 9,11 Euro\nNetto gesamt:\n90,20 + 9,11 = 99,31 Euro\nMwSt 19 %:\n99,31 x 0,19 = 18,87 Euro\nBrutto:\n99,31 + 18,87 = 118,18 Euro"
+    },
+    {
+      "id": 13,
+      "topic": "Fortbildung",
+      "difficulty": 2,
+      "q": "Nenne je drei Beispiele für Fortbildung und Weiterbildung im Friseurberuf.",
+      "a": "Fortbildung:\nSchneideseminar\nColorationsseminar\nProduktschulung/Messe/Fachzeitschriften\nWeiterbildung:\nKosmetikerin\nMaskenbildnerin/Visagistin\nMeisterbrief\nBetriebswirtin im Handwerk"
+    },
+    {
+      "id": 14,
+      "topic": "Fortbildung",
+      "difficulty": 2,
+      "q": "Warum ist ständige Fortbildung im Friseurberuf besonders wichtig? Nenne fünf Gründe.",
+      "a": "Mode und Trends ändern sich ständig\nNeue Techniken und Produkte kommen hinzu\nFachwissen verbessert die Beratungsqualität\nFortbildung stärkt Karriere- und Lohnchancen\nAktualität erhöht Wettbewerbsfähigkeit und Vorbildfunktion"
+    },
+    {
+      "id": 15,
+      "topic": "Warenpräsentation",
+      "difficulty": 1,
+      "q": "Welche Zonen gibt es im Regal von oben nach unten?",
+      "a": "Reckzone\nSichtzone\nGriffzone\nBückzone"
+    },
+    {
+      "id": 16,
+      "topic": "Warenpräsentation",
+      "difficulty": 2,
+      "q": "Nenne fünf Regeln für die professionelle Einrichtung eines Warenregals.",
+      "a": "Sauberkeit\nÜbersichtliche Anordnung\nGriffmulden lassen\nEin klares Ordnungssystem wählen\nSicht- und Griffzone für wichtige Ware nutzen\nPreise gut sichtbar machen"
+    },
+    {
+      "id": 17,
+      "topic": "Oxidationshaarfarbe",
+      "difficulty": 2,
+      "q": "Was passiert, wenn im Färbebrei das Verdickungsmittel fehlt?",
+      "a": "Der Farbbrei läuft ab. Das Material verteilt sich ungleichmäßig und das Farbergebnis wird fleckig."
+    },
+    {
+      "id": 18,
+      "topic": "Oxidationshaarfarbe",
+      "difficulty": 3,
+      "q": "Was passiert, wenn im Färbebrei das Alkalisierungsmittel fehlt?",
+      "a": "Die Schuppenschicht öffnet sich nicht ausreichend. Farbbildner dringen kaum ein, die Oxidationsreaktion läuft nicht richtig ab. Es entsteht höchstens eine schwache Nuancierung statt einer dauerhaften Farbveränderung."
+    },
+    {
+      "id": 19,
+      "topic": "Oxidationshaarfarbe",
+      "difficulty": 2,
+      "q": "Was passiert, wenn Wasserstoffperoxid im Färbebrei fehlt?",
+      "a": "Es findet keine eigentliche Oxidation und keine Aufhellung der Naturpigmente statt. Es bleibt nur eine oberflächliche Nuancierung."
+    },
+    {
+      "id": 20,
+      "topic": "Oxidationshaarfarbe",
+      "difficulty": 2,
+      "q": "Was passiert, wenn Nuancierungsfarbstoffe fehlen?",
+      "a": "Die Farbrichtung fehlt. Eine Veränderung der Farbtiefe ist möglich, aber gewünschte Töne wie Rot-, Gold- oder Aschrichtung werden nicht erreicht."
+    },
+    {
+      "id": 21,
+      "topic": "Oxidationshaarfarbe",
+      "difficulty": 2,
+      "q": "Was passiert, wenn Farbstoffbildner fehlen?",
+      "a": "Naturpigmente können aufgehellt werden, aber es entstehen keine neuen künstlichen Farbpigmente im Haar. Ein satter dauerhafter Farbton ist deshalb nicht erreichbar."
+    },
+    {
+      "id": 22,
+      "topic": "Mischungsrechnen",
+      "difficulty": 2,
+      "q": "Wie viel 9%iges H2O2 und Farbcreme werden für 120 ml eines 3%igen Färbebreis benötigt?",
+      "a": "Differenzenmethode:\n9 % -> Ziel 3 % = 6\n3 % -> 0 % = 3\nVerhältnis Entwickler : Creme = 3 : 6 = 1 : 2\nGesamtteile = 3\n120 ml : 3 = 40 ml je Teil\nErgebnis:\n40 ml 9 % Entwickler\n80 ml Farbcreme"
+    },
+    {
+      "id": 23,
+      "topic": "Mischungsrechnen",
+      "difficulty": 2,
+      "q": "Was kosten 40 ml 9%iges H2O2 und 80 ml Farbcreme, wenn 1 Liter Entwickler 18,95 Euro und 100 ml Farbcreme 8,60 Euro kosten?",
+      "a": "Entwickler:\n18,95 / 1000 x 40 = 0,76 Euro\nFarbcreme:\n8,60 / 100 x 80 = 6,88 Euro\nGesamtkosten:\n0,76 + 6,88 = 7,64 Euro"
+    },
+    {
+      "id": 24,
+      "topic": "Haarschnitt",
+      "difficulty": 1,
+      "q": "Beschreibe die kompakte Form beim Haarschnitt.",
+      "a": "Das gesamte Haar fällt auf eine Linie. Die Linie kann waagerecht, diagonal, konkav oder konvex verlaufen."
+    },
+    {
+      "id": 25,
+      "topic": "Haarschnitt",
+      "difficulty": 1,
+      "q": "Beschreibe die graduierte Form beim Haarschnitt.",
+      "a": "Die Haare an den Konturen sind kürzer als das Deckhaar. Die Längen liegen gestuft aufeinander, nicht auf einer einzigen Linie."
+    },
+    {
+      "id": 26,
+      "topic": "Kommunikation",
+      "difficulty": 2,
+      "q": "Nenne fünf wichtige Regeln beim Telefonieren im Salon.",
+      "a": "Freundlich mit Salonname und eigenem Namen melden\nDeutlich und in angenehmer Lautstärke sprechen\nSchreibzeug und Terminkalender bereithalten\nVereinbarungen am Ende wiederholen\nWenn etwas nicht möglich ist, Alternativen anbieten\nFreundlich verabschieden"
+    },
+    {
+      "id": 27,
+      "topic": "Fragetechnik",
+      "difficulty": 2,
+      "q": "Formuliere je ein Beispiel für offene, Alternativ- und Bestätigungsfrage bei einer Farbberatung.",
+      "a": "Offene Frage: Welche Farben tragen Sie gern?\nAlternativfrage: Soll die Farbe dauerhaft sein oder auswaschbar?\nBestätigungsfrage: Dieser Ton spricht Sie doch sicher an, oder?"
+    },
+    {
+      "id": 28,
+      "topic": "Fragetechnik",
+      "difficulty": 2,
+      "q": "Worin unterscheiden sich offene, Alternativ- und Bestätigungsfragen in ihrer Zielsetzung?",
+      "a": "Offene Fragen sammeln viele Informationen.\nAlternativfragen führen zu einer Entscheidung zwischen zwei Möglichkeiten.\nBestätigungsfragen lenken oder beeinflussen die Kundin in eine Richtung."
+    },
+    {
+      "id": 29,
+      "topic": "Preisberechnung",
+      "difficulty": 2,
+      "q": "Eine Firma bietet Shampoo für 7,50 Euro an. Bei 50 Stück gibt es 3 % Rabatt, bei 100 Stück 10 %. Wie hoch sind Gesamtpreis und Stückpreis?",
+      "a": "50 Stück:\nListenpreis 50 x 7,50 = 375,00 Euro\nRabatt 3 % = 11,25 Euro\nGesamtpreis = 363,75 Euro\nStückpreis = 363,75 / 50 = 7,28 Euro\n\n100 Stück:\nListenpreis 100 x 7,50 = 750,00 Euro\nRabatt 10 % = 75,00 Euro\nGesamtpreis = 675,00 Euro\nStückpreis = 675,00 / 100 = 6,75 Euro"
+    },
+    {
+      "id": 30,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Erkläre Franchising im Friseurbereich mit Beispiel.",
+      "a": "Ein Salon übernimmt ein bestehendes Geschäftskonzept gegen Gebühr. Beispiel: Ein Friseur eröffnet unter einer bekannten Kette mit festem Logo, Sortiment und Marketing."
+    },
+    {
+      "id": 31,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Erkläre Corporate Identity im Friseurbereich mit Beispiel.",
+      "a": "Corporate Identity ist das einheitliche Erscheinungsbild eines Unternehmens. Beispiel: Salonfarben, Logo, Kleidung und Werbung passen optisch zusammen."
+    },
+    {
+      "id": 32,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Erkläre Event-Marketing im Friseurbereich mit Beispiel.",
+      "a": "Beim Event-Marketing wird ein besonderes Erlebnis beworben. Beispiel: Sommerparty im Salon mit Frisurenshow, Cocktails und Modepräsentation."
+    },
+    {
+      "id": 33,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Erkläre Public Relations im Friseurbereich mit Beispiel.",
+      "a": "Public Relations ist Öffentlichkeitsarbeit. Beispiel: Der Salon organisiert eine Aktion im Altersheim und die Lokalzeitung berichtet darüber."
+    },
+    {
+      "id": 34,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Erkläre Merchandising im Friseurbereich mit Beispiel.",
+      "a": "Merchandising meint Werbeartikel oder Zusatzprodukte mit Markenbezug. Beispiel: T-Shirts oder Schirme mit Salonlogo."
+    },
+    {
+      "id": 35,
+      "topic": "Färbe-Arbeitsablauf",
+      "difficulty": 3,
+      "q": "In welcher Reihenfolge wird ein unbehandeltes Haar für ein helles Lichtblond bearbeitet?",
+      "a": "Zuerst Hinterkopf und Nacken, dann Oberkopf, die feinen Schläfen zuletzt. Bei unbehandeltem Haar zuerst die Längen, dann die Spitzen, zuletzt der Ansatz. Grund: Nacken ist oft dunkler, Schläfen sind empfindlicher, Ansatz hellt durch Körperwärme schneller auf."
+    },
+    {
+      "id": 36,
+      "topic": "Farbveränderung",
+      "difficulty": 3,
+      "q": "Unterscheide physikalische Tönung und oxidative Farbbehandlung in sechs Punkten.",
+      "a": "Physikalische Tönung:\nkeine H2O2-Zugabe\nnur direktziehende Farbstoffe\npH ca. 5,5-6,5\nkeine Aufhellung\nhält 2-8 Haarwäschen\nca. 25-30 % Weißabdeckung\n\nOxidative Farbbehandlung:\nH2O2-Zugabe nötig\nFarbbildner plus direktziehende Farbstoffe\npH ca. 8-12\n1-5 Tonhöhen Aufhellung möglich\nhaltbar, Farbe wächst heraus\n50-100 % Weißabdeckung je nach Produkt"
+    },
+    {
+      "id": 37,
+      "topic": "Blondierung",
+      "difficulty": 2,
+      "q": "Nenne fünf Inhaltsstoffe eines Blondierpräparats mit Wirkung.",
+      "a": "Alkalisierungsmittel - öffnet Schuppenschicht und quillt das Haar\nOxidationsmittel - verstärkt die Oxidationswirkung\nNetzmittel - sorgt für gleichmäßige Benetzung\nVerdickungsmittel - gibt streichfähige Konsistenz\nFarbstoffe - gleichen unerwünschte Farbstiche aus"
+    },
+    {
+      "id": 38,
+      "topic": "Unfallverhütung",
+      "difficulty": 2,
+      "q": "Nenne drei Unfallgefahren im Eingangsbereich und passende Vorbeugung.",
+      "a": "Stolpern an ungünstigen Treppen - genormte Treppen/Markierung\nRutschen bei Nässe oder Glätte - Überdachung, streuen, trocknen\nAbgestellte Gegenstände - Eingangsbereich freihalten"
+    },
+    {
+      "id": 39,
+      "topic": "Unfallverhütung",
+      "difficulty": 2,
+      "q": "Nenne drei Unfallgefahren am Arbeitsplatz und passende Vorbeugung.",
+      "a": "Ausrutschen auf Haaren - nach jedem Schnitt kehren\nStolpern über Rollwagen - Wagen sofort wegstellen\nAusrutschen auf Flüssigkeiten - verschüttetes Material sofort entfernen"
+    },
+    {
+      "id": 40,
+      "topic": "Unfallverhütung",
+      "difficulty": 2,
+      "q": "Nenne drei Gefahren im Umgang mit elektrischen Geräten und passende Vorbeugung.",
+      "a": "Verbrennungen durch Glätteisen - Geräte in Halterung abkühlen lassen\nStromschlag in Wassernähe - elektrische Geräte nie am Wasser verwenden\nDefekte Leitungen - nie am Kabel ziehen, Schäden vom Fachmann reparieren lassen"
+    },
+    {
+      "id": 41,
+      "topic": "Fragetechnik",
+      "difficulty": 2,
+      "q": "Nenne vier Fragearten im Beratungsgespräch mit je einem Beispiel zur Farbveränderung.",
+      "a": "Offen: Welche Farben tragen Sie gern?\nGeschlossen: Reagiert Ihre Haut empfindlich?\nAlternativ: Soll die Farbe auswaschbar oder dauerhaft sein?\nBestätigend: Dieser Modeton gefällt Ihnen doch sicher?\nRhetorisch: Darf ich Ihnen passende Frisuren zeigen?"
+    },
+    {
+      "id": 42,
+      "topic": "Warenpräsentation",
+      "difficulty": 2,
+      "q": "Nenne zehn allgemeine Präsentationsgrundsätze für ein Warenregal.",
+      "a": "Hochpreisige Ware in Sicht-/Griffzone\nNachfüllware in Bückzone\nSpezialbedarf in Reckzone\nNach Themen oder Warengruppen ordnen\nProdukte einer Marke zusammenstellen\nKleinteile sinnvoll platzieren\nÜbersichtlich präsentieren\nGriffmulden lassen\nStaubfrei und sauber halten\nPreise sichtbar machen\nEtikett/Logo nach vorne"
+    },
+    {
+      "id": 43,
+      "topic": "Bezugskalkulation",
+      "difficulty": 3,
+      "q": "Ein Festiger kostet 2,10 Euro. Bei 50 Stück gibt es 3 % Rabatt, bei 200 Stück 12 %. Zusätzlich 2 % Skonto und 7,50 Euro Porto. Berechne den Bezugspreis pro Stück für 50 und 200 Stück.",
+      "a": "50 Stück:\nListenpreis 50 x 2,10 = 105,00 Euro\n- 3 % Rabatt = 3,15 Euro\n= 101,85 Euro Rechnungspreis\n- 2 % Skonto = 2,04 Euro\n= 99,81 Euro Bareinkaufspreis\n+ 7,50 Euro Porto\n= 107,31 Euro Bezugspreis\n107,31 / 50 = 2,15 Euro pro Stück\n\n200 Stück:\nListenpreis 200 x 2,10 = 420,00 Euro\n- 12 % Rabatt = 50,40 Euro\n= 369,60 Euro Rechnungspreis\n- 2 % Skonto = 7,39 Euro\n= 362,21 Euro Bareinkaufspreis\n+ 7,50 Euro Porto\n= 369,71 Euro Bezugspreis\n369,71 / 200 = 1,85 Euro pro Stück"
+    },
+    {
+      "id": 44,
+      "topic": "Verkaufskalkulation",
+      "difficulty": 3,
+      "q": "Eine Bodylotion hat Listenpreis 5,80 Euro. Rabatt 8,5 %, Skonto 3 %, Bezugskosten gesamt 4,70 Euro bei 25 Stück, Handlungskosten 30 %, Gewinn 35 %, MwSt 19 %. Wie teuer ist eine Flasche im Salon?",
+      "a": "Rabatt:\n5,80 x 8,5 % = 0,49 Euro\n5,80 - 0,49 = 5,31 Euro Rechnungspreis\nSkonto:\n5,31 x 3 % = 0,16 Euro\n5,31 - 0,16 = 5,15 Euro Bareinkaufspreis\nBezugskosten pro Stück:\n4,70 / 25 = 0,19 Euro\n5,15 + 0,19 = 5,34 Euro Bezugspreis\nHandlungskosten:\n5,34 x 30 % = 1,60 Euro\nSelbstkostenpreis = 6,94 Euro\nGewinn:\n6,94 x 35 % = 2,43 Euro\nNettoverkaufspreis = 9,37 Euro\nMwSt:\n9,37 x 19 % = 1,78 Euro\nBruttoverkaufspreis = 11,15 Euro"
+    },
+    {
+      "id": 45,
+      "topic": "Hautalterung",
+      "difficulty": 2,
+      "q": "Nenne fünf altersbedingte Veränderungen der Gesichtshaut.",
+      "a": "Weniger Spannkraft und Feuchtigkeit\nFalten vertiefen sich\nPigmentflecken\nTeleangiektasien/Alterswarzen\nDünnere Haut und stärkere Augenringe\nTränensäcke\nDamenbart"
+    },
+    {
+      "id": 46,
+      "topic": "Hautalterung",
+      "difficulty": 2,
+      "q": "Nenne drei Maßnahmen, mit denen altersbedingte Hautveränderungen optisch verbessert werden können.",
+      "a": "Pigmentflecken mit Camouflage abdecken\nDamenbart depilieren\nFrisches Make-up einsetzen\nFeuchtigkeitspflege z. B. mit Hyaluron empfehlen\nBeratung zu Pflege, Ernährung und Lebensstil"
+    },
+    {
+      "id": 47,
+      "topic": "Nichtdauerhafte Umformung",
+      "difficulty": 2,
+      "q": "Nenne fünf Techniken der nichtdauerhaften Umformung mit passendem Werkzeug.",
+      "a": "Einlegen - Wickler\nPapillotieren - Clips/Papilloten\nGlätten - Glätteisen\nLocken - Lockenstab\nWasserwelle - Wellkamm\nOndulation - Onduliereisen\nFöhnen - Bürste und Föhn"
+    },
+    {
+      "id": 48,
+      "topic": "Nichtdauerhafte Umformung",
+      "difficulty": 3,
+      "q": "Beschreibe den Prozess der nichtdauerhaften Umformung ausführlich.",
+      "a": "Durch Wasser werden Wasserstoffbrücken und teilweise Salzbrücken gelöst. Das Haar wird mit Hilfsmitteln in die gewünschte Form gebracht und getrocknet. In dieser Form schließen sich neue Wasserstoffbrücken. Bei Feuchtigkeit oder erneutem Nasswerden fällt das Haar in die Grundform zurück, die durch Schwefelbrücken bestimmt ist."
+    },
+    {
+      "id": 49,
+      "topic": "Nichtdauerhafte Umformung",
+      "difficulty": 2,
+      "q": "Warum lässt sich auch trocken wirkendes Haar mit dem Lockenstab umformen?",
+      "a": "Auch trockenes Haar enthält Eigenfeuchtigkeit. Durch Hitze wird sie beweglich bzw. verdunstet teilweise, sodass Wasserstoffbrücken in neuer Form geschlossen werden können."
+    },
+    {
+      "id": 50,
+      "topic": "Dekorative Kosmetik",
+      "difficulty": 2,
+      "q": "Welche Farben gelten bei einem Augen-Make-up als kühl?",
+      "a": "Blautöne\nGrautöne\nGrüntöne mit wenig Gelbanteil\nSilber\nWeiß"
+    },
+    {
+      "id": 51,
+      "topic": "Kosmetik",
+      "difficulty": 2,
+      "q": "Beschreibe den Arbeitsablauf beim Wimpernfärben.",
+      "a": "Augen-Make-up entfernen\nHaut unter dem Auge eincremen und Pad anlegen\nKundin schließt das Auge entspannt\nOberlid bis zum Wimpernrand schützen\nFarbe anrühren und sorgfältig auftragen\nEinwirkzeit beachten\nFarbe mit feuchten Pads abnehmen\nAugenränder reinigen und mit viel Wasser nachspülen"
+    },
+    {
+      "id": 52,
+      "topic": "Maniküre",
+      "difficulty": 2,
+      "q": "Beschreibe einen sinnvollen Ablauf der Maniküre mit Ziel der einzelnen Schritte.",
+      "a": "Werkzeuge desinfizieren - Schutz vor Krankheitsübertragung\nMaterial bereitlegen - reibungsloser Ablauf\nNägel entlacken - saubere Arbeitsfläche\nNägel beurteilen - Technik und Behandlungsumfang festlegen\nNägel formen - Länge und Form ausgleichen\nNagelbad - Nagelhaut erweichen und reinigen\nNagelhaut behandeln - Nagel optisch korrigieren\nHandmassage - Wohlgefühl und Entspannung\nNägel lackieren - Gestaltung und Schutz"
+    },
+    {
+      "id": 53,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Nenne wichtige Merkmale eines Salonkonzepts für aktive ältere Kunden.",
+      "a": "Passende Produkte und Dienstleistungen\nFreundliche, nicht schrille Mitarbeitende\nBarrierefreier Zugang und gute Parkmöglichkeiten\nBequeme Möbel und ruhige Atmosphäre\nDezente Musik und gedämpfte Farben"
+    },
+    {
+      "id": 54,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Entwickle eine Marketingstrategie zum Thema: Alle wollen alt werden - aber nicht alt aussehen.",
+      "a": "Stammkundenorientierte Werbung\nTreuepass und Aktionen\nWerbematerial mit älteren Modellen\nHausbesuche bei Bedarf\nFrisurenshows mit passender Zielgruppe\nWerbung in Seniorengruppen, Altersheimen oder Fitness-Clubs"
+    },
+    {
+      "id": 55,
+      "topic": "Werbung",
+      "difficulty": 2,
+      "q": "Nenne sechs Möglichkeiten, um Neukunden zu gewinnen.",
+      "a": "Zeitungsanzeigen\nFlyer an passenden Orten\nKinowerbung\nAutoaufkleber\nRadio- oder TV-Spots regional\nMundpropaganda\nFreundschaftswerbung"
+    },
+    {
+      "id": 56,
+      "topic": "Werbung",
+      "difficulty": 2,
+      "q": "Nenne sechs Möglichkeiten, um Stammkunden zu halten.",
+      "a": "Treuepass\nGeburtstagsgrüße\nRabatte für häufige Besuche\nKleine Wellness-Extras\nImmer wieder neue Beratung anbieten\nZu Feiertagen Proben oder kleine Geschenke mitgeben"
+    },
+    {
+      "id": 57,
+      "topic": "Reklamation",
+      "difficulty": 2,
+      "q": "Wie verhältst du dich bei einer Reklamation wegen zu intensivem Make-up?",
+      "a": "Ruhig und höflich bleiben\nVerständnis zeigen\nKundin ausreden lassen\nGezielt nachfragen\nSchnell nachbessern\nAm Ende Zufriedenheit prüfen\nBei Bedarf kleine Wiedergutmachung anbieten"
+    },
+    {
+      "id": 58,
+      "topic": "Dauerwelle",
+      "difficulty": 3,
+      "q": "Beschreibe die chemisch-physikalischen Vorgänge im Haar bei der Dauerwellbehandlung.",
+      "a": "Das Haar wird auf Wickler gespannt. Alkalisierungsmittel öffnen die Schuppenschicht, die Faserschicht quillt. Wasserstoff- und Salzbrücken sowie durch das Reduktionsmittel auch Schwefelbrücken werden gelöst. Die neue Form entsteht unter Spannung. Bei der Fixierung gibt das Oxidationsmittel Sauerstoff ab, Schwefelbrücken schließen sich neu. Säuren neutralisieren Restalkali und unterstützen das Schließen der Schuppenschicht."
+    },
+    {
+      "id": 59,
+      "topic": "Umweltschutz",
+      "difficulty": 2,
+      "q": "Wie viel Farbe landen pro Jahr im Müll, wenn in jeder von fünf Tuben täglich 8 ml verbleiben und im Monat 20 Arbeitstage gerechnet werden?",
+      "a": "Pro Tag:\n8 ml x 5 = 40 ml\nPro Monat:\n40 ml x 20 = 800 ml\nPro Jahr:\n800 ml x 12 = 9600 ml"
+    },
+    {
+      "id": 60,
+      "topic": "Umweltschutz",
+      "difficulty": 2,
+      "q": "Wie hoch ist der finanzielle Schaden, wenn 60 ml Farbe 9,75 Euro kosten und pro Jahr 9600 ml verschwendet werden?",
+      "a": "Preis pro ml:\n9,75 / 60 = 0,1625 Euro\nSchaden pro Jahr:\n9600 x 0,1625 = 1560,00 Euro"
+    },
+    {
+      "id": 61,
+      "topic": "Umweltschutz",
+      "difficulty": 2,
+      "q": "Nenne fünf Maßnahmen im Salon, die dem Umweltschutz dienen.",
+      "a": "Tubenausdrücker benutzen\nNachfüllpackungen verwenden\nShampoo und Pflege sparsam dosieren\nKleine Energiesparhandtücher einsetzen\nMüll trennen\nSparperlatoren verwenden\nEnergiesparende Geräte kaufen"
+    },
+    {
+      "id": 62,
+      "topic": "Farbbehandlung",
+      "difficulty": 2,
+      "q": "Korrigiere typische falsche Aussagen zur Farbveränderung. Nenne mindestens fünf richtige Merksätze.",
+      "a": "Mit Blondierung sind bis zu etwa 8 Tonhöhen Aufhellung möglich.\nEumelanine lassen sich leichter aufhellen als Phäomelanine.\nBlonde haben insgesamt weniger Pigmente als Dunkelhaarige.\nEine Tönung enthält kein H2O2.\nIntensivtönungen decken nicht 100 %, sondern bis etwa 50 %.\nBei Blondierung entsteht immer eine gewisse Haarschädigung.\nNach oxidativer Farbbehandlung wird sauer nachbehandelt.\nGelbstich wird mit Violett/Silber neutralisiert."
+    },
+    {
+      "id": 63,
+      "topic": "Mischungsrechnen",
+      "difficulty": 2,
+      "q": "Eine 12%ige H2O2-Lösung wird in 60 ml Blondiercreme eingerührt. Der Blondierbrei soll 4 % haben. Wie viel 12%iges H2O2 wird benötigt?",
+      "a": "Differenzenmethode:\n12 % -> Ziel 4 % = 8\n4 % -> 0 % = 4\nVerhältnis Entwickler : Creme = 4 : 8 = 1 : 2\n60 ml Creme sind 2 Teile\n1 Teil = 30 ml\nErgebnis: 30 ml 12 %iges H2O2"
+    },
+    {
+      "id": 64,
+      "topic": "Mischungsrechnen",
+      "difficulty": 2,
+      "q": "Wie teuer ist dieser Blondierbrei, wenn 1 Liter 12%iges H2O2 9,95 Euro kostet und 60 ml Blondiercreme 9,10 Euro kosten?",
+      "a": "Entwickler:\n9,95 / 1000 x 30 = 0,30 Euro\nBlondiercreme:\n9,10 Euro\nGesamtpreis:\n9,10 + 0,30 = 9,40 Euro"
+    },
+    {
+      "id": 65,
+      "topic": "Schaufenster",
+      "difficulty": 2,
+      "q": "Nenne acht Regeln für ein gut gestaltetes Schaufenster.",
+      "a": "Auffälliger Blickfang\nStimmiges Gesamtthema\nSehgewohnheiten beachten\nNicht überladen\nSaubere und erneuerte Dekoration\nInnenraum muss bei Durchblick ebenfalls stimmig sein\nGute Beleuchtung\nProdukte und Dienstleistungen auspreisen"
+    },
+    {
+      "id": 66,
+      "topic": "Kundenatmosphäre",
+      "difficulty": 2,
+      "q": "Nenne je drei Gestaltungsideen für Empfangsbereich, Wartebereich, Arbeitsplatz und Verkaufsbereich.",
+      "a": "Empfang: übersichtlich, einladend, sauber\nWartebereich: bequeme Sitzplätze, aktuelles Lesematerial, Ablage/Getränkemöglichkeit\nArbeitsplatz: bequemer verstellbarer Platz, genug Abstand, gute Belüftung und Licht\nVerkaufsbereich: übersichtlich, gut beleuchtet, Preise gut lesbar"
+    },
+    {
+      "id": 67,
+      "topic": "Businessplan",
+      "difficulty": 2,
+      "q": "Nenne drei Vorteile eines Franchise-Unternehmens für einen Friseursalon.",
+      "a": "Unterstützung bei Gründung\nBekanntes Marketing- und Werbekonzept\nSchulungen und oft Teile der Ausstattung\nWiedererkennbares Logo und System"
+    },
+    {
+      "id": 68,
+      "topic": "Businessplan",
+      "difficulty": 2,
+      "q": "Nenne drei Nachteile eines Franchise-Unternehmens.",
+      "a": "Wenig unternehmerische Freiheit\nLaufende Gebühren können hoch sein\nVorgaben bei Waren und Dienstleistungen"
+    },
+    {
+      "id": 69,
+      "topic": "Businessplan",
+      "difficulty": 2,
+      "q": "Nenne drei Argumente für ein Einzelunternehmen statt Franchise.",
+      "a": "Volle Freiheit bei Konzept und Sortiment\nEigene Preis- und Werbegestaltung\nFortbildungsrichtung selbst bestimmbar\nGewinn bleibt vollständig im eigenen Betrieb"
+    },
+    {
+      "id": 70,
+      "topic": "Öko-Salon",
+      "difficulty": 2,
+      "q": "Welche Merkmale kennzeichnen einen ökologisch-alternativen Friseursalon? Nenne drei mit Begründung.",
+      "a": "Produkte auf pflanzlicher oder biologischer Basis - wirkt gesundheits- und umweltbewusst\nSpezialisierung auf Pflanzenfarben - passt zur Zielgruppe mit Naturanspruch\nSichtbares Abfall- und Nachfüllsystem - macht Nachhaltigkeit glaubwürdig\nEnergiesparende Technik oder Solarstrom - unterstreicht das ökologische Konzept"
+    },
+    {
+      "id": 71,
+      "topic": "Stilkunde",
+      "difficulty": 2,
+      "q": "Ordne die Methode der Wellung der passenden Epoche zu.",
+      "a": "Calamistrum - Römer\nPapillotiereisen - Mittelalter\nAllongeperücke mit Locken - Barock\nMarcel-Ondulation - Gründerzeit/Jahrhundertwende\nHandgelegte Wasserwelle - 20. Jahrhundert"
+    },
+    {
+      "id": 72,
+      "topic": "Umformung",
+      "difficulty": 3,
+      "q": "Vergleiche nichtdauerhafte und dauerhafte Haarumformung in fünf Punkten.",
+      "a": "Nichtdauerhaft:\nWasserstoff- und teilweise Salzbrücken werden gelöst\nWasser und Wärme reichen aus\nKein Alkali nötig\nFixierung durch Trocknung/Wärme\nHält nur bis zur nächsten Feuchtigkeit\n\nDauerhaft:\nAuch Schwefelbrücken werden umgeformt\nWellmittel und Fixierung nötig\nAlkali wird eingesetzt\nFixierung mit Oxidationsmittel\nHält dauerhaft, belastet das Haar stärker"
+    },
+    {
+      "id": 73,
+      "topic": "Mischungsrechnen",
+      "difficulty": 2,
+      "q": "Für 35 ml 6%iges H2O2 stehen nur 12%iges und 2%iges H2O2 zur Verfügung. Berechne Mischungsverhältnis und Mengen.",
+      "a": "Mischkreuz:\n12 - 6 = 6\n6 - 2 = 4\nVerhältnis 12 % : 2 % = 4 : 6 = 2 : 3\nGesamtteile = 5\n35 ml / 5 = 7 ml je Teil\n12 %ig: 2 x 7 = 14 ml\n2 %ig: 3 x 7 = 21 ml"
+    },
+    {
+      "id": 74,
+      "topic": "Mischungsrechnen",
+      "difficulty": 1,
+      "q": "Was kosten 35 ml H2O2, wenn 1 Liter 12%iges und 2%iges H2O2 jeweils 10,80 Euro kostet?",
+      "a": "35 ml von 1000 ml:\n10,80 / 1000 x 35 = 0,38 Euro"
+    },
+    {
+      "id": 75,
+      "topic": "Warenpräsentation",
+      "difficulty": 2,
+      "q": "Ordne die Regalzonen den Maßangaben zu.",
+      "a": "Reckzone - über 1,7 m\nSichtzone - 1,2 bis 1,7 m\nGriffzone - 0,8 bis 1,2 m\nBückzone - 0 bis 0,8 m"
+    },
+    {
+      "id": 76,
+      "topic": "Warenpräsentation",
+      "difficulty": 2,
+      "q": "Welche Regalzonen sind verkaufsstark und welche verkaufsschwach? Nenne je zwei passende Artikel.",
+      "a": "Verkaufsstark: Sichtzone und Griffzone - z. B. Saisonartikel, Spezialangebote\nVerkaufsschwach: Bückzone und Reckzone - z. B. Nachfüllware, preisgünstige raumgreifende Artikel"
+    },
+    {
+      "id": 77,
+      "topic": "Kalkulation",
+      "difficulty": 2,
+      "q": "Acht Kartons mit je zwölf Dosen Haarlack kosten 5,20 Euro pro Dose. Es gibt 5 % Rabatt und 2 % Skonto. Wie hoch ist der Bezugspreis insgesamt und pro Dose?",
+      "a": "Menge:\n8 x 12 = 96 Dosen\nListenpreis:\n96 x 5,20 = 499,20 Euro\nRabatt 5 %:\n499,20 x 0,05 = 24,96 Euro\nRechnungspreis:\n499,20 - 24,96 = 474,24 Euro\nSkonto 2 %:\n474,24 x 0,02 = 9,48 Euro\nBezugspreis gesamt:\n474,24 - 9,48 = 464,76 Euro\nPro Dose:\n464,76 / 96 = 4,84 Euro"
+    },
+    {
+      "id": 78,
+      "topic": "Kalkulation",
+      "difficulty": 2,
+      "q": "Zu welchem Preis wird eine Dose Haarlack verkauft, wenn mit 95 % Kalkulationszuschlag gerechnet wird?",
+      "a": "Bezugspreis pro Dose: 4,84 Euro\nZuschlag 95 %:\n4,84 x 0,95 = 4,60 Euro\nVerkaufspreis:\n4,84 + 4,60 = 9,44 Euro"
+    },
+    {
+      "id": 79,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Nenne fünf Maßnahmen zur Erhaltung und Steigerung des Umsatzes im Salon.",
+      "a": "Markt beobachten\nAngebote auf Zielgruppe abstimmen\nWerbeaktionen planen\nQualitätsmanagement verbessern\nFeedback der Kundschaft nutzen"
+    },
+    {
+      "id": 80,
+      "topic": "Marketing",
+      "difficulty": 1,
+      "q": "Übersetze vier typische Marketingbegriffe ins Deutsche.",
+      "a": "Corporate Identity - einheitliches Erscheinungsbild\nSales Promotion - Verkaufsförderung\nMarketing-Mix - abgestimmte Marketinginstrumente\nPoint of Sale - Ort des Verkaufs\nPublic Relations - Öffentlichkeitsarbeit\nUnique Selling Proposition - Alleinstellungsmerkmal"
+    },
+    {
+      "id": 81,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Im aktuellen Monat kamen 876 Kunden, das sind 20 % mehr als im Vormonat. Wie viele Kunden kamen im Vormonat?",
+      "a": "876 Kunden entsprechen 120 %.\n100 % = 876 / 120 x 100 = 730 Kunden"
+    },
+    {
+      "id": 82,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Wenn die 146 Neukunden durchschnittlich 29,50 Euro Umsatz bringen, wie hoch ist der Gesamtumsatz dieser Neukunden?",
+      "a": "Neukunden:\n876 - 730 = 146\nUmsatz:\n146 x 29,50 = 4307,00 Euro"
+    },
+    {
+      "id": 83,
+      "topic": "Formveränderung",
+      "difficulty": 1,
+      "q": "Nenne drei Techniken der nichtdauerhaften Haarumformung für mehr Bewegung im Haar.",
+      "a": "Lockenstab\nPapillotieren\nEinlegen mit Volumenwicklern\nWasserwelle\nFöhnwelle"
+    },
+    {
+      "id": 84,
+      "topic": "Kosmetik",
+      "difficulty": 1,
+      "q": "Wie heißt der Hauttyp bei unreiner, glänzender, fettiger Haut?",
+      "a": "Seborrhoe oleosa"
+    },
+    {
+      "id": 85,
+      "topic": "Kosmetik",
+      "difficulty": 2,
+      "q": "Was ist die Ursache für seborrhoische, fettige Haut?",
+      "a": "Eine verstärkte Talgproduktion, meist hormonell beeinflusst und genetisch mitbedingt."
+    },
+    {
+      "id": 86,
+      "topic": "Kosmetik",
+      "difficulty": 2,
+      "q": "Nenne vier kosmetische Möglichkeiten zur Verbesserung fettiger, unreiner Haut.",
+      "a": "Reinigung mit Waschlotion oder Emulsion\nNachreinigung mit alkoholhaltigem Gesichtswasser\nLeichte O/W-Creme verwenden\nPeeling zur Porenverfeinerung\nKlärende oder reinigende Maske"
+    },
+    {
+      "id": 87,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Nenne je drei rationale und emotionale Kaufmotive.",
+      "a": "Rational: Preis-Leistungs-Verhältnis, Zeitersparnis, Gesundheit/Umwelt, Sicherheit\nEmotional: Geltung, Besitztrieb, Neugier, Attraktivität, Geborgenheit, Angst vor dem Altern"
+    },
+    {
+      "id": 88,
+      "topic": "Marketing",
+      "difficulty": 2,
+      "q": "Welche Kaufmotive sprechen Männer besonders an?",
+      "a": "Häufig rational: Zeitersparnis, Preis-Leistungs-Verhältnis\nzusätzlich emotional: Geltung, Besitztrieb, Neugier, sexuelle Attraktivität"
+    },
+    {
+      "id": 89,
+      "topic": "Sortiment",
+      "difficulty": 1,
+      "q": "Was versteht man unter dem Sortiment eines Salons?",
+      "a": "Alle Waren und Dienstleistungen, die im Salon angeboten werden."
+    },
+    {
+      "id": 90,
+      "topic": "Sortiment",
+      "difficulty": 2,
+      "q": "Nenne je fünf Beispiele für Kernsortiment und Randsortiment eines Friseursalons.",
+      "a": "Kernsortiment:\nHaarschnitt\nFarbveränderung\nStyling\nPflegeprodukte\nReinigung für Haar und Kopfhaut\n\nRandsortiment:\nHaarverlängerung\nKosmetikprogramm\nRasierfrisuren\nHochsteckservice\nZweithaar\nSchmuck oder Accessoires"
+    },
+    {
+      "id": 91,
+      "topic": "Sortiment",
+      "difficulty": 2,
+      "q": "Was bedeutet breites und tiefes Sortiment? Erkläre mit Beispielen.",
+      "a": "Breit bedeutet viele unterschiedliche Warengruppen.\nTief bedeutet viele Varianten innerhalb einer Warengruppe.\nBeispiel breit und tief: viele verschiedene Pflegearten für viele Haar- und Kopfhauttypen.\nBeispiel schmal und tief: nur dekorative Kosmetik, davon aber viele Farbvarianten."
+    }
+  ]
+}
