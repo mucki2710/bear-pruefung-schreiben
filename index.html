@@ -19,6 +19,8 @@
     textarea{width:100%;min-height:150px;resize:vertical;line-height:1.35}
     .q{font-size:1.15rem;font-weight:700;margin:8px 0 4px;white-space:pre-wrap}
     .a{font-size:1.05rem;margin:8px 0;white-space:pre-wrap}
+    .solution{font-size:1rem;margin:8px 0;white-space:pre-wrap;background:#f8f8f8;border:1px solid #e6e6e6;border-radius:10px;padding:10px 12px}
+    .mixvis{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#fff;border:1px solid #e6e6e6;border-radius:10px;padding:12px;margin-top:10px;white-space:pre-line;line-height:1.4}
     .rtl{direction:rtl;text-align:right}
     .grid{display:grid;grid-template-columns:1fr;gap:12px}
     @media (min-width: 900px){ .grid{grid-template-columns:1fr 1fr} }
@@ -138,10 +140,10 @@
         <span class="pill" id="pillIdx">Frage: -/-</span>
         <span class="pill" id="pillWrong">Fehler: 0</span>
 
-        <label class="mini" for="topicSelect">Thema:</label>
+        <label class="mini">Thema:</label>
         <select id="topicSelect"></select>
 
-        <label class="mini" for="difficultySelect">Schwierigkeit:</label>
+        <label class="mini">Schwierigkeit:</label>
         <select id="difficultySelect">
           <option value="ALL">Alle</option>
           <option value="1">1 (leicht)</option>
@@ -164,6 +166,8 @@
     <div class="row">
       <button id="speakQ" class="primary">🔊 Frage</button>
       <button id="speakA">🔊 Lösung</button>
+      <button id="speakSolution">🔊 Lösungsweg</button>
+      <button id="toggleVisual">🧮 Visual</button>
       <button id="speakBoth">🔊 Beides</button>
       <button id="stopTTS">⏹ Stop</button>
 
@@ -191,6 +195,10 @@
       <div>
         <div class="muted">Richtige Lösung</div>
         <div id="answer" class="a"></div>
+        <div class="muted" style="margin-top:10px">Lösungsweg</div>
+        <div id="solutionBox" class="solution"></div>
+        <div class="muted" style="margin-top:10px">Visualisierung</div>
+        <div id="mixVisualBox" class="mixvis"></div>
       </div>
     </div>
 
@@ -227,7 +235,6 @@
       <span class="muted mini" id="dictCount"></span>
     </div>
     <div class="row">
-      <label class="mini" for="dictSearch">Suche Begriff:</label>
       <input id="dictSearch" type="text" placeholder="Suche Begriff..." style="min-width:240px"/>
       <button id="dictSpeakTerm">🔊 Begriff</button>
       <button id="dictSpeakDef">🔊 Erklärung</button>
@@ -333,7 +340,9 @@ function getQAFromItem(item){
   const a = item.a ?? item.answer ?? "";
   const q_ar = item.q_ar || item.question_ar || item.ar_question || "";
   const a_ar = item.a_ar || item.answer_ar || item.ar_answer || "";
-  return { q, a, q_ar, a_ar };
+  const solution = item.solution || item.loesungsweg || item.solution_de || "";
+  const solution_ar = item.solution_ar || item.loesungsweg_ar || "";
+  return { q, a, q_ar, a_ar, solution, solution_ar };
 }
 function isIOS(){
   try{
@@ -513,9 +522,9 @@ function closeTooltip(){
 }
 function getGlossEntry(term){
   const raw = GLOSSARY[term];
-  if(raw === undefined || raw === null) return null;
+  if(!raw) return null;
   if(typeof raw === "string") return { term, def: raw };
-  return { term, def: raw.def || raw.expl || raw.explanation || "—", def_ar: raw.def_ar || raw.ar || "" };
+  return { term, def: raw.def || raw.expl || raw.explanation || String(raw), def_ar: raw.def_ar || raw.ar || "" };
 }
 function clamp(n, min, max){ return Math.max(min, Math.min(max, n)); }
 function positionTooltip(anchor){
@@ -571,7 +580,6 @@ function showTooltipFor(anchorEl, term){
     '<div class="ttrow">' +
       '<button class="ttbtn" id="ttSpeakTerm">🔊 Begriff</button>' +
       '<button class="ttbtn" id="ttSpeakDef">🔊 Erklärung</button>' +
-      '<button class="ttbtn" id="ttOpenDict">📖 Wörterbuch</button>' +
       '<button class="ttbtn" id="ttClose">Schließen</button>' +
     '</div>';
 
@@ -584,7 +592,6 @@ function showTooltipFor(anchorEl, term){
   ttBox.querySelector("#ttClose").onclick = (e)=>{ e.stopPropagation(); closeTooltip(); };
   ttBox.querySelector("#ttSpeakTerm").onclick = (e)=>{ e.stopPropagation(); speak(term, useArabic ? "ar-SA" : "de-DE"); };
   ttBox.querySelector("#ttSpeakDef").onclick = (e)=>{ e.stopPropagation(); speak(def, useArabic ? "ar-SA" : "de-DE"); };
-  ttBox.querySelector("#ttOpenDict").onclick = (e)=>{ e.stopPropagation(); openDictAtTerm(term); };
 
   positionTooltip(anchorEl);
   ttBox.addEventListener("click", (e)=>e.stopPropagation());
@@ -708,6 +715,63 @@ function initTopics(){
   };
 }
 
+
+function parseMixDataFromText(text){
+  const s = String(text || "").replace(/,/g, ".");
+  const perc = [...s.matchAll(/(\d+(?:\.\d+)?)\s*(?:%|Prozent)/gi)].map(m => Number(m[1]));
+  const mlm = s.match(/(?:Gesamt(?:menge)?|Gesamt)\s*(\d+(?:\.\d+)?)\s*ml/i) || s.match(/(\d+(?:\.\d+)?)\s*ml/i);
+  if(perc.length < 3) return null;
+  const a = perc[0], b = perc[1], target = perc[2];
+  const total = mlm ? Number(mlm[1]) : null;
+  if([a,b,target].some(v => Number.isNaN(v))) return null;
+  return { a, b, target, total };
+}
+function gcdInt(a,b){
+  a = Math.abs(a); b = Math.abs(b);
+  while(b){ const t = a % b; a = b; b = t; }
+  return a || 1;
+}
+function gcdApprox(a,b){
+  let x = Math.round(a*10), y = Math.round(b*10);
+  const g = gcdInt(x,y);
+  return [x/g, y/g];
+}
+function buildMixVisualFromQA(qa){
+  const parsed = parseMixDataFromText((qa && qa.q) || "");
+  if(!parsed) return "Keine automatische Visualisierung verfügbar.\nTipp: Funktioniert bei Fragen mit drei Prozentwerten, z. B. 12 %, 2 % und Ziel 6 %.";
+  const a = parsed.a, b = parsed.b, target = parsed.target, total = parsed.total;
+  const leftDiff = Math.abs(a - target);
+  const rightDiff = Math.abs(target - b);
+  if(leftDiff === 0 && rightDiff === 0) return "Beide Ausgangswerte liegen schon beim Zielwert.";
+  const rawLeft = rightDiff;
+  const rawRight = leftDiff;
+  const ratio = gcdApprox(rawLeft, rawRight);
+  const leftParts = ratio[0];
+  const rightParts = ratio[1];
+  let out = "";
+  out += "Mischkreuz\n\n";
+  out += "  " + a + "%        " + leftParts + " Teil(e)\n";
+  out += "      \\      /\n";
+  out += "       \\    /\n";
+  out += "        " + target + "%\n";
+  out += "       /    \\\n";
+  out += "      /      \\\n";
+  out += "  " + b + "%        " + rightParts + " Teil(e)\n\n";
+  out += "Rechnung: " + a + " - " + target + " = " + leftDiff + " | " + target + " - " + b + " = " + rightDiff + "\n";
+  out += "Verhältnis: " + leftParts + " : " + rightParts + "\n";
+  if(total){
+    const parts = leftParts + rightParts;
+    const onePart = total / parts;
+    const amountA = Math.round(onePart * leftParts * 10) / 10;
+    const amountB = Math.round(onePart * rightParts * 10) / 10;
+    out += "Gesamt: " + total + " ml = " + parts + " Teile → 1 Teil = " + (Math.round(onePart*10)/10) + " ml\n";
+    out += a + "% = " + amountA + " ml | " + b + "% = " + amountB + " ml";
+  } else {
+    out += "Ohne Gesamtmenge wird nur das Verhältnis dargestellt.";
+  }
+  return out;
+}
+
 /* UI */
 function setStatus(){
   const total = queue.length || 0;
@@ -737,12 +801,22 @@ function render(){
 
   const qEl = document.getElementById("question");
   const aEl = document.getElementById("answer");
+  const sEl = document.getElementById("solutionBox");
+  const vEl = document.getElementById("mixVisualBox");
 
   qEl.classList.toggle("rtl", useArabic);
   aEl.classList.toggle("rtl", useArabic);
+  if(sEl) sEl.classList.toggle("rtl", !!(useArabic && qa.solution_ar));
 
   qEl.textContent = useArabic ? (qa.q_ar || qa.q) : qa.q;
   aEl.textContent = useArabic ? (qa.a_ar || qa.a) : qa.a;
+  if(sEl){
+    const solutionText = useArabic && qa.solution_ar ? qa.solution_ar : (qa.solution || "—");
+    sEl.textContent = solutionText;
+  }
+  if(vEl){
+    vEl.textContent = buildMixVisualFromQA(qa);
+  }
 
   document.getElementById("topic").textContent =
     (item.topic || "") + (item.difficulty ? " • Schwierigkeit " + item.difficulty : "");
@@ -892,50 +966,25 @@ function prev(){
 
 /* Wörterbuch */
 function openDict(){
-  blurActiveElement();
+  blurActiveElement();     // 👈 doppelt hält besser
   closeTooltip();
   const backdrop = document.getElementById("modalBackdrop");
   const modal = document.getElementById("dictModal");
-  const s = document.getElementById("dictSearch");
-
-  if(s) s.value = "";
-
   backdrop.style.display = "block";
   modal.style.display = "block";
   renderDictList();
-
-  const first = document.querySelector("#dictBody .dictTerm");
+  const first = document.querySelector('#dictBody .dictTerm');
   if(first) first.click();
-
-  if (s && !isIOS()) s.focus();
-  else if (s) s.blur();
+  const s = document.getElementById("dictSearch");
+    if (s && !isIOS()) {
+      s.focus();               // Desktop ok
+    } else if (s) {
+      s.blur();                // iPad: sicher keine Tastatur
+    }
 }
 function closeDict(){
   document.getElementById("modalBackdrop").style.display = "none";
   document.getElementById("dictModal").style.display = "none";
-}
-function openDictAtTerm(term){
-  const backdrop = document.getElementById("modalBackdrop");
-  const modal = document.getElementById("dictModal");
-  const s = document.getElementById("dictSearch");
-
-  blurActiveElement();
-  closeTooltip();
-
-  if(s) s.value = term || "";
-  backdrop.style.display = "block";
-  modal.style.display = "block";
-  renderDictList();
-
-  const terms = [...document.querySelectorAll("#dictBody .dictTerm")];
-  const match = terms.find(el => el.textContent === term) || terms[0];
-  if(match){
-    match.click();
-    match.scrollIntoView({block:"center", behavior:"smooth"});
-  }
-
-  if(s && !isIOS()) s.focus();
-  else if(s) s.blur();
 }
 function dictEntries(){
   const terms = Object.keys(GLOSSARY || {}).sort((a,b)=>a.localeCompare(b,"de"));
@@ -988,11 +1037,11 @@ function renderDictList(){
 
 /* Load */
 async function loadData(){
-  const r = await fetch("quiz_runtime-v1.json", { cache: "no-store" });
+  const r = await fetch("quiz_runtime-v1.json");
   DATA = await r.json();
 
   try{
-    const gr = await fetch("glossar-v1.json", { cache: "no-store" });
+    const gr = await fetch("glossar-v1.json");
     if(gr.ok){
       const gj = await gr.json();
       GLOSSARY = gj.terms || gj || {};
@@ -1034,6 +1083,11 @@ async function loadData(){
   document.getElementById("toggleArabic").onchange = () => { stopSpeak(); render(); };
 
   document.getElementById("stopTTS").onclick = () => stopSpeak();
+  document.getElementById("toggleVisual").onclick = () => {
+    const box = document.getElementById("mixVisualBox");
+    if(!box) return;
+    box.style.display = (box.style.display === "none") ? "block" : "none";
+  };
 
   document.getElementById("speakQ").onclick = () => {
     const qa = getQAFromItem(queue[idx]);
@@ -1045,6 +1099,12 @@ async function loadData(){
     const useArabic = document.getElementById("toggleArabic").checked && qa.a_ar;
     const text = useArabic ? (qa.a_ar || qa.a) : qa.a;
     speak(String(text).replace(/\n+/g, ". "), useArabic ? "ar-SA" : "de-DE");
+  };
+  document.getElementById("speakSolution").onclick = () => {
+    const qa = getQAFromItem(queue[idx]);
+    const useArabic = document.getElementById("toggleArabic").checked && qa.solution_ar;
+    const text = useArabic ? (qa.solution_ar || qa.solution) : qa.solution;
+    if(text) speak("Rechenweg. " + String(text).replace(/\n+/g, ". "), useArabic ? "ar-SA" : "de-DE");
   };
   document.getElementById("speakBoth").onclick = () => {
     const qa = getQAFromItem(queue[idx]);
