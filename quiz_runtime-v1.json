@@ -12,6 +12,192 @@
   },
   "questions": [
     {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 1,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 6 Prozent ergeben 9 Prozent.",
+    "a": "1 zu 1",
+    "solution": "12 minus 9 gleich 3. 9 minus 6 gleich 3. Verhältnis 1 zu 1."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 1,
+    "q": "Wie ist das Verhältnis? 6 Prozent und 2 Prozent ergeben 4 Prozent.",
+    "a": "1 zu 1",
+    "solution": "6 minus 4 gleich 2. 4 minus 2 gleich 2. Verhältnis 1 zu 1."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 1,
+    "q": "Wie ist das Verhältnis? 9 Prozent und 3 Prozent ergeben 6 Prozent.",
+    "a": "1 zu 1",
+    "solution": "9 minus 6 gleich 3. 6 minus 3 gleich 3. Verhältnis 1 zu 1."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 1,
+    "q": "Wie ist das Verhältnis? 6 Prozent und 0 Prozent ergeben 3 Prozent.",
+    "a": "1 zu 1",
+    "solution": "6 minus 3 gleich 3. 3 minus 0 gleich 3. Verhältnis 1 zu 1."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 1,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 0 Prozent ergeben 6 Prozent.",
+    "a": "1 zu 1",
+    "solution": "12 minus 6 gleich 6. 6 minus 0 gleich 6. Verhältnis 1 zu 1."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 2,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 2 Prozent ergeben 6 Prozent.",
+    "a": "2 zu 3",
+    "solution": "12 minus 6 gleich 6. 6 minus 2 gleich 4. Verhältnis 2 zu 3."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 2,
+    "q": "Wie ist das Verhältnis? 9 Prozent und 0 Prozent ergeben 3 Prozent.",
+    "a": "1 zu 2",
+    "solution": "9 minus 3 gleich 6. 3 minus 0 gleich 3. Verhältnis 1 zu 2."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 2,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 3 Prozent ergeben 6 Prozent.",
+    "a": "1 zu 2",
+    "solution": "12 minus 6 gleich 6. 6 minus 3 gleich 3. Verhältnis 1 zu 2."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 2,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 6 Prozent ergeben 8 Prozent.",
+    "a": "1 zu 2",
+    "solution": "12 minus 8 gleich 4. 8 minus 6 gleich 2. Verhältnis 1 zu 2."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 2,
+    "q": "Wie ist das Verhältnis? 6 Prozent und 2 Prozent ergeben 5 Prozent.",
+    "a": "3 zu 1",
+    "solution": "6 minus 5 gleich 1. 5 minus 2 gleich 3. Verhältnis 3 zu 1."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 3,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 3 Prozent ergeben 9 Prozent.",
+    "a": "2 zu 1",
+    "solution": "12 minus 9 gleich 3. 9 minus 3 gleich 6. Verhältnis 2 zu 1."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 3,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 6 Prozent ergeben 7 Komma 5 Prozent.",
+    "a": "1 zu 3",
+    "solution": "12 minus 7 Komma 5 gleich 4 Komma 5. 7 Komma 5 minus 6 gleich 1 Komma 5. Verhältnis 1 zu 3."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 3,
+    "q": "Wie ist das Verhältnis? 9 Prozent und 2 Prozent ergeben 5 Prozent.",
+    "a": "3 zu 4",
+    "solution": "9 minus 5 gleich 4. 5 minus 2 gleich 3. Verhältnis 3 zu 4."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 3,
+    "q": "Wie ist das Verhältnis? 12 Prozent und 0 Prozent ergeben 3 Prozent.",
+    "a": "1 zu 3",
+    "solution": "12 minus 3 gleich 9. 3 minus 0 gleich 3. Verhältnis 1 zu 3."
+  },
+  {
+    "topic": "Mischungsrechnen Verhältnis",
+    "difficulty": 3,
+    "q": "Wie ist das Verhältnis? 6 Prozent und 0 Prozent ergeben 4 Prozent.",
+    "a": "2 zu 1",
+    "solution": "6 minus 4 gleich 2. 4 minus 0 gleich 4. Verhältnis 2 zu 1."
+  },
+
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 2,
+    "q": "Du mischst 12 Prozent und 2 Prozent zu 6 Prozent. Gesamtmenge 40 ml. Wie viel von jeder Lösung?",
+    "a": "12 Prozent: 16 ml. 2 Prozent: 24 ml.",
+    "solution": "12 minus 6 gleich 6. 6 minus 2 gleich 4. Verhältnis 2 zu 3. Gesamt 5 Teile. 40 durch 5 gleich 8 ml pro Teil. 2 Teile sind 16 ml. 3 Teile sind 24 ml.",
+    "hint": "Minus, kreuzen, Verhältnis bilden"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 1,
+    "q": "Du mischst 9 Prozent und 3 Prozent zu 6 Prozent. Gesamt 30 ml. Ergebnis?",
+    "a": "15 ml und 15 ml.",
+    "solution": "9 minus 6 gleich 3. 6 minus 3 gleich 3. Verhältnis 1 zu 1. Gesamt 2 Teile. 30 durch 2 gleich 15 ml pro Teil.",
+    "hint": "Gleicher Abstand zum Ziel"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 1,
+    "q": "Du mischst 12 Prozent und 6 Prozent zu 9 Prozent. Gesamt 60 ml. Ergebnis?",
+    "a": "30 ml und 30 ml.",
+    "solution": "12 minus 9 gleich 3. 9 minus 6 gleich 3. Verhältnis 1 zu 1. 60 durch 2 gleich 30 ml.",
+    "hint": "Ziel liegt genau in der Mitte"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 2,
+    "q": "Du mischst 12 Prozent mit 0 Prozent zu 4 Prozent. Gesamt 90 ml. Ergebnis?",
+    "a": "30 ml 12 Prozent und 60 ml 0 Prozent.",
+    "solution": "12 minus 4 gleich 8. 4 minus 0 gleich 4. Verhältnis 1 zu 2. 3 Teile. 90 durch 3 gleich 30 ml. 1 Teil 12 Prozent, 2 Teile 0 Prozent.",
+    "hint": "Je weiter weg, desto weniger"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 1,
+    "q": "Du mischst 6 Prozent und 0 Prozent zu 3 Prozent. Gesamt 50 ml. Ergebnis?",
+    "a": "25 ml und 25 ml.",
+    "solution": "6 minus 3 gleich 3. 3 minus 0 gleich 3. Verhältnis 1 zu 1. 50 durch 2 gleich 25 ml.",
+    "hint": "Mitte = gleiche Teile"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 2,
+    "q": "Du mischst 12 Prozent und 3 Prozent zu 6 Prozent. Gesamt 45 ml. Ergebnis?",
+    "a": "15 ml 12 Prozent und 30 ml 3 Prozent.",
+    "solution": "12 minus 6 gleich 6. 6 minus 3 gleich 3. Verhältnis 1 zu 2. 3 Teile. 45 durch 3 gleich 15 ml.",
+    "hint": "Minus und kreuzen"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 2,
+    "q": "Du mischst 9 Prozent und 0 Prozent zu 3 Prozent. Gesamt 60 ml. Ergebnis?",
+    "a": "20 ml 9 Prozent und 40 ml 0 Prozent.",
+    "solution": "9 minus 3 gleich 6. 3 minus 0 gleich 3. Verhältnis 1 zu 2. 3 Teile. 60 durch 3 gleich 20 ml.",
+    "hint": "Stark wenig, schwach viel"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 1,
+    "q": "Du mischst 6 Prozent und 2 Prozent zu 4 Prozent. Gesamt 80 ml. Ergebnis?",
+    "a": "40 ml und 40 ml.",
+    "solution": "6 minus 4 gleich 2. 4 minus 2 gleich 2. Verhältnis 1 zu 1. 80 durch 2 gleich 40 ml.",
+    "hint": "Ziel liegt genau zwischen beiden"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 3,
+    "q": "Du mischst 12 Prozent und 3 Prozent zu 9 Prozent. Gesamt 50 ml. Ergebnis?",
+    "a": "33,3 ml 12 Prozent und 16,7 ml 3 Prozent.",
+    "solution": "12 minus 9 gleich 3. 9 minus 3 gleich 6. Verhältnis 2 zu 1. 3 Teile. 50 durch 3 gleich 16,7 ml. 2 Teile sind 33,3 ml.",
+    "hint": "Kreuzen nicht vergessen"
+  },
+  {
+    "topic": "Mischungsrechnen",
+    "difficulty": 3,
+    "q": "Du mischst 12 Prozent und 6 Prozent zu 7,5 Prozent. Gesamt 100 ml. Ergebnis?",
+    "a": "25 ml 12 Prozent und 75 ml 6 Prozent.",
+    "solution": "12 minus 7,5 gleich 4,5. 7,5 minus 6 gleich 1,5. Verhältnis 1 zu 3. 4 Teile. 100 durch 4 gleich 25 ml.",
+    "hint": "Kommazahlen beachten"
+  },
+    {
       "id": 1,
       "topic": "Dauerwelle",
       "difficulty": 2,
