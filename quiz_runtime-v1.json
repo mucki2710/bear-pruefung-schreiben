@@ -11,192 +11,7 @@
     ]
   },
   "questions": [
-    {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 1,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 6 Prozent ergeben 9 Prozent.",
-    "a": "1 zu 1",
-    "solution": "12 minus 9 gleich 3. 9 minus 6 gleich 3. Verhältnis 1 zu 1."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 1,
-    "q": "Wie ist das Verhältnis? 6 Prozent und 2 Prozent ergeben 4 Prozent.",
-    "a": "1 zu 1",
-    "solution": "6 minus 4 gleich 2. 4 minus 2 gleich 2. Verhältnis 1 zu 1."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 1,
-    "q": "Wie ist das Verhältnis? 9 Prozent und 3 Prozent ergeben 6 Prozent.",
-    "a": "1 zu 1",
-    "solution": "9 minus 6 gleich 3. 6 minus 3 gleich 3. Verhältnis 1 zu 1."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 1,
-    "q": "Wie ist das Verhältnis? 6 Prozent und 0 Prozent ergeben 3 Prozent.",
-    "a": "1 zu 1",
-    "solution": "6 minus 3 gleich 3. 3 minus 0 gleich 3. Verhältnis 1 zu 1."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 1,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 0 Prozent ergeben 6 Prozent.",
-    "a": "1 zu 1",
-    "solution": "12 minus 6 gleich 6. 6 minus 0 gleich 6. Verhältnis 1 zu 1."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 2,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 2 Prozent ergeben 6 Prozent.",
-    "a": "2 zu 3",
-    "solution": "12 minus 6 gleich 6. 6 minus 2 gleich 4. Verhältnis 2 zu 3."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 2,
-    "q": "Wie ist das Verhältnis? 9 Prozent und 0 Prozent ergeben 3 Prozent.",
-    "a": "1 zu 2",
-    "solution": "9 minus 3 gleich 6. 3 minus 0 gleich 3. Verhältnis 1 zu 2."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 2,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 3 Prozent ergeben 6 Prozent.",
-    "a": "1 zu 2",
-    "solution": "12 minus 6 gleich 6. 6 minus 3 gleich 3. Verhältnis 1 zu 2."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 2,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 6 Prozent ergeben 8 Prozent.",
-    "a": "1 zu 2",
-    "solution": "12 minus 8 gleich 4. 8 minus 6 gleich 2. Verhältnis 1 zu 2."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 2,
-    "q": "Wie ist das Verhältnis? 6 Prozent und 2 Prozent ergeben 5 Prozent.",
-    "a": "3 zu 1",
-    "solution": "6 minus 5 gleich 1. 5 minus 2 gleich 3. Verhältnis 3 zu 1."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 3,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 3 Prozent ergeben 9 Prozent.",
-    "a": "2 zu 1",
-    "solution": "12 minus 9 gleich 3. 9 minus 3 gleich 6. Verhältnis 2 zu 1."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 3,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 6 Prozent ergeben 7 Komma 5 Prozent.",
-    "a": "1 zu 3",
-    "solution": "12 minus 7 Komma 5 gleich 4 Komma 5. 7 Komma 5 minus 6 gleich 1 Komma 5. Verhältnis 1 zu 3."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 3,
-    "q": "Wie ist das Verhältnis? 9 Prozent und 2 Prozent ergeben 5 Prozent.",
-    "a": "3 zu 4",
-    "solution": "9 minus 5 gleich 4. 5 minus 2 gleich 3. Verhältnis 3 zu 4."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 3,
-    "q": "Wie ist das Verhältnis? 12 Prozent und 0 Prozent ergeben 3 Prozent.",
-    "a": "1 zu 3",
-    "solution": "12 minus 3 gleich 9. 3 minus 0 gleich 3. Verhältnis 1 zu 3."
-  },
-  {
-    "topic": "Mischungsrechnen Verhältnis",
-    "difficulty": 3,
-    "q": "Wie ist das Verhältnis? 6 Prozent und 0 Prozent ergeben 4 Prozent.",
-    "a": "2 zu 1",
-    "solution": "6 minus 4 gleich 2. 4 minus 0 gleich 4. Verhältnis 2 zu 1."
-  },
-
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 2,
-    "q": "Du mischst 12 Prozent und 2 Prozent zu 6 Prozent. Gesamtmenge 40 ml. Wie viel von jeder Lösung?",
-    "a": "12 Prozent: 16 ml. 2 Prozent: 24 ml.",
-    "solution": "12 minus 6 gleich 6. 6 minus 2 gleich 4. Verhältnis 2 zu 3. Gesamt 5 Teile. 40 durch 5 gleich 8 ml pro Teil. 2 Teile sind 16 ml. 3 Teile sind 24 ml.",
-    "hint": "Minus, kreuzen, Verhältnis bilden"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 1,
-    "q": "Du mischst 9 Prozent und 3 Prozent zu 6 Prozent. Gesamt 30 ml. Ergebnis?",
-    "a": "15 ml und 15 ml.",
-    "solution": "9 minus 6 gleich 3. 6 minus 3 gleich 3. Verhältnis 1 zu 1. Gesamt 2 Teile. 30 durch 2 gleich 15 ml pro Teil.",
-    "hint": "Gleicher Abstand zum Ziel"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 1,
-    "q": "Du mischst 12 Prozent und 6 Prozent zu 9 Prozent. Gesamt 60 ml. Ergebnis?",
-    "a": "30 ml und 30 ml.",
-    "solution": "12 minus 9 gleich 3. 9 minus 6 gleich 3. Verhältnis 1 zu 1. 60 durch 2 gleich 30 ml.",
-    "hint": "Ziel liegt genau in der Mitte"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 2,
-    "q": "Du mischst 12 Prozent mit 0 Prozent zu 4 Prozent. Gesamt 90 ml. Ergebnis?",
-    "a": "30 ml 12 Prozent und 60 ml 0 Prozent.",
-    "solution": "12 minus 4 gleich 8. 4 minus 0 gleich 4. Verhältnis 1 zu 2. 3 Teile. 90 durch 3 gleich 30 ml. 1 Teil 12 Prozent, 2 Teile 0 Prozent.",
-    "hint": "Je weiter weg, desto weniger"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 1,
-    "q": "Du mischst 6 Prozent und 0 Prozent zu 3 Prozent. Gesamt 50 ml. Ergebnis?",
-    "a": "25 ml und 25 ml.",
-    "solution": "6 minus 3 gleich 3. 3 minus 0 gleich 3. Verhältnis 1 zu 1. 50 durch 2 gleich 25 ml.",
-    "hint": "Mitte = gleiche Teile"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 2,
-    "q": "Du mischst 12 Prozent und 3 Prozent zu 6 Prozent. Gesamt 45 ml. Ergebnis?",
-    "a": "15 ml 12 Prozent und 30 ml 3 Prozent.",
-    "solution": "12 minus 6 gleich 6. 6 minus 3 gleich 3. Verhältnis 1 zu 2. 3 Teile. 45 durch 3 gleich 15 ml.",
-    "hint": "Minus und kreuzen"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 2,
-    "q": "Du mischst 9 Prozent und 0 Prozent zu 3 Prozent. Gesamt 60 ml. Ergebnis?",
-    "a": "20 ml 9 Prozent und 40 ml 0 Prozent.",
-    "solution": "9 minus 3 gleich 6. 3 minus 0 gleich 3. Verhältnis 1 zu 2. 3 Teile. 60 durch 3 gleich 20 ml.",
-    "hint": "Stark wenig, schwach viel"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 1,
-    "q": "Du mischst 6 Prozent und 2 Prozent zu 4 Prozent. Gesamt 80 ml. Ergebnis?",
-    "a": "40 ml und 40 ml.",
-    "solution": "6 minus 4 gleich 2. 4 minus 2 gleich 2. Verhältnis 1 zu 1. 80 durch 2 gleich 40 ml.",
-    "hint": "Ziel liegt genau zwischen beiden"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 3,
-    "q": "Du mischst 12 Prozent und 3 Prozent zu 9 Prozent. Gesamt 50 ml. Ergebnis?",
-    "a": "33,3 ml 12 Prozent und 16,7 ml 3 Prozent.",
-    "solution": "12 minus 9 gleich 3. 9 minus 3 gleich 6. Verhältnis 2 zu 1. 3 Teile. 50 durch 3 gleich 16,7 ml. 2 Teile sind 33,3 ml.",
-    "hint": "Kreuzen nicht vergessen"
-  },
-  {
-    "topic": "Mischungsrechnen",
-    "difficulty": 3,
-    "q": "Du mischst 12 Prozent und 6 Prozent zu 7,5 Prozent. Gesamt 100 ml. Ergebnis?",
-    "a": "25 ml 12 Prozent und 75 ml 6 Prozent.",
-    "solution": "12 minus 7,5 gleich 4,5. 7,5 minus 6 gleich 1,5. Verhältnis 1 zu 3. 4 Teile. 100 durch 4 gleich 25 ml.",
-    "hint": "Kommazahlen beachten"
-  },
+    
     {
       "id": 1,
       "topic": "Dauerwelle",
@@ -274,13 +89,7 @@
       "q": "Welche Folgen kann eine unzufriedene Kundin für den Salon haben?",
       "a": "Schlechte Mundpropaganda\nWeniger Neukunden\nStammkunden bleiben eventuell auch weg\nUmsatzrückgang\nSchlechteres Image des Salons"
     },
-    {
-      "id": 12,
-      "topic": "Rabattrechnung",
-      "difficulty": 2,
-      "q": "Eine Erstausstattung kostet 110 Euro, darauf gibt es 18 % Rabatt. Ein Shampoo kostet 9,80 Euro, darauf gibt es 7 % Rabatt. Wie viel ist insgesamt brutto zu zahlen?",
-      "a": "Schneidewerkzeug:\n110,00 - 19,80 = 90,20 Euro\nShampoo:\n9,80 - 0,69 = 9,11 Euro\nNetto gesamt:\n90,20 + 9,11 = 99,31 Euro\nMwSt 19 %:\n99,31 x 0,19 = 18,87 Euro\nBrutto:\n99,31 + 18,87 = 118,18 Euro"
-    },
+    
     {
       "id": 13,
       "topic": "Fortbildung",
@@ -344,20 +153,7 @@
       "q": "Was passiert, wenn Farbstoffbildner fehlen?",
       "a": "Naturpigmente können aufgehellt werden, aber es entstehen keine neuen künstlichen Farbpigmente im Haar. Ein satter dauerhafter Farbton ist deshalb nicht erreichbar."
     },
-    {
-      "id": 22,
-      "topic": "Mischungsrechnen",
-      "difficulty": 2,
-      "q": "Wie viel 9%iges H2O2 und Farbcreme werden für 120 ml eines 3%igen Färbebreis benötigt?",
-      "a": "Differenzenmethode:\n9 % -> Ziel 3 % = 6\n3 % -> 0 % = 3\nVerhältnis Entwickler : Creme = 3 : 6 = 1 : 2\nGesamtteile = 3\n120 ml : 3 = 40 ml je Teil\nErgebnis:\n40 ml 9 % Entwickler\n80 ml Farbcreme"
-    },
-    {
-      "id": 23,
-      "topic": "Mischungsrechnen",
-      "difficulty": 2,
-      "q": "Was kosten 40 ml 9%iges H2O2 und 80 ml Farbcreme, wenn 1 Liter Entwickler 18,95 Euro und 100 ml Farbcreme 8,60 Euro kosten?",
-      "a": "Entwickler:\n18,95 / 1000 x 40 = 0,76 Euro\nFarbcreme:\n8,60 / 100 x 80 = 6,88 Euro\nGesamtkosten:\n0,76 + 6,88 = 7,64 Euro"
-    },
+    
     {
       "id": 24,
       "topic": "Haarschnitt",
@@ -393,13 +189,7 @@
       "q": "Worin unterscheiden sich offene, Alternativ- und Bestätigungsfragen in ihrer Zielsetzung?",
       "a": "Offene Fragen sammeln viele Informationen.\nAlternativfragen führen zu einer Entscheidung zwischen zwei Möglichkeiten.\nBestätigungsfragen lenken oder beeinflussen die Kundin in eine Richtung."
     },
-    {
-      "id": 29,
-      "topic": "Preisberechnung",
-      "difficulty": 2,
-      "q": "Eine Firma bietet Shampoo für 7,50 Euro an. Bei 50 Stück gibt es 3 % Rabatt, bei 100 Stück 10 %. Wie hoch sind Gesamtpreis und Stückpreis?",
-      "a": "50 Stück:\nListenpreis 50 x 7,50 = 375,00 Euro\nRabatt 3 % = 11,25 Euro\nGesamtpreis = 363,75 Euro\nStückpreis = 363,75 / 50 = 7,28 Euro\n\n100 Stück:\nListenpreis 100 x 7,50 = 750,00 Euro\nRabatt 10 % = 75,00 Euro\nGesamtpreis = 675,00 Euro\nStückpreis = 675,00 / 100 = 6,75 Euro"
-    },
+    
     {
       "id": 30,
       "topic": "Marketing",
@@ -491,20 +281,7 @@
       "q": "Nenne zehn allgemeine Präsentationsgrundsätze für ein Warenregal.",
       "a": "Hochpreisige Ware in Sicht-/Griffzone\nNachfüllware in Bückzone\nSpezialbedarf in Reckzone\nNach Themen oder Warengruppen ordnen\nProdukte einer Marke zusammenstellen\nKleinteile sinnvoll platzieren\nÜbersichtlich präsentieren\nGriffmulden lassen\nStaubfrei und sauber halten\nPreise sichtbar machen\nEtikett/Logo nach vorne"
     },
-    {
-      "id": 43,
-      "topic": "Bezugskalkulation",
-      "difficulty": 3,
-      "q": "Ein Festiger kostet 2,10 Euro. Bei 50 Stück gibt es 3 % Rabatt, bei 200 Stück 12 %. Zusätzlich 2 % Skonto und 7,50 Euro Porto. Berechne den Bezugspreis pro Stück für 50 und 200 Stück.",
-      "a": "50 Stück:\nListenpreis 50 x 2,10 = 105,00 Euro\n- 3 % Rabatt = 3,15 Euro\n= 101,85 Euro Rechnungspreis\n- 2 % Skonto = 2,04 Euro\n= 99,81 Euro Bareinkaufspreis\n+ 7,50 Euro Porto\n= 107,31 Euro Bezugspreis\n107,31 / 50 = 2,15 Euro pro Stück\n\n200 Stück:\nListenpreis 200 x 2,10 = 420,00 Euro\n- 12 % Rabatt = 50,40 Euro\n= 369,60 Euro Rechnungspreis\n- 2 % Skonto = 7,39 Euro\n= 362,21 Euro Bareinkaufspreis\n+ 7,50 Euro Porto\n= 369,71 Euro Bezugspreis\n369,71 / 200 = 1,85 Euro pro Stück"
-    },
-    {
-      "id": 44,
-      "topic": "Verkaufskalkulation",
-      "difficulty": 3,
-      "q": "Eine Bodylotion hat Listenpreis 5,80 Euro. Rabatt 8,5 %, Skonto 3 %, Bezugskosten gesamt 4,70 Euro bei 25 Stück, Handlungskosten 30 %, Gewinn 35 %, MwSt 19 %. Wie teuer ist eine Flasche im Salon?",
-      "a": "Rabatt:\n5,80 x 8,5 % = 0,49 Euro\n5,80 - 0,49 = 5,31 Euro Rechnungspreis\nSkonto:\n5,31 x 3 % = 0,16 Euro\n5,31 - 0,16 = 5,15 Euro Bareinkaufspreis\nBezugskosten pro Stück:\n4,70 / 25 = 0,19 Euro\n5,15 + 0,19 = 5,34 Euro Bezugspreis\nHandlungskosten:\n5,34 x 30 % = 1,60 Euro\nSelbstkostenpreis = 6,94 Euro\nGewinn:\n6,94 x 35 % = 2,43 Euro\nNettoverkaufspreis = 9,37 Euro\nMwSt:\n9,37 x 19 % = 1,78 Euro\nBruttoverkaufspreis = 11,15 Euro"
-    },
+    
     {
       "id": 45,
       "topic": "Hautalterung",
@@ -603,20 +380,7 @@
       "q": "Beschreibe die chemisch-physikalischen Vorgänge im Haar bei der Dauerwellbehandlung.",
       "a": "Das Haar wird auf Wickler gespannt. Alkalisierungsmittel öffnen die Schuppenschicht, die Faserschicht quillt. Wasserstoff- und Salzbrücken sowie durch das Reduktionsmittel auch Schwefelbrücken werden gelöst. Die neue Form entsteht unter Spannung. Bei der Fixierung gibt das Oxidationsmittel Sauerstoff ab, Schwefelbrücken schließen sich neu. Säuren neutralisieren Restalkali und unterstützen das Schließen der Schuppenschicht."
     },
-    {
-      "id": 59,
-      "topic": "Umweltschutz",
-      "difficulty": 2,
-      "q": "Wie viel Farbe landen pro Jahr im Müll, wenn in jeder von fünf Tuben täglich 8 ml verbleiben und im Monat 20 Arbeitstage gerechnet werden?",
-      "a": "Pro Tag:\n8 ml x 5 = 40 ml\nPro Monat:\n40 ml x 20 = 800 ml\nPro Jahr:\n800 ml x 12 = 9600 ml"
-    },
-    {
-      "id": 60,
-      "topic": "Umweltschutz",
-      "difficulty": 2,
-      "q": "Wie hoch ist der finanzielle Schaden, wenn 60 ml Farbe 9,75 Euro kosten und pro Jahr 9600 ml verschwendet werden?",
-      "a": "Preis pro ml:\n9,75 / 60 = 0,1625 Euro\nSchaden pro Jahr:\n9600 x 0,1625 = 1560,00 Euro"
-    },
+    
     {
       "id": 61,
       "topic": "Umweltschutz",
@@ -631,20 +395,7 @@
       "q": "Korrigiere typische falsche Aussagen zur Farbveränderung. Nenne mindestens fünf richtige Merksätze.",
       "a": "Mit Blondierung sind bis zu etwa 8 Tonhöhen Aufhellung möglich.\nEumelanine lassen sich leichter aufhellen als Phäomelanine.\nBlonde haben insgesamt weniger Pigmente als Dunkelhaarige.\nEine Tönung enthält kein H2O2.\nIntensivtönungen decken nicht 100 %, sondern bis etwa 50 %.\nBei Blondierung entsteht immer eine gewisse Haarschädigung.\nNach oxidativer Farbbehandlung wird sauer nachbehandelt.\nGelbstich wird mit Violett/Silber neutralisiert."
     },
-    {
-      "id": 63,
-      "topic": "Mischungsrechnen",
-      "difficulty": 2,
-      "q": "Eine 12%ige H2O2-Lösung wird in 60 ml Blondiercreme eingerührt. Der Blondierbrei soll 4 % haben. Wie viel 12%iges H2O2 wird benötigt?",
-      "a": "Differenzenmethode:\n12 % -> Ziel 4 % = 8\n4 % -> 0 % = 4\nVerhältnis Entwickler : Creme = 4 : 8 = 1 : 2\n60 ml Creme sind 2 Teile\n1 Teil = 30 ml\nErgebnis: 30 ml 12 %iges H2O2"
-    },
-    {
-      "id": 64,
-      "topic": "Mischungsrechnen",
-      "difficulty": 2,
-      "q": "Wie teuer ist dieser Blondierbrei, wenn 1 Liter 12%iges H2O2 9,95 Euro kostet und 60 ml Blondiercreme 9,10 Euro kosten?",
-      "a": "Entwickler:\n9,95 / 1000 x 30 = 0,30 Euro\nBlondiercreme:\n9,10 Euro\nGesamtpreis:\n9,10 + 0,30 = 9,40 Euro"
-    },
+    
     {
       "id": 65,
       "topic": "Schaufenster",
@@ -701,20 +452,7 @@
       "q": "Vergleiche nichtdauerhafte und dauerhafte Haarumformung in fünf Punkten.",
       "a": "Nichtdauerhaft:\nWasserstoff- und teilweise Salzbrücken werden gelöst\nWasser und Wärme reichen aus\nKein Alkali nötig\nFixierung durch Trocknung/Wärme\nHält nur bis zur nächsten Feuchtigkeit\n\nDauerhaft:\nAuch Schwefelbrücken werden umgeformt\nWellmittel und Fixierung nötig\nAlkali wird eingesetzt\nFixierung mit Oxidationsmittel\nHält dauerhaft, belastet das Haar stärker"
     },
-    {
-      "id": 73,
-      "topic": "Mischungsrechnen",
-      "difficulty": 2,
-      "q": "Für 35 ml 6%iges H2O2 stehen nur 12%iges und 2%iges H2O2 zur Verfügung. Berechne Mischungsverhältnis und Mengen.",
-      "a": "Mischkreuz:\n12 - 6 = 6\n6 - 2 = 4\nVerhältnis 12 % : 2 % = 4 : 6 = 2 : 3\nGesamtteile = 5\n35 ml / 5 = 7 ml je Teil\n12 %ig: 2 x 7 = 14 ml\n2 %ig: 3 x 7 = 21 ml"
-    },
-    {
-      "id": 74,
-      "topic": "Mischungsrechnen",
-      "difficulty": 1,
-      "q": "Was kosten 35 ml H2O2, wenn 1 Liter 12%iges und 2%iges H2O2 jeweils 10,80 Euro kostet?",
-      "a": "35 ml von 1000 ml:\n10,80 / 1000 x 35 = 0,38 Euro"
-    },
+    
     {
       "id": 75,
       "topic": "Warenpräsentation",
@@ -729,20 +467,8 @@
       "q": "Welche Regalzonen sind verkaufsstark und welche verkaufsschwach? Nenne je zwei passende Artikel.",
       "a": "Verkaufsstark: Sichtzone und Griffzone - z. B. Saisonartikel, Spezialangebote\nVerkaufsschwach: Bückzone und Reckzone - z. B. Nachfüllware, preisgünstige raumgreifende Artikel"
     },
-    {
-      "id": 77,
-      "topic": "Kalkulation",
-      "difficulty": 2,
-      "q": "Acht Kartons mit je zwölf Dosen Haarlack kosten 5,20 Euro pro Dose. Es gibt 5 % Rabatt und 2 % Skonto. Wie hoch ist der Bezugspreis insgesamt und pro Dose?",
-      "a": "Menge:\n8 x 12 = 96 Dosen\nListenpreis:\n96 x 5,20 = 499,20 Euro\nRabatt 5 %:\n499,20 x 0,05 = 24,96 Euro\nRechnungspreis:\n499,20 - 24,96 = 474,24 Euro\nSkonto 2 %:\n474,24 x 0,02 = 9,48 Euro\nBezugspreis gesamt:\n474,24 - 9,48 = 464,76 Euro\nPro Dose:\n464,76 / 96 = 4,84 Euro"
-    },
-    {
-      "id": 78,
-      "topic": "Kalkulation",
-      "difficulty": 2,
-      "q": "Zu welchem Preis wird eine Dose Haarlack verkauft, wenn mit 95 % Kalkulationszuschlag gerechnet wird?",
-      "a": "Bezugspreis pro Dose: 4,84 Euro\nZuschlag 95 %:\n4,84 x 0,95 = 4,60 Euro\nVerkaufspreis:\n4,84 + 4,60 = 9,44 Euro"
-    },
+    
+    
     {
       "id": 79,
       "topic": "Marketing",
@@ -757,20 +483,7 @@
       "q": "Übersetze vier typische Marketingbegriffe ins Deutsche.",
       "a": "Corporate Identity - einheitliches Erscheinungsbild\nSales Promotion - Verkaufsförderung\nMarketing-Mix - abgestimmte Marketinginstrumente\nPoint of Sale - Ort des Verkaufs\nPublic Relations - Öffentlichkeitsarbeit\nUnique Selling Proposition - Alleinstellungsmerkmal"
     },
-    {
-      "id": 81,
-      "topic": "Marketing",
-      "difficulty": 2,
-      "q": "Im aktuellen Monat kamen 876 Kunden, das sind 20 % mehr als im Vormonat. Wie viele Kunden kamen im Vormonat?",
-      "a": "876 Kunden entsprechen 120 %.\n100 % = 876 / 120 x 100 = 730 Kunden"
-    },
-    {
-      "id": 82,
-      "topic": "Marketing",
-      "difficulty": 2,
-      "q": "Wenn die 146 Neukunden durchschnittlich 29,50 Euro Umsatz bringen, wie hoch ist der Gesamtumsatz dieser Neukunden?",
-      "a": "Neukunden:\n876 - 730 = 146\nUmsatz:\n146 x 29,50 = 4307,00 Euro"
-    },
+    
     {
       "id": 83,
       "topic": "Formveränderung",
