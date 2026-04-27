@@ -848,8 +848,21 @@ function resetAll(){
     base = base.filter(q => (q.topic || "Ohne Thema") === selectedTopic);
   }
   if(selectedDifficulty !== "ALL"){
-    base = base.filter(q => String(q.difficulty) === selectedDifficulty);
-  }
+  base = base.filter(q => {
+    if (q.difficulty !== undefined) {
+      return String(q.difficulty) === selectedDifficulty;
+    }
+
+    const levelMap = {
+      leicht: "1",
+      mittel: "2",
+      schwer: "3",
+      buch: "4"
+    };
+
+    return levelMap[String(q.level || "").toLowerCase()] === selectedDifficulty;
+  });
+}
 
   //queue = shuffle(base);
   queue = base;   // ✅ feste Reihenfolge
